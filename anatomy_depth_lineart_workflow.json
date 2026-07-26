@@ -1,0 +1,244 @@
+{
+  "last_node_id": 14,
+  "last_link_id": 19,
+  "nodes": [
+    {
+      "id": 1,
+      "type": "CheckpointLoaderSimple",
+      "pos": [50, 100],
+      "size": [315, 98],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {"name": "MODEL", "type": "MODEL", "links": [1], "slot_index": 0},
+        {"name": "CLIP", "type": "CLIP", "links": [2, 3], "slot_index": 1},
+        {"name": "VAE", "type": "VAE", "links": [4], "slot_index": 2}
+      ],
+      "properties": {"Node name for S&R": "CheckpointLoaderSimple"},
+      "widgets_values": ["PUT_YOUR_CHECKPOINT_HERE.safetensors"]
+    },
+    {
+      "id": 5,
+      "type": "LoadImage",
+      "pos": [50, 400],
+      "size": [315, 314],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {"name": "IMAGE", "type": "IMAGE", "links": [5, 6], "slot_index": 0},
+        {"name": "MASK", "type": "MASK", "links": null, "slot_index": 1}
+      ],
+      "properties": {"Node name for S&R": "LoadImage"},
+      "widgets_values": ["example.png", "image"]
+    },
+    {
+      "id": 2,
+      "type": "CLIPTextEncode",
+      "pos": [400, 100],
+      "size": [400, 200],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [{"name": "clip", "type": "CLIP", "link": 2}],
+      "outputs": [{"name": "CONDITIONING", "type": "CONDITIONING", "links": [7], "slot_index": 0}],
+      "properties": {"Node name for S&R": "CLIPTextEncode"},
+      "widgets_values": ["medical anatomical atlas illustration, Netter style, clean precise linework, detailed muscle fiber direction, white background, professional textbook plate"]
+    },
+    {
+      "id": 3,
+      "type": "CLIPTextEncode",
+      "pos": [400, 340],
+      "size": [400, 150],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [{"name": "clip", "type": "CLIP", "link": 3}],
+      "outputs": [{"name": "CONDITIONING", "type": "CONDITIONING", "links": [8], "slot_index": 0}],
+      "properties": {"Node name for S&R": "CLIPTextEncode"},
+      "widgets_values": ["blurry, distorted anatomy, extra vessels, exaggerated arteries, text, labels, watermark, low quality, deformed"]
+    },
+    {
+      "id": 6,
+      "type": "Zoe-DepthMapPreprocessor",
+      "pos": [400, 550],
+      "size": [315, 58],
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [{"name": "image", "type": "IMAGE", "link": 5}],
+      "outputs": [{"name": "IMAGE", "type": "IMAGE", "links": [10], "slot_index": 0}],
+      "properties": {"Node name for S&R": "Zoe-DepthMapPreprocessor"},
+      "widgets_values": [1024]
+    },
+    {
+      "id": 7,
+      "type": "LineArtPreprocessor",
+      "pos": [400, 660],
+      "size": [315, 82],
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [{"name": "image", "type": "IMAGE", "link": 6}],
+      "outputs": [{"name": "IMAGE", "type": "IMAGE", "links": [14], "slot_index": 0}],
+      "properties": {"Node name for S&R": "LineArtPreprocessor"},
+      "widgets_values": ["disable", 1024]
+    },
+    {
+      "id": 8,
+      "type": "ControlNetLoader",
+      "pos": [400, 790],
+      "size": [315, 58],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [{"name": "CONTROL_NET", "type": "CONTROL_NET", "links": [9], "slot_index": 0}],
+      "properties": {"Node name for S&R": "ControlNetLoader"},
+      "widgets_values": ["PUT_YOUR_DEPTH_CONTROLNET_HERE.safetensors"]
+    },
+    {
+      "id": 9,
+      "type": "ControlNetLoader",
+      "pos": [400, 900],
+      "size": [315, 58],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [{"name": "CONTROL_NET", "type": "CONTROL_NET", "links": [13], "slot_index": 0}],
+      "properties": {"Node name for S&R": "ControlNetLoader"},
+      "widgets_values": ["PUT_YOUR_LINEART_CONTROLNET_HERE.safetensors"]
+    },
+    {
+      "id": 4,
+      "type": "EmptyLatentImage",
+      "pos": [400, 1010],
+      "size": [315, 106],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [{"name": "LATENT", "type": "LATENT", "links": [17], "slot_index": 0}],
+      "properties": {"Node name for S&R": "EmptyLatentImage"},
+      "widgets_values": [1024, 1024, 1]
+    },
+    {
+      "id": 10,
+      "type": "ControlNetApplyAdvanced",
+      "pos": [850, 300],
+      "size": [240, 166],
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "inputs": [
+        {"name": "positive", "type": "CONDITIONING", "link": 7},
+        {"name": "negative", "type": "CONDITIONING", "link": 8},
+        {"name": "control_net", "type": "CONTROL_NET", "link": 9},
+        {"name": "image", "type": "IMAGE", "link": 10}
+      ],
+      "outputs": [
+        {"name": "positive", "type": "CONDITIONING", "links": [11], "slot_index": 0},
+        {"name": "negative", "type": "CONDITIONING", "links": [12], "slot_index": 1}
+      ],
+      "properties": {"Node name for S&R": "ControlNetApplyAdvanced"},
+      "widgets_values": [0.8, 0.0, 1.0]
+    },
+    {
+      "id": 11,
+      "type": "ControlNetApplyAdvanced",
+      "pos": [1150, 300],
+      "size": [240, 166],
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "inputs": [
+        {"name": "positive", "type": "CONDITIONING", "link": 11},
+        {"name": "negative", "type": "CONDITIONING", "link": 12},
+        {"name": "control_net", "type": "CONTROL_NET", "link": 13},
+        {"name": "image", "type": "IMAGE", "link": 14}
+      ],
+      "outputs": [
+        {"name": "positive", "type": "CONDITIONING", "links": [15], "slot_index": 0},
+        {"name": "negative", "type": "CONDITIONING", "links": [16], "slot_index": 1}
+      ],
+      "properties": {"Node name for S&R": "ControlNetApplyAdvanced"},
+      "widgets_values": [0.7, 0.0, 1.0]
+    },
+    {
+      "id": 12,
+      "type": "KSampler",
+      "pos": [1450, 300],
+      "size": [315, 262],
+      "flags": {},
+      "order": 11,
+      "mode": 0,
+      "inputs": [
+        {"name": "model", "type": "MODEL", "link": 1},
+        {"name": "positive", "type": "CONDITIONING", "link": 15},
+        {"name": "negative", "type": "CONDITIONING", "link": 16},
+        {"name": "latent_image", "type": "LATENT", "link": 17}
+      ],
+      "outputs": [{"name": "LATENT", "type": "LATENT", "links": [18], "slot_index": 0}],
+      "properties": {"Node name for S&R": "KSampler"},
+      "widgets_values": [0, "randomize", 30, 7.0, "euler", "normal", 1.0]
+    },
+    {
+      "id": 13,
+      "type": "VAEDecode",
+      "pos": [1800, 300],
+      "size": [210, 46],
+      "flags": {},
+      "order": 12,
+      "mode": 0,
+      "inputs": [
+        {"name": "samples", "type": "LATENT", "link": 18},
+        {"name": "vae", "type": "VAE", "link": 4}
+      ],
+      "outputs": [{"name": "IMAGE", "type": "IMAGE", "links": [19], "slot_index": 0}],
+      "properties": {"Node name for S&R": "VAEDecode"},
+      "widgets_values": []
+    },
+    {
+      "id": 14,
+      "type": "SaveImage",
+      "pos": [2050, 300],
+      "size": [315, 270],
+      "flags": {},
+      "order": 13,
+      "mode": 0,
+      "inputs": [{"name": "images", "type": "IMAGE", "link": 19}],
+      "outputs": [],
+      "properties": {"Node name for S&R": "SaveImage"},
+      "widgets_values": ["anatomy_plate"]
+    }
+  ],
+  "links": [
+    [1, 1, 0, 12, 0, "MODEL"],
+    [2, 1, 1, 2, 0, "CLIP"],
+    [3, 1, 1, 3, 0, "CLIP"],
+    [4, 1, 2, 13, 1, "VAE"],
+    [5, 5, 0, 6, 0, "IMAGE"],
+    [6, 5, 0, 7, 0, "IMAGE"],
+    [7, 2, 0, 10, 0, "CONDITIONING"],
+    [8, 3, 0, 10, 1, "CONDITIONING"],
+    [9, 8, 0, 10, 2, "CONTROL_NET"],
+    [10, 6, 0, 10, 3, "IMAGE"],
+    [11, 10, 0, 11, 0, "CONDITIONING"],
+    [12, 10, 1, 11, 1, "CONDITIONING"],
+    [13, 9, 0, 11, 2, "CONTROL_NET"],
+    [14, 7, 0, 11, 3, "IMAGE"],
+    [15, 11, 0, 12, 1, "CONDITIONING"],
+    [16, 11, 1, 12, 2, "CONDITIONING"],
+    [17, 4, 0, 12, 3, "LATENT"],
+    [18, 12, 0, 13, 0, "LATENT"],
+    [19, 13, 0, 14, 0, "IMAGE"]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {},
+  "version": 0.4
+}
