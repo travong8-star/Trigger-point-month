@@ -1,0 +1,29 @@
+CREATIVE COMMONS ATTRIBUTION-SHAREALIKE 4.0 INTERNATIONAL
+
+Full legal text: https://creativecommons.org/licenses/by-sa/4.0/legalcode
+
+This directory contains 3D anatomical mesh assets derived from Z-Anatomy,
+licensed under CC BY-SA 4.0. Commercial use is permitted.
+
+ATTRIBUTION
+-----------
+3D anatomical meshes derived from Z-Anatomy,
+licensed under CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/).
+
+MODIFICATIONS
+-------------
+- Muscle subset extracted from full-body anatomical model
+- Converted to glTF 2.0 binary format
+- Decimated for web delivery (201,268 triangles)
+- Normals computed at runtime to reduce payload
+
+These modified meshes are redistributed under CC BY-SA 4.0.
+
+OBLIGATIONS
+-----------
+1. Attribution must be retained in any distribution.
+2. No DRM or technical restrictions may be applied to these files.
+3. Derivatives of these meshes carry the same CC BY-SA 4.0 license.
+
+The application code, clinical content (trigger_points.json), and
+all other non-mesh assets are proprietary and unaffected by this license.
