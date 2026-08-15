@@ -36,11 +36,17 @@
       backdrop-filter: blur(10px);
       border-bottom: 1px solid var(--gray-200);
       z-index: 20;
-      display: flex; align-items: center; justify-content: space-between;
-      gap: 12px;
     }
-    .header h1 { font-size: 15px; font-weight: 600; color: var(--teal-700); letter-spacing: 0.01em; white-space: nowrap; }
-    .header .disclaimer { font-size: 10px; color: var(--gray-500); line-height: 1.35; max-width: 55%; }
+    .header h1 { font-size: 15px; font-weight: 600; color: var(--teal-700); letter-spacing: 0.01em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .header .disclaimer { font-size: 10px; color: var(--gray-500); line-height: 1.35; margin-top: 6px; }
+    .header-row { display: flex; align-items: center; gap: 10px; }
+    .view-toggle {
+      flex-shrink: 0;
+      font-size: 11px; font-weight: 600; color: var(--teal-600);
+      text-decoration: none;
+      border: 1px solid var(--teal-600); border-radius: 999px;
+      padding: 5px 10px; white-space: nowrap;
+    }
 
     /* Loading */
     #loading {
@@ -111,7 +117,10 @@
 </head>
 <body>
   <header class="header">
-    <h1>Vital Essence — Trigger Point Map</h1>
+    <div class="header-row">
+      <a class="view-toggle" href="/">&larr; List view</a>
+      <h1>Vital Essence — Trigger Point Map</h1>
+    </div>
     <div class="disclaimer">Educational only. Not medical advice. Use under supervision. Stop if sharp, electrical, or nerve-like sensations occur.</div>
   </header>
 

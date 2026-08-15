@@ -2,7 +2,6 @@ import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import crosswalk from './data/muscle_crosswalk.json';
-import trpData from './data/trigger_points.json';
 
 // ── Mesh node → muscle → trigger point resolver ──
 // GLTFLoader renames every node via PropertyBinding.sanitizeNodeName (strips
@@ -16,7 +15,17 @@ crosswalk.muscles.forEach((muscle) => {
     nodeToMuscle.set(THREE.PropertyBinding.sanitizeNodeName(nodeName), muscle)
   );
 });
-const idToPoint = new Map(trpData.points.map((p) => [p.id, p]));
+
+// trigger_points.json is the single canonical copy served from the site
+// root (see CLAUDE.md: "the only module allowed to touch trigger_points.json
+// directly" — here that's this fetch, not a bundled/duplicated copy).
+let idToPoint = new Map();
+fetch('/trigger_points.json')
+  .then((res) => res.json())
+  .then((trpData) => {
+    idToPoint = new Map(trpData.points.map((p) => [p.id, p]));
+  })
+  .catch((err) => console.error('Failed to load trigger_points.json:', err));
 
 // ── Scene ──
 const scene = new THREE.Scene();
@@ -155,7 +164,7 @@ const loadingEl = document.getElementById('loading');
 const hintEl = document.getElementById('hint');
 
 loader.load(
-  '/models/TrP_Muscles_web.glb',
+  `${import.meta.env.BASE_URL}models/TrP_Muscles_web.glb`,
   (gltf) => {
     modelScene = gltf.scene;
 
