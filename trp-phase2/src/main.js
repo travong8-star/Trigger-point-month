@@ -16,11 +16,14 @@ crosswalk.muscles.forEach((muscle) => {
   );
 });
 
-// trigger_points.json is the single canonical copy served from the site
-// root (see CLAUDE.md: "the only module allowed to touch trigger_points.json
-// directly" — here that's this fetch, not a bundled/duplicated copy).
+// trigger_points.json has exactly one authored copy in the repo (site
+// root); public/trigger_points.json here is a symlink to it, not a second
+// copy (see CLAUDE.md: "the only module allowed to touch trigger_points.json
+// directly"). Fetched via BASE_URL rather than a hardcoded root path so
+// this resolves correctly both standalone (npm run dev, base "/") and
+// inside the combined build (base "/3d/") without special-casing either.
 let idToPoint = new Map();
-fetch('/trigger_points.json')
+fetch(`${import.meta.env.BASE_URL}trigger_points.json`)
   .then((res) => res.json())
   .then((trpData) => {
     idToPoint = new Map(trpData.points.map((p) => [p.id, p]));
@@ -142,9 +145,16 @@ function openPanelForMuscle(muscle) {
     .map((id) => idToPoint.get(id))
     .filter(Boolean);
 
+  // Clickable meshes can exist ahead of their trigger-point data (e.g. a
+  // newly-mapped muscle whose card hasn't been authored yet) — say so
+  // rather than rendering a muscle name with nothing underneath it.
+  const body = points.length
+    ? points.map(trpBlockHtml).join('')
+    : `<div class="panel-empty">Trigger point data for this muscle is coming soon.</div>`;
+
   panelContentEl.innerHTML = `
     <div class="panel-muscle">${muscle.muscle}</div>
-    ${points.map(trpBlockHtml).join('')}
+    ${body}
   `;
   panelEl.classList.add('open');
   panelEl.setAttribute('aria-hidden', 'false');
@@ -257,6 +267,68 @@ function onCanvasClick(event) {
 // as a mesh selection.
 canvas.addEventListener('click', onCanvasClick);
 
+// ── Skeleton overlay (reference layer, not clickable) ──
+// The source file is ~1.74m tall vs the muscle model's measured 1.62m —
+// different assets, no shared rig — so it's uniformly rescaled to match.
+// Not wired into muscle_crosswalk: it's a single undifferentiated mesh
+// with no per-bone names, so there's nothing to resolve a click against.
+const SKELETON_SCALE = 1.61726744 / 1.7395376;
+const skeletonToggleEl = document.getElementById('skeleton-toggle');
+let skeletonScene = null;
+let skeletonLoading = false;
+let skeletonVisible = false;
+
+function setMusclesXray(on) {
+  clickableMeshes.forEach((mesh) => {
+    mesh.material.transparent = on;
+    mesh.material.opacity = on ? 0.35 : 1;
+  });
+}
+
+function applySkeletonVisibility() {
+  if (skeletonScene) skeletonScene.visible = skeletonVisible;
+  setMusclesXray(skeletonVisible);
+  skeletonToggleEl.classList.toggle('active', skeletonVisible);
+}
+
+function loadSkeleton() {
+  skeletonLoading = true;
+  skeletonToggleEl.textContent = 'Loading…';
+
+  const skeletonLoader = new GLTFLoader();
+  skeletonLoader.load(
+    `${import.meta.env.BASE_URL}models/male_skeleton.glb`,
+    (gltf) => {
+      skeletonScene = gltf.scene;
+      skeletonScene.scale.setScalar(SKELETON_SCALE);
+      scene.add(skeletonScene);
+      skeletonLoading = false;
+      skeletonToggleEl.textContent = 'Skeleton';
+      applySkeletonVisibility();
+    },
+    undefined,
+    (err) => {
+      console.error('Skeleton load failed:', err);
+      skeletonLoading = false;
+      skeletonVisible = false;
+      skeletonToggleEl.textContent = 'Skeleton';
+      skeletonToggleEl.classList.remove('active');
+    }
+  );
+}
+
+skeletonToggleEl.addEventListener('click', () => {
+  if (skeletonLoading) return;
+  skeletonVisible = !skeletonVisible;
+  // Lazy-loaded on first toggle — it's a large reference-only asset, no
+  // reason to make every visitor download it before they've asked for it.
+  if (skeletonVisible && !skeletonScene) {
+    loadSkeleton();
+    return;
+  }
+  applySkeletonVisibility();
+});
+
 // ── Resize ──
 window.addEventListener('resize', () => {
   camera.aspect = window.innerWidth / window.innerHeight;
@@ -271,4 +343,3 @@ function animate() {
   renderer.render(scene, camera);
 }
 animate();
-

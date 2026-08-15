@@ -20,7 +20,7 @@
   {"muscle":"Deltoid (Middle)","region":"Shoulder & Arm","cards":[31,32],"nodes":["Acromial_part_of_deltoid_muscle.l","Acromial_part_of_deltoid_muscle.r"]},
   {"muscle":"Brachialis","region":"Shoulder & Arm","cards":[33,34],"nodes":["Brachialis_muscle.l","Brachialis_muscle.r"]},
   {"muscle":"Supinator","region":"Shoulder & Arm","cards":[35,36],"nodes":["Supinator.l","Supinator.r"]},
-  {"muscle":"Triceps (Medial)","region":"Shoulder & Arm","cards":[37],"nodes":[],"status":"NO_MESH_IN_SOURCE"},
+  {"muscle":"Triceps (Medial)","region":"Shoulder & Arm","cards":[37],"nodes":["Triceps_medial_head_PLACEHOLDER.l","Triceps_medial_head_PLACEHOLDER.r"],"status":"PLACEHOLDER_MESH_NOT_ANATOMICALLY_ACCURATE"},
   {"muscle":"Triceps (Lateral)","region":"Shoulder & Arm","cards":[38],"nodes":["Lateral_head_of_triceps_brachii_muscle.l","Lateral_head_of_triceps_brachii_muscle.r"]},
   {"muscle":"Teres major","region":"Shoulder & Arm","cards":[39,40],"nodes":["Teres_major_muscle.l","Teres_major_muscle.r"]},
   {"muscle":"Erector spinae (Upper)","region":"Torso & Back","cards":[41,42],"nodes":["Iliocostalis_colli_muscle.l","Iliocostalis_colli_muscle.r","Iliocostalis_thoracis_muscle.l","Iliocostalis_thoracis_muscle.r","Longissimus_colli_muscle.l","Longissimus_colli_muscle.r","Longissimus_thoracis_muscle.l","Longissimus_thoracis_muscle.r","Spinalis_colli_muscle.l","Spinalis_colli_muscle.r","Spinalis_thoracis_muscle.l","Spinalis_thoracis_muscle.r"]},
