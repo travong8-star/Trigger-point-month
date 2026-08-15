@@ -1,0 +1,2186 @@
+{
+  "meta": {
+    "title": "Trigger Point MTrP Dataset",
+    "source": "100-card MTrP Flashcard Deck",
+    "count": 100,
+    "disclaimer": "Educational only. Not medical advice. Use under supervision. Stop if sharp, electrical, or nerve-like sensations occur.",
+    "schema_version": "1.0",
+    "fields": [
+      "id",
+      "card",
+      "muscle",
+      "trp",
+      "region",
+      "location",
+      "referral",
+      "referral_tags",
+      "protocol",
+      "stretch",
+      "caution",
+      "caution_note"
+    ]
+  },
+  "regions": {
+    "Head & Neck": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20
+    ],
+    "Shoulder & Arm": [
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40
+    ],
+    "Torso & Back": [
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60
+    ],
+    "Hip & Pelvis": [
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80
+    ],
+    "Legs & Feet": [
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      100
+    ]
+  },
+  "referral_index": {
+    "abdomen": [
+      60
+    ],
+    "abdominal": [
+      59,
+      60
+    ],
+    "achilles": [
+      95,
+      96,
+      97
+    ],
+    "ankle": [
+      100
+    ],
+    "anterior hip": [
+      65,
+      66,
+      69,
+      70,
+      71,
+      72,
+      82
+    ],
+    "anterior shoulder": [
+      27,
+      28,
+      29,
+      52,
+      53,
+      54,
+      55,
+      56
+    ],
+    "anterior thigh": [
+      62,
+      80,
+      81,
+      87,
+      88
+    ],
+    "base of neck": [
+      5
+    ],
+    "base of skull": [
+      15
+    ],
+    "behind ear": [
+      9
+    ],
+    "biceps": [
+      53,
+      94
+    ],
+    "buttock": [
+      46,
+      61,
+      63,
+      67
+    ],
+    "calf": [
+      90,
+      92,
+      94,
+      95,
+      96,
+      97,
+      98
+    ],
+    "cheek": [
+      13
+    ],
+    "chest": [
+      51,
+      52,
+      56,
+      58
+    ],
+    "chest wall": [
+      55
+    ],
+    "dorsal foot": [
+      100
+    ],
+    "ear": [
+      7,
+      13,
+      14,
+      20
+    ],
+    "elbow": [
+      33,
+      34,
+      35,
+      37,
+      38
+    ],
+    "foot": [
+      99
+    ],
+    "forearm": [
+      33,
+      34,
+      37
+    ],
+    "groin": [
+      65,
+      69,
+      71,
+      72,
+      75
+    ],
+    "heel": [
+      95
+    ],
+    "hip": [
+      45,
+      68
+    ],
+    "jaw": [
+      2,
+      7,
+      14,
+      19
+    ],
+    "knee": [
+      64,
+      76,
+      78,
+      80,
+      81,
+      83,
+      87,
+      88,
+      89
+    ],
+    "lateral arm": [
+      22
+    ],
+    "lateral forearm": [
+      35,
+      36
+    ],
+    "lateral hip": [
+      61,
+      62,
+      73,
+      74
+    ],
+    "lateral knee": [
+      73,
+      84,
+      94
+    ],
+    "lateral neck": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      7,
+      8,
+      9,
+      10,
+      16
+    ],
+    "lateral shoulder": [
+      2,
+      21,
+      25,
+      26,
+      31,
+      32
+    ],
+    "lateral thigh": [
+      63,
+      67,
+      83
+    ],
+    "low-back": [
+      45,
+      46
+    ],
+    "lumbar": [
+      45,
+      46
+    ],
+    "mastoid": [
+      7,
+      10,
+      20
+    ],
+    "medial knee": [
+      75,
+      77,
+      85,
+      86
+    ],
+    "medial scapula": [
+      17,
+      18,
+      47,
+      48,
+      49
+    ],
+    "medial thigh": [
+      75,
+      76,
+      77,
+      78,
+      79,
+      85
+    ],
+    "mid-back": [
+      41,
+      43
+    ],
+    "neck": [
+      6,
+      11,
+      12,
+      15,
+      17,
+      49
+    ],
+    "occipital": [
+      5,
+      11,
+      12
+    ],
+    "occiput": [
+      9
+    ],
+    "outer arm": [
+      24,
+      26
+    ],
+    "outer thigh": [
+      61
+    ],
+    "patella": [
+      85
+    ],
+    "posterior knee": [
+      90,
+      91,
+      92
+    ],
+    "posterior shoulder": [
+      10,
+      18,
+      23,
+      24,
+      39,
+      40,
+      50
+    ],
+    "posterior thigh": [
+      64,
+      89,
+      93
+    ],
+    "rib": [
+      1,
+      41,
+      48,
+      51
+    ],
+    "scapula": [
+      22,
+      27,
+      51
+    ],
+    "shin": [
+      77,
+      86,
+      99
+    ],
+    "shoulder": [
+      1,
+      3,
+      5,
+      6,
+      17,
+      30,
+      47,
+      58,
+      59,
+      60
+    ],
+    "shoulder blade": [
+      42,
+      57
+    ],
+    "shoulder top": [
+      4,
+      15,
+      16
+    ],
+    "sternal": [
+      55
+    ],
+    "supraclavicular": [
+      2
+    ],
+    "teeth": [
+      13
+    ],
+    "temple": [
+      19
+    ],
+    "thigh": [
+      68,
+      82
+    ],
+    "throat": [
+      8
+    ],
+    "tmj": [
+      13,
+      19
+    ],
+    "upper arm": [
+      1,
+      23,
+      29,
+      30,
+      32,
+      37,
+      38,
+      39
+    ],
+    "upper back": [
+      42
+    ],
+    "upper chest": [
+      27,
+      54
+    ]
+  },
+  "points": [
+    {
+      "id": 1,
+      "card": "001",
+      "muscle": "Anterior scalenes",
+      "trp": "TrP 1",
+      "region": "Head & Neck",
+      "location": "Anterior scalene taut band near upper 1st-rib region (deep lateral neck); palpate with head rotated away.",
+      "referral": "Lateral neck/shoulder; may radiate toward lateral upper arm.",
+      "referral_tags": [
+        "lateral neck",
+        "shoulder",
+        "upper arm",
+        "rib"
+      ],
+      "protocol": "Ischemic Compression (education): steady sustained pressure to MTrP at discomfort level 45-75s (1-3 passes), stop if sharp/electrical/nerve symptoms; then gentle lengthening into comfort; reassess tenderness + ROM.",
+      "stretch": "Side-bend away (gentle), chin slightly tucked; reassess neck rotation comfort.",
+      "caution": false,
+      "caution_note": null
+    },
+    {
+      "id": 2,
+      "card": "002",
+      "muscle": "Anterior scalenes",
+      "trp": "TrP 2",
+      "region": "Head & Neck",
+      "location": "Superior-anterior anterior scalene fibers between jaw level and clavicle.",
+      "referral": "Supraclavicular/lateral neck tightness; may refer to lateral shoulder.",
+      "referral_tags": [
+        "jaw",
+        "supraclavicular",
+        "lateral neck",
+        "lateral shoulder"
+      ],
+      "protocol": "Ischemic Compression (education): steady sustained pressure to MTrP at discomfort level 45-75s (1-3 passes), stop if sharp/electrical/nerve symptoms; then gentle lengthening into comfort; reassess tenderness + ROM.",
+      "stretch": "Side-bend away + long-neck posture; reassess symptom reproduction.",
+      "caution": false,
+      "caution_note": null
+    },
+    {
+      "id": 3,
+      "card": "003",
+      "muscle": "Middle scalenes",
+      "trp": "TrP 1",
+      "region": "Head & Neck",
+      "location": "Middle scalene taut band lateral to cervical spine.",
+      "referral": "Lateral neck to upper shoulder region.",
+      "referral_tags": [
+        "lateral neck",
+        "shoulder"
+      ],
+      "protocol": "Ischemic Compression (education): steady sustained pressure to MTrP at discomfort level 45-75s (1-3 passes), stop if sharp/electrical/nerve symptoms; then gentle lengthening into comfort; reassess tenderness + ROM.",
+      "stretch": "Scapular depression + contralateral side-bend; reassess overhead comfort.",
+      "caution": false,
+      "caution_note": null
+    },
+    {
+      "id": 4,
+      "card": "004",
+      "muscle": "Middle scalenes",
+      "trp": "TrP 2",
+      "region": "Head & Neck",
+      "location": "Discrete tender spot along middle scalene fibers toward transverse process area.",
+      "referral": "Posterior-lateral neck and shoulder top.",
+      "referral_tags": [
+        "lateral neck",
+        "shoulder top"
+      ],
+      "protocol": "Ischemic Compression (education): steady sustained pressure to MTrP at discomfort level 45-75s (1-3 passes), stop if sharp/electrical/nerve symptoms; then gentle lengthening into comfort; reassess tenderness + ROM.",
+      "stretch": "Contralateral side-bend with gentle head turn away; reassess ROM.",
+      "caution": false,
+      "caution_note": null
+    },
+    {
+      "id": 5,
+      "card": "005",
+      "muscle": "Posterior scalenes",
+      "trp": "TrP 1",
+      "region": "Head & Neck",
+      "location": "Posterior scalene taut band toward upper ribs/upper lateral neck.",
+      "referral": "Base of neck/upper shoulder; may contribute to occipital headache patterns.",
+      "referral_tags": [
+        "occipital",
+        "base of neck",
+        "lateral neck",
+        "shoulder"
+      ],
+      "protocol": "Ischemic Compression (education): steady sustained pressure to MTrP at discomfort level 45-75s (1-3 passes), stop if sharp/electrical/nerve symptoms; then gentle lengthening into comfort; reassess tenderness + ROM.",
+      "stretch": "Long-neck + side-bend away; reassess occipital trigger.",
+      "caution": false,
+      "caution_note": null
+    },
+    {
+      "id": 6,
+      "card": "006",
+      "muscle": "Posterior scalenes",
+      "trp": "TrP 2",
+      "region": "Head & Neck",
+      "location": "Deeper posterior-lateral scalene taut band.",
+      "referral": "Upper shoulder/back-of-neck tightness; sometimes limb symptoms.",
+      "referral_tags": [
+        "neck",
+        "shoulder"
+      ],
+      "protocol": "Ischemic Compression (education): steady sustained pressure to MTrP at discomfort level 45-75s (1-3 passes), stop if sharp/electrical/nerve symptoms; then gentle lengthening into comfort; reassess tenderness + ROM.",
+      "stretch": "Gentle contralateral side-bend; reassess intensity.",
+      "caution": false,
+      "caution_note": null
+    },
+    {
+      "id": 7,
+      "card": "007",
+      "muscle": "SCM",
+      "trp": "TrP 1 - proximal",
+      "region": "Head & Neck",
+      "location": "SCM taut band near mastoid/clavicle line; palpate along the muscle belly with head rotated away.",
+      "referral": "Lateral neck; may refer toward jaw/ear region.",
+      "referral_tags": [
+        "ear",
+        "jaw",
+        "mastoid",
+        "lateral neck"
+      ],
+      "protocol": "Ischemic Compression (education): steady sustained pressure to MTrP at discomfort level 45-75s (1-3 passes), stop if sharp/electrical/nerve symptoms; then gentle lengthening into comfort; reassess tenderness + ROM.",
+      "stretch": "Rotation away + opposite side-bend (gentle); reassess lateral neck/jaw comfort.",
+      "caution": false,
+      "caution_note": null
+    },
+    {
+      "id": 8,
+      "card": "008",
+      "muscle": "SCM",
+      "trp": "TrP 2 - mid-belly",
+      "region": "Head & Neck",
+      "location": "Mid SCM discrete hyperirritable spot.",
+      "referral": "Throat/lateral neck tightness; headache-like patterns in some.",
+      "referral_tags": [
+        "throat",
+        "lateral neck"
+      ],
+      "protocol": "Ischemic Compression (education): steady sustained pressure to MTrP at discomfort level 45-75s (1-3 passes), stop if sharp/electrical/nerve symptoms; then gentle lengthening into comfort; reassess tenderness + ROM.",
+      "stretch": "Chin tuck + gentle side-bend; reassess tenderness.",
+      "caution": false,
+      "caution_note": null
+    },
+    {
+      "id": 9,
+      "card": "009",
+      "muscle": "Splenius capitis",
+      "trp": "TrP 1",
+      "region": "Head & Neck",
+      "location": "Posterior-lateral neck near upper cervical transverse processes (medial to upper trap border).",
+      "referral": "Occiput/behind ear; upper neck.",
+      "referral_tags": [
+        "occiput",
+        "behind ear",
+        "lateral neck"
+      ],
+      "protocol": "Ischemic Compression (education): steady sustained pressure to MTrP at discomfort level 45-75s (1-3 passes), stop if sharp/electrical/nerve symptoms; then gentle lengthening into comfort; reassess tenderness + ROM.",
+      "stretch": "Contralateral side-bend/rotation away; reassess occipital discomfort.",
+      "caution": false,
+      "caution_note": null
+    },
+    {
+      "id": 10,
+      "card": "010",
+      "muscle": "Splenius capitis",
+      "trp": "TrP 2",
+      "region": "Head & Neck",
+      "location": "Lower splenius capitis taut band on posterior-lateral neck.",
+      "referral": "Mastoid/upper posterior shoulder region.",
+      "referral_tags": [
+        "mastoid",
+        "lateral neck",
+        "posterior shoulder"
+      ],
+      "protocol": "Ischemic Compression (education): steady sustained pressure to MTrP at discomfort level 45-75s (1-3 passes), stop if sharp/electrical/nerve symptoms; then gentle lengthening into comfort; reassess tenderness + ROM.",
+      "stretch": "Thoracic rotation + gentle side-bend away; reassess shoulder-top tension.",
+      "caution": false,
+      "caution_note": null
+    },
+    {
+      "id": 11,
+      "card": "011",
+      "muscle": "Suboccipitals",
+      "trp": "TrP 1 - lateral",
+      "region": "Head & Neck",
+      "location": "Suboccipital triangle lateral edge under occipital ridge; palpate gently.",
+      "referral": "Occipital headache area; upper neck tightness.",
+      "referral_tags": [
+        "occipital",
+        "neck"
+      ],
+      "protocol": "Ischemic Compression (education): steady sustained pressure to MTrP at discomfort level 45-75s (1-3 passes), stop if sharp/electrical/nerve symptoms; then gentle lengthening into comfort; reassess tenderness + ROM.",
+      "stretch": "Chin tuck (gentle) + contralateral rotation; reassess headache trigger.",
+      "caution": false,
+      "caution_note": null
+    },
+    {
+      "id": 12,
+      "card": "012",
+      "muscle": "Suboccipitals",
+      "trp": "TrP 2 - central",
+      "region": "Head & Neck",
+      "location": "Central suboccipital taut band under occipital ridge.",
+      "referral": "Back-of-head/upper neck pain.",
+      "referral_tags": [
+        "occipital",
+        "neck"
+      ],
+      "protocol": "Ischemic Compression (education): steady sustained pressure to MTrP at discomfort level 45-75s (1-3 passes), stop if sharp/electrical/nerve symptoms; then gentle lengthening into comfort; reassess tenderness + ROM.",
+      "stretch": "Chin tuck + neutral head; reassess neck flexion comfort.",
+      "caution": false,
+      "caution_note": null
+    },
+    {
+      "id": 13,
+      "card": "013",
+      "muscle": "Masseter",
+      "trp": "TrP 1",
+      "region": "Head & Neck",
+      "location": "Masseter taut band near zygomatic arch; palpate during light clench then relax.",
+      "referral": "TMJ/cheek pain; may refer toward teeth/ear region.",
+      "referral_tags": [
+        "ear",
+        "tmj",
+        "cheek",
+        "teeth"
+      ],
+      "protocol": "Ischemic Compression (education): steady sustained pressure to MTrP at discomfort level 45-75s (1-3 passes), stop if sharp/electrical/nerve symptoms; then gentle lengthening into comfort; reassess tenderness + ROM.",
+      "stretch": "Jaw open/relax drill; reassess TMJ comfort.",
+      "caution": false,
+      "caution_note": null
+    },
+    {
+      "id": 14,
+      "card": "014",
+      "muscle": "Masseter",
+      "trp": "TrP 2",
+      "region": "Head & Neck",
+      "location": "Deep posterior masseter near posterior mandible.",
+      "referral": "Ear/lateral jaw discomfort.",
+      "referral_tags": [
+        "ear",
+        "jaw"
+      ],
+      "protocol": "Ischemic Compression (education): steady sustained pressure to MTrP at discomfort level 45-75s (1-3 passes), stop if sharp/electrical/nerve symptoms; then gentle lengthening into comfort; reassess tenderness + ROM.",
+      "stretch": "Gentle jaw opening/closing within comfort; reassess.",
+      "caution": false,
+      "caution_note": null
+    },
+    {
+      "id": 15,
+      "card": "015",
+      "muscle": "Upper trapezius",
+      "trp": "TrP 1 - near levator border",
+      "region": "Head & Neck",
+      "location": "Upper trap taut band between neck and superior medial scapular border.",
+      "referral": "Neck/base of skull; shoulder top.",
+      "referral_tags": [
+        "base of skull",
+        "neck",
+        "shoulder top"
+      ],
+      "protocol": "Ischemic Compression (education): steady sustained pressure to MTrP at discomfort level 45-75s (1-3 passes), stop if sharp/electrical/nerve symptoms; then gentle lengthening into comfort; reassess tenderness + ROM.",
+      "stretch": "Contralateral side-bend + scapular depression; reassess neck rotation.",
+      "caution": false,
+      "caution_note": null
+    },
+    {
+      "id": 16,
+      "card": "016",
+      "muscle": "Upper trapezius",
+      "trp": "TrP 2 - mid-fiber",
+      "region": "Head & Neck",
+      "location": "Mid-upper trap discrete tender spot.",
+      "referral": "Lateral neck/shoulder top; may contribute to arm ache.",
+      "referral_tags": [
+        "lateral neck",
+        "shoulder top"
+      ],
+      "protocol": "Ischemic Compression (education): steady sustained pressure to MTrP at discomfort level 45-75s (1-3 passes), stop if sharp/electrical/nerve symptoms; then gentle lengthening into comfort; reassess tenderness + ROM.",
+      "stretch": "Cross-body stretch + head side-bend away; reassess shoulder shrug.",
+      "caution": false,
+      "caution_note": null
+    },
+    {
+      "id": 17,
+      "card": "017",
+      "muscle": "Levator scapulae",
+      "trp": "TrP 1",
+      "region": "Head & Neck",
+      "location": "Superior medial scapular border toward cervical transverse processes.",
+      "referral": "Neck base to medial scapula; may radiate toward shoulder.",
+      "referral_tags": [
+        "neck",
+        "medial scapula",
+        "shoulder"
+      ],
+      "protocol": "Ischemic Compression (education): steady sustained pressure to MTrP at discomfort level 45-75s (1-3 passes), stop if sharp/electrical/nerve symptoms; then gentle lengthening into comfort; reassess tenderness + ROM.",
+      "stretch": "Scapular setting + contralateral side-bend; reassess ROM.",
+      "caution": false,
+      "caution_note": null
+    },
+    {
+      "id": 18,
+      "card": "018",
+      "muscle": "Levator scapulae",
+      "trp": "TrP 2",
+      "region": "Head & Neck",
+      "location": "Lower portion taut band toward scapular spine area.",
+      "referral": "Medial scapula/posterior shoulder tightness.",
+      "referral_tags": [
+        "medial scapula",
+        "posterior shoulder"
+      ],
+      "protocol": "Ischemic Compression (education): steady sustained pressure to MTrP at discomfort level 45-75s (1-3 passes), stop if sharp/electrical/nerve symptoms; then gentle lengthening into comfort; reassess tenderness + ROM.",
+      "stretch": "Contralateral side-bend + scapular depression; reassess elevation.",
+      "caution": false,
+      "caution_note": null
+    },
+    {
+      "id": 19,
+      "card": "019",
+      "muscle": "Temporalis",
+      "trp": "TrP 1 - anterior",
+      "region": "Head & Neck",
+      "location": "Anterior-mid temporal fossa; palpate during gentle clench.",
+      "referral": "Temple pain; may refer toward jaw/TMJ.",
+      "referral_tags": [
+        "jaw",
+        "tmj",
+        "temple"
+      ],
+      "protocol": "Ischemic Compression (education): steady sustained pressure to MTrP at discomfort level 45-75s (1-3 passes), stop if sharp/electrical/nerve symptoms; then gentle lengthening into comfort; reassess tenderness + ROM.",
+      "stretch": "Jaw release drill + controlled head position; reassess temple tenderness.",
+      "caution": false,
+      "caution_note": null
+    },
+    {
+      "id": 20,
+      "card": "020",
+      "muscle": "Temporalis",
+      "trp": "TrP 2 - posterior",
+      "region": "Head & Neck",
+      "location": "Posterior temporalis near mastoid border.",
+      "referral": "Mastoid/ear-area discomfort; headache patterns.",
+      "referral_tags": [
+        "ear",
+        "mastoid"
+      ],
+      "protocol": "Ischemic Compression (education): steady sustained pressure to MTrP at discomfort level 45-75s (1-3 passes), stop if sharp/electrical/nerve symptoms; then gentle lengthening into comfort; reassess tenderness + ROM.",
+      "stretch": "Gentle jaw relaxation + slight head turn; reassess pain.",
+      "caution": false,
+      "caution_note": null
+    },
+    {
+      "id": 21,
+      "card": "021",
+      "muscle": "Supraspinatus",
+      "trp": "TrP 1 - anterior",
+      "region": "Shoulder & Arm",
+      "location": "Supraspinatus taut band near supraspinous fossa; palpate lateral shoulder.",
+      "referral": "Lateral shoulder; pain with abduction/overhead use.",
+      "referral_tags": [
+        "lateral shoulder"
+      ],
+      "protocol": "Ischemic Compression (education): steady sustained pressure to MTrP at discomfort level 45-75s (1-3 passes), stop if sharp/electrical/nerve symptoms; then gentle lengthening into comfort; reassess tenderness + ROM.",
+      "stretch": "Scapular setting + gentle shoulder flexion into comfort; reassess.",
+      "caution": false,
+      "caution_note": null
+    },
+    {
+      "id": 22,
+      "card": "022",
+      "muscle": "Supraspinatus",
+      "trp": "TrP 2 - posterior",
+      "region": "Shoulder & Arm",
+      "location": "Posterior supraspinatus fibers near lateral scapula.",
+      "referral": "Upper lateral arm/deltoid area.",
+      "referral_tags": [
+        "scapula",
+        "lateral arm"
+      ],
+      "protocol": "Ischemic Compression (education): steady sustained pressure to MTrP at discomfort level 45-75s (1-3 passes), stop if sharp/electrical/nerve symptoms; then gentle lengthening into comfort; reassess tenderness + ROM.",
+      "stretch": "Cross-body light stretch; reassess abduction tolerance.",
+      "caution": false,
+      "caution_note": null
+    },
+    {
+      "id": 23,
+      "card": "023",
+      "muscle": "Infraspinatus",
+      "trp": "TrP 1",
+      "region": "Shoulder & Arm",
+      "location": "Infraspinatus taut band in scapular spine region.",
+      "referral": "Posterior shoulder; lateral upper arm.",
+      "referral_tags": [
+        "posterior shoulder",
+        "upper arm"
+      ],
+      "protocol": "Ischemic Compression (education): steady sustained pressure to MTrP at discomfort level 45-75s (1-3 passes), stop if sharp/electrical/nerve symptoms; then gentle lengthening into comfort; reassess tenderness + ROM.",
+      "stretch": "Posterior shoulder capsule stretch; reassess ROM.",
+      "caution": false,
+      "caution_note": null
+    },
+    {
+      "id": 24,
+      "card": "024",
+      "muscle": "Infraspinatus",
+      "trp": "TrP 2 - inferior",
+      "region": "Shoulder & Arm",
+      "location": "Inferior infraspinatus near inferior angle; discrete tender spot.",
+      "referral": "Posterior shoulder to outer arm discomfort.",
+      "referral_tags": [
+        "posterior shoulder",
+        "outer arm"
+      ],
+      "protocol": "Ischemic Compression (education): steady sustained pressure to MTrP at discomfort level 45-75s (1-3 passes), stop if sharp/electrical/nerve symptoms; then gentle lengthening into comfort; reassess tenderness + ROM.",
+      "stretch": "Supported gentle ER/IR range; reassess tenderness.",
+      "caution": false,
+      "caution_note": null
+    },
+    {
+      "id": 25,
+      "card": "025",
+      "muscle": "Teres minor",
+      "trp": "TrP 1",
+      "region": "Shoulder & Arm",
+      "location": "Teres minor taut band inferior to infraspinatus.",
+      "referral": "Lateral shoulder.",
+      "referral_tags": [
+        "lateral shoulder"
+      ],
+      "protocol": "Ischemic Compression (education): steady sustained pressure to MTrP at discomfort level 45-75s (1-3 passes), stop if sharp/electrical/nerve symptoms; then gentle lengthening into comfort; reassess tenderness + ROM.",
+      "stretch": "Gentle shoulder abduction within comfort; reassess reach pain.",
+      "caution": false,
+      "caution_note": null
+    },
+    {
+      "id": 26,
+      "card": "026",
+      "muscle": "Teres minor",
+      "trp": "TrP 2",
+      "region": "Shoulder & Arm",
+      "location": "Discrete lower teres minor spot.",
+      "referral": "Lateral shoulder to upper outer arm.",
+      "referral_tags": [
+        "lateral shoulder",
+        "outer arm"
+      ],
+      "protocol": "Ischemic Compression (education): steady sustained pressure to MTrP at discomfort level 45-75s (1-3 passes), stop if sharp/electrical/nerve symptoms; then gentle lengthening into comfort; reassess tenderness + ROM.",
+      "stretch": "Scapular depression + gentle rotation; reassess.",
+      "caution": false,
+      "caution_note": null
+    },
+    {
+      "id": 27,
+      "card": "027",
+      "muscle": "Subscapularis",
+      "trp": "TrP 1 - upper",
+      "region": "Shoulder & Arm",
+      "location": "Subscapularis taut band under scapula near axillary fold.",
+      "referral": "Anterior shoulder/upper chest.",
+      "referral_tags": [
+        "scapula",
+        "anterior shoulder",
+        "upper chest"
+      ],
+      "protocol": "Ischemic Compression (education): steady sustained pressure to MTrP at discomfort level 45-75s (1-3 passes), stop if sharp/electrical/nerve symptoms; then gentle lengthening into comfort; reassess tenderness + ROM.",
+      "stretch": "Supported shoulder ER stretch; reassess anterior tenderness.",
+      "caution": false,
+      "caution_note": null
+    },
+    {
+      "id": 28,
+      "card": "028",
+      "muscle": "Subscapularis",
+      "trp": "TrP 2 - lower",
+      "region": "Shoulder & Arm",
+      "location": "Lower subscapularis taut band near inferior scapular border.",
+      "referral": "Anterior shoulder; reaching discomfort.",
+      "referral_tags": [
+        "anterior shoulder"
+      ],
+      "protocol": "Ischemic Compression (education): steady sustained pressure to MTrP at discomfort level 45-75s (1-3 passes), stop if sharp/electrical/nerve symptoms; then gentle lengthening into comfort; reassess tenderness + ROM.",
+      "stretch": "Supported ER/comfort range; reassess ROM.",
+      "caution": false,
+      "caution_note": null
+    },
+    {
+      "id": 29,
+      "card": "029",
+      "muscle": "Deltoid (Anterior)",
+      "trp": "TrP 1",
+      "region": "Shoulder & Arm",
+      "location": "Anterior deltoid taut band on front shoulder.",
+      "referral": "Anterior shoulder/front upper arm discomfort.",
+      "referral_tags": [
+        "anterior shoulder",
+        "upper arm"
+      ],
+      "protocol": "Ischemic Compression (education): steady sustained pressure to MTrP at discomfort level 45-75s (1-3 passes), stop if sharp/electrical/nerve symptoms; then gentle lengthening into comfort; reassess tenderness + ROM.",
+      "stretch": "Posterior cross-body stretch; reassess flexion pain.",
+      "caution": false,
+      "caution_note": null
+    },
+    {
+      "id": 30,
+      "card": "030",
+      "muscle": "Deltoid (Anterior)",
+      "trp": "TrP 2",
+      "region": "Shoulder & Arm",
+      "location": "Anterior deltoid mid-belly taut spot.",
+      "referral": "Front shoulder; sometimes into upper arm.",
+      "referral_tags": [
+        "shoulder",
+        "upper arm"
+      ],
+      "protocol": "Ischemic Compression (education): steady sustained pressure to MTrP at discomfort level 45-75s (1-3 passes), stop if sharp/electrical/nerve symptoms; then gentle lengthening into comfort; reassess tenderness + ROM.",
+      "stretch": "Shoulder extension/adduction stretch; reassess tenderness.",
+      "caution": false,
+      "caution_note": null
+    },
+    {
+      "id": 31,
+      "card": "031",
+      "muscle": "Deltoid (Middle)",
+      "trp": "TrP 1",
+      "region": "Shoulder & Arm",
+      "location": "Middle deltoid taut band on lateral shoulder cap.",
+      "referral": "Lateral shoulder region.",
+      "referral_tags": [
+        "lateral shoulder"
+      ],
+      "protocol": "Ischemic Compression (education): steady sustained pressure to MTrP at discomfort level 45-75s (1-3 passes), stop if sharp/electrical/nerve symptoms; then gentle lengthening into comfort; reassess tenderness + ROM.",
+      "stretch": "Supported slight abduction + scapular set; reassess.",
+      "caution": false,
+      "caution_note": null
+    },
+    {
+      "id": 32,
+      "card": "032",
+      "muscle": "Deltoid (Middle)",
+      "trp": "TrP 2",
+      "region": "Shoulder & Arm",
+      "location": "Inferior middle deltoid discrete tender spot.",
+      "referral": "Lateral shoulder to upper arm line.",
+      "referral_tags": [
+        "lateral shoulder",
+        "upper arm"
+      ],
+      "protocol": "Ischemic Compression (education): steady sustained pressure to MTrP at discomfort level 45-75s (1-3 passes), stop if sharp/electrical/nerve symptoms; then gentle lengthening into comfort; reassess tenderness + ROM.",
+      "stretch": "Gentle arm movement into comfort; reassess symptom reproduction.",
+      "caution": false,
+      "caution_note": null
+    },
+    {
+      "id": 33,
+      "card": "033",
+      "muscle": "Brachialis",
+      "trp": "TrP 1",
+      "region": "Shoulder & Arm",
+      "location": "Brachialis taut band mid-anterior arm; palpate with elbow supported.",
+      "referral": "Anterior elbow/forearm discomfort.",
+      "referral_tags": [
+        "elbow",
+        "forearm"
+      ],
+      "protocol": "Ischemic Compression (education): steady sustained pressure to MTrP at discomfort level 45-75s (1-3 passes), stop if sharp/electrical/nerve symptoms; then gentle lengthening into comfort; reassess tenderness + ROM.",
+      "stretch": "Elbow flexion/extension gentle within comfort; reassess.",
+      "caution": false,
+      "caution_note": null
+    },
+    {
+      "id": 34,
+      "card": "034",
+      "muscle": "Brachialis",
+      "trp": "TrP 2",
+      "region": "Shoulder & Arm",
+      "location": "Brachialis distal taut band near elbow.",
+      "referral": "May refer around elbow/upper forearm.",
+      "referral_tags": [
+        "elbow",
+        "forearm"
+      ],
+      "protocol": "Ischemic Compression (education): steady sustained pressure to MTrP at discomfort level 45-75s (1-3 passes), stop if sharp/electrical/nerve symptoms; then gentle lengthening into comfort; reassess tenderness + ROM.",
+      "stretch": "Supported elbow motion; reassess tenderness.",
+      "caution": false,
+      "caution_note": null
+    },
+    {
+      "id": 35,
+      "card": "035",
+      "muscle": "Supinator",
+      "trp": "TrP 1",
+      "region": "Shoulder & Arm",
+      "location": "Supinator region near lateral elbow/forearm border.",
+      "referral": "Lateral elbow; lateral forearm discomfort.",
+      "referral_tags": [
+        "elbow",
+        "lateral forearm"
+      ],
+      "protocol": "Ischemic Compression (education): steady sustained pressure to MTrP at discomfort level 45-75s (1-3 passes), stop if sharp/electrical/nerve symptoms; then gentle lengthening into comfort; reassess tenderness + ROM.",
+      "stretch": "Forearm rotations (supinate/pronate) gentle; reassess.",
+      "caution": false,
+      "caution_note": null
+    },
+    {
+      "id": 36,
+      "card": "036",
+      "muscle": "Supinator",
+      "trp": "TrP 2",
+      "region": "Shoulder & Arm",
+      "location": "Proximal supinator taut band.",
+      "referral": "Lateral forearm discomfort tied to gripping.",
+      "referral_tags": [
+        "lateral forearm"
+      ],
+      "protocol": "Ischemic Compression (education): steady sustained pressure to MTrP at discomfort level 45-75s (1-3 passes), stop if sharp/electrical/nerve symptoms; then gentle lengthening into comfort; reassess tenderness + ROM.",
+      "stretch": "Wrist/forearm rotation drill; reassess grip-related pain.",
+      "caution": false,
+      "caution_note": null
+    },
+    {
+      "id": 37,
+      "card": "037",
+      "muscle": "Triceps (Medial)",
+      "trp": "TrP 1",
+      "region": "Shoulder & Arm",
+      "location": "Medial triceps belly posterior upper arm.",
+      "referral": "Posterior elbow/upper forearm.",
+      "referral_tags": [
+        "upper arm",
+        "elbow",
+        "forearm"
+      ],
+      "protocol": "Ischemic Compression (education): steady sustained pressure to MTrP at discomfort level 45-75s (1-3 passes), stop if sharp/electrical/nerve symptoms; then gentle lengthening into comfort; reassess tenderness + ROM.",
+      "stretch": "Elbow flexion + shoulder support; reassess extension comfort.",
+      "caution": false,
+      "caution_note": null
+    },
+    {
+      "id": 38,
+      "card": "038",
+      "muscle": "Triceps (Lateral)",
+      "trp": "TrP 2",
+      "region": "Shoulder & Arm",
+      "location": "Lateral triceps belly discrete tender spot.",
+      "referral": "Posterior-lateral elbow/upper arm.",
+      "referral_tags": [
+        "upper arm",
+        "elbow"
+      ],
+      "protocol": "Ischemic Compression (education): steady sustained pressure to MTrP at discomfort level 45-75s (1-3 passes), stop if sharp/electrical/nerve symptoms; then gentle lengthening into comfort; reassess tenderness + ROM.",
+      "stretch": "Arm supported positioning; reassess posterior arm tenderness.",
+      "caution": false,
+      "caution_note": null
+    },
+    {
+      "id": 39,
+      "card": "039",
+      "muscle": "Teres major",
+      "trp": "TrP 1",
+      "region": "Shoulder & Arm",
+      "location": "Posterior axillary border near inferior scapular angle.",
+      "referral": "Posterior shoulder and upper arm.",
+      "referral_tags": [
+        "posterior shoulder",
+        "upper arm"
+      ],
+      "protocol": "Ischemic Compression (education): steady sustained pressure to MTrP at discomfort level 45-75s (1-3 passes), stop if sharp/electrical/nerve symptoms; then gentle lengthening into comfort; reassess tenderness + ROM.",
+      "stretch": "Shoulder extension/adduction within comfort; reassess reach pain.",
+      "caution": false,
+      "caution_note": null
+    },
+    {
+      "id": 40,
+      "card": "040",
+      "muscle": "Teres major",
+      "trp": "TrP 2",
+      "region": "Shoulder & Arm",
+      "location": "Lower teres major taut band.",
+      "referral": "Posterior shoulder comfort changes.",
+      "referral_tags": [
+        "posterior shoulder"
+      ],
+      "protocol": "Ischemic Compression (education): steady sustained pressure to MTrP at discomfort level 45-75s (1-3 passes), stop if sharp/electrical/nerve symptoms; then gentle lengthening into comfort; reassess tenderness + ROM.",
+      "stretch": "Scapular retraction + gentle shoulder extension; reassess ROM.",
+      "caution": false,
+      "caution_note": null
+    },
+    {
+      "id": 41,
+      "card": "041",
+      "muscle": "Erector spinae (Upper)",
+      "trp": "TrP 1",
+      "region": "Torso & Back",
+      "location": "Upper paraspinals near thoracic costovertebral area.",
+      "referral": "Mid-back pain; may wrap along rib line.",
+      "referral_tags": [
+        "rib",
+        "mid-back"
+      ],
+      "protocol": "Ischemic Compression (education): steady sustained pressure to MTrP at discomfort level 45-75s (1-3 passes), stop if sharp/electrical/nerve symptoms; then gentle lengthening into comfort; reassess tenderness + ROM.",
+      "stretch": "Child's pose + gentle side-bend away; reassess extension.",
+      "caution": false,
+      "caution_note": null
+    },
+    {
+      "id": 42,
+      "card": "042",
+      "muscle": "Erector spinae (Upper)",
+      "trp": "TrP 2",
+      "region": "Torso & Back",
+      "location": "Upper lateral paraspinal taut band adjacent to spine.",
+      "referral": "Upper back to shoulder blade region.",
+      "referral_tags": [
+        "shoulder blade",
+        "upper back"
+      ],
+      "protocol": "Ischemic Compression (education): steady sustained pressure to MTrP at discomfort level 45-75s (1-3 passes), stop if sharp/electrical/nerve symptoms; then gentle lengthening into comfort; reassess tenderness + ROM.",
+      "stretch": "Thoracic rotation/side-bend; reassess tenderness.",
+      "caution": false,
+      "caution_note": null
+    },
+    {
+      "id": 43,
+      "card": "043",
+      "muscle": "Erector spinae (Mid)",
+      "trp": "TrP 1",
+      "region": "Torso & Back",
+      "location": "Mid-thoracic paraspinals taut band.",
+      "referral": "Mid-back pain with extension.",
+      "referral_tags": [
+        "mid-back"
+      ],
+      "protocol": "Ischemic Compression (education): steady sustained pressure to MTrP at discomfort level 45-75s (1-3 passes), stop if sharp/electrical/nerve symptoms; then gentle lengthening into comfort; reassess tenderness + ROM.",
+      "stretch": "Supported forward fold; reassess extension tolerance.",
+      "caution": false,
+      "caution_note": null
+    },
+    {
+      "id": 44,
+      "card": "044",
+      "muscle": "Erector spinae (Mid)",
+      "trp": "TrP 2",
+      "region": "Torso & Back",
+      "location": "More lateral mid-paraspinal discrete spot.",
+      "referral": "Scapular-border pain.",
+      "referral_tags": [],
+      "protocol": "Ischemic Compression (education): steady sustained pressure to MTrP at discomfort level 45-75s (1-3 passes), stop if sharp/electrical/nerve symptoms; then gentle lengthening into comfort; reassess tenderness + ROM.",
+      "stretch": "Side-bend away; reassess ROM.",
+      "caution": false,
+      "caution_note": null
+    },
+    {
+      "id": 45,
+      "card": "045",
+      "muscle": "Erector spinae (Lower)",
+      "trp": "TrP 1",
+      "region": "Torso & Back",
+      "location": "Lumbar paraspinals near L4-L5 off the spine.",
+      "referral": "Low-back pain; sometimes toward posterior hip.",
+      "referral_tags": [
+        "low-back",
+        "lumbar",
+        "hip"
+      ],
+      "protocol": "Ischemic Compression (education): steady sustained pressure to MTrP at discomfort level 45-75s (1-3 passes), stop if sharp/electrical/nerve symptoms; then gentle lengthening into comfort; reassess tenderness + ROM.",
+      "stretch": "Hip-hinge forward fold; reassess lumbar flexion comfort.",
+      "caution": false,
+      "caution_note": null
+    },
+    {
+      "id": 46,
+      "card": "046",
+      "muscle": "Erector spinae (Lower)",
+      "trp": "TrP 2",
+      "region": "Torso & Back",
+      "location": "Lower lumbar taut band near iliac crest.",
+      "referral": "Low-back/upper buttock pain.",
+      "referral_tags": [
+        "low-back",
+        "lumbar",
+        "buttock"
+      ],
+      "protocol": "Ischemic Compression (education): steady sustained pressure to MTrP at discomfort level 45-75s (1-3 passes), stop if sharp/electrical/nerve symptoms; then gentle lengthening into comfort; reassess tenderness + ROM.",
+      "stretch": "Pelvic tilt + forward fold; reassess intensity.",
+      "caution": false,
+      "caution_note": null
+    },
+    {
+      "id": 47,
+      "card": "047",
+      "muscle": "Rhomboid major",
+      "trp": "TrP 1",
+      "region": "Torso & Back",
+      "location": "Medial scapular border, near spine of scapula.",
+      "referral": "Medial scapula; may refer toward shoulder.",
+      "referral_tags": [
+        "medial scapula",
+        "shoulder"
+      ],
+      "protocol": "Ischemic Compression (education): steady sustained pressure to MTrP at discomfort level 45-75s (1-3 passes), stop if sharp/electrical/nerve symptoms; then gentle lengthening into comfort; reassess tenderness + ROM.",
+      "stretch": "Scapular retraction stretch + cross-body; reassess.",
+      "caution": false,
+      "caution_note": null
+    },
+    {
+      "id": 48,
+      "card": "048",
+      "muscle": "Rhomboid major",
+      "trp": "TrP 2",
+      "region": "Torso & Back",
+      "location": "Inferior rhomboid major fibers near inferior angle.",
+      "referral": "Medial scapula/rib line tightness.",
+      "referral_tags": [
+        "medial scapula",
+        "rib"
+      ],
+      "protocol": "Ischemic Compression (education): steady sustained pressure to MTrP at discomfort level 45-75s (1-3 passes), stop if sharp/electrical/nerve symptoms; then gentle lengthening into comfort; reassess tenderness + ROM.",
+      "stretch": "Arm supported abduction + scapular support; reassess.",
+      "caution": false,
+      "caution_note": null
+    },
+    {
+      "id": 49,
+      "card": "049",
+      "muscle": "Rhomboid minor",
+      "trp": "TrP 1",
+      "region": "Torso & Back",
+      "location": "Upper rhomboid minor taut band near base of scapula.",
+      "referral": "Upper medial scapula; neck base.",
+      "referral_tags": [
+        "neck",
+        "medial scapula"
+      ],
+      "protocol": "Ischemic Compression (education): steady sustained pressure to MTrP at discomfort level 45-75s (1-3 passes), stop if sharp/electrical/nerve symptoms; then gentle lengthening into comfort; reassess tenderness + ROM.",
+      "stretch": "Neck side-bend + scapular set; reassess.",
+      "caution": false,
+      "caution_note": null
+    },
+    {
+      "id": 50,
+      "card": "050",
+      "muscle": "Rhomboid minor",
+      "trp": "TrP 2",
+      "region": "Torso & Back",
+      "location": "Deeper rhomboid minor spot under trapezius border.",
+      "referral": "Scapular spine + posterior shoulder.",
+      "referral_tags": [
+        "posterior shoulder"
+      ],
+      "protocol": "Ischemic Compression (education): steady sustained pressure to MTrP at discomfort level 45-75s (1-3 passes), stop if sharp/electrical/nerve symptoms; then gentle lengthening into comfort; reassess tenderness + ROM.",
+      "stretch": "Thoracic extension + scapular retraction; reassess.",
+      "caution": false,
+      "caution_note": null
+    },
+    {
+      "id": 51,
+      "card": "051",
+      "muscle": "Serratus anterior",
+      "trp": "TrP 1 - upper",
+      "region": "Torso & Back",
+      "location": "Upper serratus along lateral ribs just anterior to scapula.",
+      "referral": "Lateral chest/rib discomfort; scapular edge pain.",
+      "referral_tags": [
+        "scapula",
+        "chest",
+        "rib"
+      ],
+      "protocol": "Ischemic Compression (education): steady sustained pressure to MTrP at discomfort level 45-75s (1-3 passes), stop if sharp/electrical/nerve symptoms; then gentle lengthening into comfort; reassess tenderness + ROM.",
+      "stretch": "Wall-supported reach; rib expansion drill; reassess scapular control.",
+      "caution": false,
+      "caution_note": null
+    },
+    {
+      "id": 52,
+      "card": "052",
+      "muscle": "Serratus anterior",
+      "trp": "TrP 2 - lower",
+      "region": "Torso & Back",
+      "location": "Lower serratus along lateral ribs near inferior scapular angle.",
+      "referral": "Lateral chest/anterior shoulder discomfort.",
+      "referral_tags": [
+        "anterior shoulder",
+        "chest"
+      ],
+      "protocol": "Ischemic Compression (education): steady sustained pressure to MTrP at discomfort level 45-75s (1-3 passes), stop if sharp/electrical/nerve symptoms; then gentle lengthening into comfort; reassess tenderness + ROM.",
+      "stretch": "Reach with side-body control; reassess.",
+      "caution": false,
+      "caution_note": null
+    },
+    {
+      "id": 53,
+      "card": "053",
+      "muscle": "Pectoralis major (Clavicular)",
+      "trp": "TrP 1",
+      "region": "Torso & Back",
+      "location": "Clavicular head taut band near anterior shoulder/clavicle.",
+      "referral": "Anterior shoulder; toward biceps region.",
+      "referral_tags": [
+        "anterior shoulder",
+        "biceps"
+      ],
+      "protocol": "Ischemic Compression (education): steady sustained pressure to MTrP at discomfort level 45-75s (1-3 passes), stop if sharp/electrical/nerve symptoms; then gentle lengthening into comfort; reassess tenderness + ROM.",
+      "stretch": "Doorway chest stretch; reassess shoulder flexion.",
+      "caution": false,
+      "caution_note": null
+    },
+    {
+      "id": 54,
+      "card": "054",
+      "muscle": "Pectoralis major (Clavicular)",
+      "trp": "TrP 2",
+      "region": "Torso & Back",
+      "location": "Discrete tender spot within clavicular fibers.",
+      "referral": "Upper chest/anterior shoulder.",
+      "referral_tags": [
+        "anterior shoulder",
+        "upper chest"
+      ],
+      "protocol": "Ischemic Compression (education): steady sustained pressure to MTrP at discomfort level 45-75s (1-3 passes), stop if sharp/electrical/nerve symptoms; then gentle lengthening into comfort; reassess tenderness + ROM.",
+      "stretch": "Scapular retraction + chest opening; reassess tenderness.",
+      "caution": false,
+      "caution_note": null
+    },
+    {
+      "id": 55,
+      "card": "055",
+      "muscle": "Pectoralis major (Sternocostal)",
+      "trp": "TrP 1",
+      "region": "Torso & Back",
+      "location": "Sternocostal fibers near upper sternal border.",
+      "referral": "Chest wall + anterior shoulder.",
+      "referral_tags": [
+        "anterior shoulder",
+        "chest wall",
+        "sternal"
+      ],
+      "protocol": "Ischemic Compression (education): steady sustained pressure to MTrP at discomfort level 45-75s (1-3 passes), stop if sharp/electrical/nerve symptoms; then gentle lengthening into comfort; reassess tenderness + ROM.",
+      "stretch": "Cross-body chest stretch; reassess arm movement.",
+      "caution": false,
+      "caution_note": null
+    },
+    {
+      "id": 56,
+      "card": "056",
+      "muscle": "Pectoralis major (Sternocostal)",
+      "trp": "TrP 2",
+      "region": "Torso & Back",
+      "location": "Lower sternocostal taut band toward mid-axillary line.",
+      "referral": "Anterior shoulder/lateral chest.",
+      "referral_tags": [
+        "anterior shoulder",
+        "chest"
+      ],
+      "protocol": "Ischemic Compression (education): steady sustained pressure to MTrP at discomfort level 45-75s (1-3 passes), stop if sharp/electrical/nerve symptoms; then gentle lengthening into comfort; reassess tenderness + ROM.",
+      "stretch": "Supported extension/adduction stretch; reassess ROM.",
+      "caution": false,
+      "caution_note": null
+    },
+    {
+      "id": 57,
+      "card": "057",
+      "muscle": "Pectoralis minor",
+      "trp": "TrP 1",
+      "region": "Torso & Back",
+      "location": "Pectoralis minor taut band under minor; near coracoid region.",
+      "referral": "Shoulder blade region; may mimic cuff tightness.",
+      "referral_tags": [
+        "shoulder blade"
+      ],
+      "protocol": "Ischemic Compression (education): steady sustained pressure to MTrP at discomfort level 45-75s (1-3 passes), stop if sharp/electrical/nerve symptoms; then gentle lengthening into comfort; reassess tenderness + ROM.",
+      "stretch": "Scapular depression + gentle pec minor stretch; reassess posture.",
+      "caution": false,
+      "caution_note": null
+    },
+    {
+      "id": 58,
+      "card": "058",
+      "muscle": "Pectoralis minor",
+      "trp": "TrP 2",
+      "region": "Torso & Back",
+      "location": "Discrete deep pectoralis minor spot.",
+      "referral": "Upper anterior chest/shoulder.",
+      "referral_tags": [
+        "shoulder",
+        "chest"
+      ],
+      "protocol": "Ischemic Compression (education): steady sustained pressure to MTrP at discomfort level 45-75s (1-3 passes), stop if sharp/electrical/nerve symptoms; then gentle lengthening into comfort; reassess tenderness + ROM.",
+      "stretch": "Scapular depression/retraction drill; reassess symptom intensity.",
+      "caution": false,
+      "caution_note": null
+    },
+    {
+      "id": 59,
+      "card": "059",
+      "muscle": "Diaphragm",
+      "trp": "TrP 1 - costal",
+      "region": "Torso & Back",
+      "location": "Diaphragmatic region near costal margin; gentle superficial palpation education.",
+      "referral": "Referred shoulder/C4-type discomfort; upper abdominal ache.",
+      "referral_tags": [
+        "shoulder",
+        "abdominal"
+      ],
+      "protocol": "Ischemic Compression (education): steady sustained pressure to MTrP at discomfort level 45-75s (1-3 passes), stop if sharp/electrical/nerve symptoms; then gentle lengthening into comfort; reassess tenderness + ROM.",
+      "stretch": "Diaphragmatic breathing + thoracic expansion; reassess referred pattern.",
+      "caution": true,
+      "caution_note": "Use gentle, education-only pressure; avoid deep work."
+    },
+    {
+      "id": 60,
+      "card": "060",
+      "muscle": "Diaphragm",
+      "trp": "TrP 2 - central/crural",
+      "region": "Torso & Back",
+      "location": "Central diaphragm area (education-only approach); avoid deep abdominal compression.",
+      "referral": "Referred upper abdomen/back/shoulder patterns.",
+      "referral_tags": [
+        "shoulder",
+        "abdomen",
+        "abdominal"
+      ],
+      "protocol": "Ischemic Compression (education): steady sustained pressure to MTrP at discomfort level 45-75s (1-3 passes), stop if sharp/electrical/nerve symptoms; then gentle lengthening into comfort; reassess tenderness + ROM.",
+      "stretch": "Breathing + posture reset; reassess.",
+      "caution": true,
+      "caution_note": "education-only approach); avoid deep abdominal compression"
+    },
+    {
+      "id": 61,
+      "card": "061",
+      "muscle": "Gluteus medius",
+      "trp": "TrP 1 - posterior",
+      "region": "Hip & Pelvis",
+      "location": "Posterior-lateral glute med near posterior iliac crest; palpate lateral buttock.",
+      "referral": "Lateral hip; outer thigh.",
+      "referral_tags": [
+        "buttock",
+        "lateral hip",
+        "outer thigh"
+      ],
+      "protocol": "Ischemic Compression (education): steady sustained pressure to MTrP at discomfort level 45-75s (1-3 passes), stop if sharp/electrical/nerve symptoms; then gentle lengthening into comfort; reassess tenderness + ROM.",
+      "stretch": "Figure-4 stretch + gentle hip abduction; reassess lateral hip tenderness.",
+      "caution": false,
+      "caution_note": null
+    },
+    {
+      "id": 62,
+      "card": "062",
+      "muscle": "Gluteus medius",
+      "trp": "TrP 2 - anterior",
+      "region": "Hip & Pelvis",
+      "location": "Anterior glute med toward greater trochanter.",
+      "referral": "Lateral hip to possible anterior thigh.",
+      "referral_tags": [
+        "lateral hip",
+        "anterior thigh"
+      ],
+      "protocol": "Ischemic Compression (education): steady sustained pressure to MTrP at discomfort level 45-75s (1-3 passes), stop if sharp/electrical/nerve symptoms; then gentle lengthening into comfort; reassess tenderness + ROM.",
+      "stretch": "Supported hip abduction/adduction within comfort; reassess ROM.",
+      "caution": false,
+      "caution_note": null
+    },
+    {
+      "id": 63,
+      "card": "063",
+      "muscle": "Gluteus maximus",
+      "trp": "TrP 1 - superior",
+      "region": "Hip & Pelvis",
+      "location": "Superior glute max fibers near iliac crest.",
+      "referral": "Buttock + posterior-lateral thigh.",
+      "referral_tags": [
+        "buttock",
+        "lateral thigh"
+      ],
+      "protocol": "Ischemic Compression (education): steady sustained pressure to MTrP at discomfort level 45-75s (1-3 passes), stop if sharp/electrical/nerve symptoms; then gentle lengthening into comfort; reassess tenderness + ROM.",
+      "stretch": "Hip flexor stretch + gentle extension comfort; reassess.",
+      "caution": false,
+      "caution_note": null
+    },
+    {
+      "id": 64,
+      "card": "064",
+      "muscle": "Gluteus maximus",
+      "trp": "TrP 2 - inferior",
+      "region": "Hip & Pelvis",
+      "location": "Inferior glute max taut band.",
+      "referral": "Posterior thigh; may influence knee-side comfort.",
+      "referral_tags": [
+        "posterior thigh",
+        "knee"
+      ],
+      "protocol": "Ischemic Compression (education): steady sustained pressure to MTrP at discomfort level 45-75s (1-3 passes), stop if sharp/electrical/nerve symptoms; then gentle lengthening into comfort; reassess tenderness + ROM.",
+      "stretch": "Hamstring/hip extension gentle integration; reassess standing pain.",
+      "caution": false,
+      "caution_note": null
+    },
+    {
+      "id": 65,
+      "card": "065",
+      "muscle": "Gluteus minimus",
+      "trp": "TrP 1",
+      "region": "Hip & Pelvis",
+      "location": "Anterior hip region near superior anterior greater trochanter.",
+      "referral": "Anterior hip/groin discomfort.",
+      "referral_tags": [
+        "anterior hip",
+        "groin"
+      ],
+      "protocol": "Ischemic Compression (education): steady sustained pressure to MTrP at discomfort level 45-75s (1-3 passes), stop if sharp/electrical/nerve symptoms; then gentle lengthening into comfort; reassess tenderness + ROM.",
+      "stretch": "Gentle hip flexor stretch with neutral pelvis; reassess groin.",
+      "caution": false,
+      "caution_note": null
+    },
+    {
+      "id": 66,
+      "card": "066",
+      "muscle": "Gluteus minimus",
+      "trp": "TrP 2",
+      "region": "Hip & Pelvis",
+      "location": "Lateral-anterior glute minimus spot.",
+      "referral": "Anterior hip; stride alteration comfort.",
+      "referral_tags": [
+        "anterior hip"
+      ],
+      "protocol": "Ischemic Compression (education): steady sustained pressure to MTrP at discomfort level 45-75s (1-3 passes), stop if sharp/electrical/nerve symptoms; then gentle lengthening into comfort; reassess tenderness + ROM.",
+      "stretch": "Gentle hip abduction with neutral spine; reassess.",
+      "caution": false,
+      "caution_note": null
+    },
+    {
+      "id": 67,
+      "card": "067",
+      "muscle": "Piriformis",
+      "trp": "TrP 1",
+      "region": "Hip & Pelvis",
+      "location": "Deep lateral buttock near greater sciatic notch region; education focus.",
+      "referral": "Buttock pain; may refer down posterior-lateral thigh.",
+      "referral_tags": [
+        "buttock",
+        "lateral thigh"
+      ],
+      "protocol": "Ischemic Compression (education): steady sustained pressure to MTrP at discomfort level 45-75s (1-3 passes), stop if sharp/electrical/nerve symptoms; then gentle lengthening into comfort; reassess tenderness + ROM.",
+      "stretch": "Figure-4 stretch; reassess buttock-to-thigh tenderness.",
+      "caution": true,
+      "caution_note": "near greater sciatic notch region; education focus"
+    },
+    {
+      "id": 68,
+      "card": "068",
+      "muscle": "Piriformis",
+      "trp": "TrP 2",
+      "region": "Hip & Pelvis",
+      "location": "More inferior piriformis belly spot.",
+      "referral": "Posterior hip/thigh discomfort.",
+      "referral_tags": [
+        "hip",
+        "thigh"
+      ],
+      "protocol": "Ischemic Compression (education): steady sustained pressure to MTrP at discomfort level 45-75s (1-3 passes), stop if sharp/electrical/nerve symptoms; then gentle lengthening into comfort; reassess tenderness + ROM.",
+      "stretch": "Gentle seated/pillow support piriformis stretch; reassess.",
+      "caution": false,
+      "caution_note": null
+    },
+    {
+      "id": 69,
+      "card": "069",
+      "muscle": "Psoas",
+      "trp": "TrP 1",
+      "region": "Hip & Pelvis",
+      "location": "Psoas region (anterior hip) palpation concept education; avoid deep unsafe pressure.",
+      "referral": "Groin/anterior hip discomfort.",
+      "referral_tags": [
+        "anterior hip",
+        "groin"
+      ],
+      "protocol": "Ischemic Compression (education): steady sustained pressure to MTrP at discomfort level 45-75s (1-3 passes), stop if sharp/electrical/nerve symptoms; then gentle lengthening into comfort; reassess tenderness + ROM.",
+      "stretch": "Hip flexor stretch with neutral spine; reassess groin pain.",
+      "caution": true,
+      "caution_note": "avoid deep unsafe pressure"
+    },
+    {
+      "id": 70,
+      "card": "070",
+      "muscle": "Psoas",
+      "trp": "TrP 2",
+      "region": "Hip & Pelvis",
+      "location": "Discrete psoas taut band education approach.",
+      "referral": "Anterior hip tension; may influence low back pain.",
+      "referral_tags": [
+        "anterior hip"
+      ],
+      "protocol": "Ischemic Compression (education): steady sustained pressure to MTrP at discomfort level 45-75s (1-3 passes), stop if sharp/electrical/nerve symptoms; then gentle lengthening into comfort; reassess tenderness + ROM.",
+      "stretch": "Supported hip flexor stretch; reassess ROM.",
+      "caution": true,
+      "caution_note": "education approach"
+    },
+    {
+      "id": 71,
+      "card": "071",
+      "muscle": "Iliacus",
+      "trp": "TrP 1",
+      "region": "Hip & Pelvis",
+      "location": "Iliacus taut band concept near anterior pelvis/hip flexor region.",
+      "referral": "Anterior hip/groin tightness.",
+      "referral_tags": [
+        "anterior hip",
+        "groin"
+      ],
+      "protocol": "Ischemic Compression (education): steady sustained pressure to MTrP at discomfort level 45-75s (1-3 passes), stop if sharp/electrical/nerve symptoms; then gentle lengthening into comfort; reassess tenderness + ROM.",
+      "stretch": "Hip flexor stretch; reassess anterior hip pain.",
+      "caution": false,
+      "caution_note": null
+    },
+    {
+      "id": 72,
+      "card": "072",
+      "muscle": "Iliacus",
+      "trp": "TrP 2",
+      "region": "Hip & Pelvis",
+      "location": "Discrete iliacus tender spot concept.",
+      "referral": "Groin/anterior hip discomfort.",
+      "referral_tags": [
+        "anterior hip",
+        "groin"
+      ],
+      "protocol": "Ischemic Compression (education): steady sustained pressure to MTrP at discomfort level 45-75s (1-3 passes), stop if sharp/electrical/nerve symptoms; then gentle lengthening into comfort; reassess tenderness + ROM.",
+      "stretch": "Gentle lunge mechanics within comfort; reassess.",
+      "caution": false,
+      "caution_note": null
+    },
+    {
+      "id": 73,
+      "card": "073",
+      "muscle": "TFL",
+      "trp": "TrP 1",
+      "region": "Hip & Pelvis",
+      "location": "TFL taut band on lateral hip near iliac crest.",
+      "referral": "Lateral hip to may refer toward lateral knee/upper leg.",
+      "referral_tags": [
+        "lateral hip",
+        "lateral knee"
+      ],
+      "protocol": "Ischemic Compression (education): steady sustained pressure to MTrP at discomfort level 45-75s (1-3 passes), stop if sharp/electrical/nerve symptoms; then gentle lengthening into comfort; reassess tenderness + ROM.",
+      "stretch": "Cross-body stretch or side lunge; reassess lateral knee discomfort.",
+      "caution": false,
+      "caution_note": null
+    },
+    {
+      "id": 74,
+      "card": "074",
+      "muscle": "TFL",
+      "trp": "TrP 2",
+      "region": "Hip & Pelvis",
+      "location": "Lower TFL discrete tender spot.",
+      "referral": "Lateral hip pain; may contribute to ITB-like symptoms.",
+      "referral_tags": [
+        "lateral hip"
+      ],
+      "protocol": "Ischemic Compression (education): steady sustained pressure to MTrP at discomfort level 45-75s (1-3 passes), stop if sharp/electrical/nerve symptoms; then gentle lengthening into comfort; reassess tenderness + ROM.",
+      "stretch": "Side-lying/pigeon-lite stretch; reassess lateral hip tenderness.",
+      "caution": false,
+      "caution_note": null
+    },
+    {
+      "id": 75,
+      "card": "075",
+      "muscle": "Adductor longus",
+      "trp": "TrP 1",
+      "region": "Hip & Pelvis",
+      "location": "Medial thigh near pubic region; locate taut band.",
+      "referral": "Groin/medial knee region discomfort.",
+      "referral_tags": [
+        "groin",
+        "medial thigh",
+        "medial knee"
+      ],
+      "protocol": "Ischemic Compression (education): steady sustained pressure to MTrP at discomfort level 45-75s (1-3 passes), stop if sharp/electrical/nerve symptoms; then gentle lengthening into comfort; reassess tenderness + ROM.",
+      "stretch": "Adductor stretch with neutral pelvis; reassess medial thigh pain.",
+      "caution": false,
+      "caution_note": null
+    },
+    {
+      "id": 76,
+      "card": "076",
+      "muscle": "Adductor longus",
+      "trp": "TrP 2",
+      "region": "Hip & Pelvis",
+      "location": "Mid-adductor taut band discrete spot.",
+      "referral": "Medial thigh; may refer toward knee.",
+      "referral_tags": [
+        "medial thigh",
+        "knee"
+      ],
+      "protocol": "Ischemic Compression (education): steady sustained pressure to MTrP at discomfort level 45-75s (1-3 passes), stop if sharp/electrical/nerve symptoms; then gentle lengthening into comfort; reassess tenderness + ROM.",
+      "stretch": "Adductor stretch; reassess walking comfort.",
+      "caution": false,
+      "caution_note": null
+    },
+    {
+      "id": 77,
+      "card": "077",
+      "muscle": "Gracilis",
+      "trp": "TrP 1",
+      "region": "Hip & Pelvis",
+      "location": "Medial thigh (more superficial) toward knee side.",
+      "referral": "Medial knee/upper shin discomfort.",
+      "referral_tags": [
+        "medial thigh",
+        "medial knee",
+        "shin"
+      ],
+      "protocol": "Ischemic Compression (education): steady sustained pressure to MTrP at discomfort level 45-75s (1-3 passes), stop if sharp/electrical/nerve symptoms; then gentle lengthening into comfort; reassess tenderness + ROM.",
+      "stretch": "Knee-to-floor adductor stretch; reassess.",
+      "caution": false,
+      "caution_note": null
+    },
+    {
+      "id": 78,
+      "card": "078",
+      "muscle": "Gracilis",
+      "trp": "TrP 2",
+      "region": "Hip & Pelvis",
+      "location": "Lower gracilis taut band discrete spot.",
+      "referral": "Medial thigh tightness; knee-adjacent ache.",
+      "referral_tags": [
+        "medial thigh",
+        "knee"
+      ],
+      "protocol": "Ischemic Compression (education): steady sustained pressure to MTrP at discomfort level 45-75s (1-3 passes), stop if sharp/electrical/nerve symptoms; then gentle lengthening into comfort; reassess tenderness + ROM.",
+      "stretch": "Gentle adductor stretch; reassess tenderness.",
+      "caution": false,
+      "caution_note": null
+    },
+    {
+      "id": 79,
+      "card": "079",
+      "muscle": "Sartorius",
+      "trp": "TrP 1",
+      "region": "Hip & Pelvis",
+      "location": "Sartorius taut band mid-anterior medial thigh.",
+      "referral": "Anterior medial thigh discomfort.",
+      "referral_tags": [
+        "medial thigh"
+      ],
+      "protocol": "Ischemic Compression (education): steady sustained pressure to MTrP at discomfort level 45-75s (1-3 passes), stop if sharp/electrical/nerve symptoms; then gentle lengthening into comfort; reassess tenderness + ROM.",
+      "stretch": "Lunge/hip flexor with gentle abduction; reassess.",
+      "caution": false,
+      "caution_note": null
+    },
+    {
+      "id": 80,
+      "card": "080",
+      "muscle": "Sartorius",
+      "trp": "TrP 2",
+      "region": "Hip & Pelvis",
+      "location": "Sartorius lower taut band toward knee.",
+      "referral": "Anterior thigh to knee discomfort.",
+      "referral_tags": [
+        "anterior thigh",
+        "knee"
+      ],
+      "protocol": "Ischemic Compression (education): steady sustained pressure to MTrP at discomfort level 45-75s (1-3 passes), stop if sharp/electrical/nerve symptoms; then gentle lengthening into comfort; reassess tenderness + ROM.",
+      "stretch": "Figure-4 with focus on anterior thigh; reassess.",
+      "caution": false,
+      "caution_note": null
+    },
+    {
+      "id": 81,
+      "card": "081",
+      "muscle": "Rectus femoris",
+      "trp": "TrP 1",
+      "region": "Legs & Feet",
+      "location": "Anterior mid-thigh taut band; palpate along rectus femoris belly.",
+      "referral": "Anterior thigh pain; may refer toward knee.",
+      "referral_tags": [
+        "anterior thigh",
+        "knee"
+      ],
+      "protocol": "Ischemic Compression (education): steady sustained pressure to MTrP at discomfort level 45-75s (1-3 passes), stop if sharp/electrical/nerve symptoms; then gentle lengthening into comfort; reassess tenderness + ROM.",
+      "stretch": "Kneeling quad stretch; reassess knee pain.",
+      "caution": false,
+      "caution_note": null
+    },
+    {
+      "id": 82,
+      "card": "082",
+      "muscle": "Rectus femoris",
+      "trp": "TrP 2",
+      "region": "Legs & Feet",
+      "location": "Proximal rectus femoris near hip flexor region.",
+      "referral": "Anterior hip/thigh pain.",
+      "referral_tags": [
+        "anterior hip",
+        "thigh"
+      ],
+      "protocol": "Ischemic Compression (education): steady sustained pressure to MTrP at discomfort level 45-75s (1-3 passes), stop if sharp/electrical/nerve symptoms; then gentle lengthening into comfort; reassess tenderness + ROM.",
+      "stretch": "Gentle hip flexor stretch; reassess anterior thigh.",
+      "caution": false,
+      "caution_note": null
+    },
+    {
+      "id": 83,
+      "card": "083",
+      "muscle": "Vastus lateralis",
+      "trp": "TrP 1",
+      "region": "Legs & Feet",
+      "location": "Lateral quad taut band mid-belly.",
+      "referral": "Lateral thigh discomfort; may refer toward knee.",
+      "referral_tags": [
+        "lateral thigh",
+        "knee"
+      ],
+      "protocol": "Ischemic Compression (education): steady sustained pressure to MTrP at discomfort level 45-75s (1-3 passes), stop if sharp/electrical/nerve symptoms; then gentle lengthening into comfort; reassess tenderness + ROM.",
+      "stretch": "Standing quad stretch with slight hip extension; reassess.",
+      "caution": false,
+      "caution_note": null
+    },
+    {
+      "id": 84,
+      "card": "084",
+      "muscle": "Vastus lateralis",
+      "trp": "TrP 2",
+      "region": "Legs & Feet",
+      "location": "Lateral quad inferior spot.",
+      "referral": "Lateral knee/anterior-lateral leg discomfort.",
+      "referral_tags": [
+        "lateral knee"
+      ],
+      "protocol": "Ischemic Compression (education): steady sustained pressure to MTrP at discomfort level 45-75s (1-3 passes), stop if sharp/electrical/nerve symptoms; then gentle lengthening into comfort; reassess tenderness + ROM.",
+      "stretch": "Gentle knee bend/quad stretch; reassess.",
+      "caution": false,
+      "caution_note": null
+    },
+    {
+      "id": 85,
+      "card": "085",
+      "muscle": "Vastus medialis",
+      "trp": "TrP 1",
+      "region": "Legs & Feet",
+      "location": "Medial quad taut band near distal medial thigh.",
+      "referral": "Medial knee/patella area discomfort.",
+      "referral_tags": [
+        "medial thigh",
+        "medial knee",
+        "patella"
+      ],
+      "protocol": "Ischemic Compression (education): steady sustained pressure to MTrP at discomfort level 45-75s (1-3 passes), stop if sharp/electrical/nerve symptoms; then gentle lengthening into comfort; reassess tenderness + ROM.",
+      "stretch": "Supported standing quad stretch; reassess medial knee.",
+      "caution": false,
+      "caution_note": null
+    },
+    {
+      "id": 86,
+      "card": "086",
+      "muscle": "Vastus medialis",
+      "trp": "TrP 2",
+      "region": "Legs & Feet",
+      "location": "Medial quad lower discrete tender spot.",
+      "referral": "Medial knee/anterior shin ache.",
+      "referral_tags": [
+        "medial knee",
+        "shin"
+      ],
+      "protocol": "Ischemic Compression (education): steady sustained pressure to MTrP at discomfort level 45-75s (1-3 passes), stop if sharp/electrical/nerve symptoms; then gentle lengthening into comfort; reassess tenderness + ROM.",
+      "stretch": "Gentle knee extension within comfort; reassess.",
+      "caution": false,
+      "caution_note": null
+    },
+    {
+      "id": 87,
+      "card": "087",
+      "muscle": "Vastus intermedius",
+      "trp": "TrP 1 - deep education",
+      "region": "Legs & Feet",
+      "location": "Deep anterior thigh taut band concept.",
+      "referral": "Deep anterior thigh to possible knee discomfort.",
+      "referral_tags": [
+        "anterior thigh",
+        "knee"
+      ],
+      "protocol": "Ischemic Compression (education): steady sustained pressure to MTrP at discomfort level 45-75s (1-3 passes), stop if sharp/electrical/nerve symptoms; then gentle lengthening into comfort; reassess tenderness + ROM.",
+      "stretch": "Sitting quad stretch drill; reassess anterior knee ache.",
+      "caution": false,
+      "caution_note": null
+    },
+    {
+      "id": 88,
+      "card": "088",
+      "muscle": "Vastus intermedius",
+      "trp": "TrP 2 - deep education",
+      "region": "Legs & Feet",
+      "location": "Deep lower anterior thigh taut band concept.",
+      "referral": "Knee-adjacent discomfort.",
+      "referral_tags": [
+        "anterior thigh",
+        "knee"
+      ],
+      "protocol": "Ischemic Compression (education): steady sustained pressure to MTrP at discomfort level 45-75s (1-3 passes), stop if sharp/electrical/nerve symptoms; then gentle lengthening into comfort; reassess tenderness + ROM.",
+      "stretch": "Gentle quad loading/ROM; reassess.",
+      "caution": false,
+      "caution_note": null
+    },
+    {
+      "id": 89,
+      "card": "089",
+      "muscle": "Semitendinosus",
+      "trp": "TrP 1",
+      "region": "Legs & Feet",
+      "location": "Posterior medial hamstring near mid-belly.",
+      "referral": "Posterior thigh; may refer toward knee.",
+      "referral_tags": [
+        "posterior thigh",
+        "knee"
+      ],
+      "protocol": "Ischemic Compression (education): steady sustained pressure to MTrP at discomfort level 45-75s (1-3 passes), stop if sharp/electrical/nerve symptoms; then gentle lengthening into comfort; reassess tenderness + ROM.",
+      "stretch": "Seated/standing hamstring stretch; reassess knee-side discomfort.",
+      "caution": false,
+      "caution_note": null
+    },
+    {
+      "id": 90,
+      "card": "090",
+      "muscle": "Semitendinosus",
+      "trp": "TrP 2",
+      "region": "Legs & Feet",
+      "location": "Distal semitendinosus near tendon.",
+      "referral": "Posterior knee/upper calf discomfort.",
+      "referral_tags": [
+        "posterior knee",
+        "calf"
+      ],
+      "protocol": "Ischemic Compression (education): steady sustained pressure to MTrP at discomfort level 45-75s (1-3 passes), stop if sharp/electrical/nerve symptoms; then gentle lengthening into comfort; reassess tenderness + ROM.",
+      "stretch": "Knee extension hamstring stretch; reassess.",
+      "caution": false,
+      "caution_note": null
+    },
+    {
+      "id": 91,
+      "card": "091",
+      "muscle": "Semimembranosus",
+      "trp": "TrP 1",
+      "region": "Legs & Feet",
+      "location": "Posterior hamstring deep medial fibers.",
+      "referral": "Posterior knee area discomfort.",
+      "referral_tags": [
+        "posterior knee"
+      ],
+      "protocol": "Ischemic Compression (education): steady sustained pressure to MTrP at discomfort level 45-75s (1-3 passes), stop if sharp/electrical/nerve symptoms; then gentle lengthening into comfort; reassess tenderness + ROM.",
+      "stretch": "Supine hamstring stretch; reassess.",
+      "caution": false,
+      "caution_note": null
+    },
+    {
+      "id": 92,
+      "card": "092",
+      "muscle": "Semimembranosus",
+      "trp": "TrP 2",
+      "region": "Legs & Feet",
+      "location": "Lower semimembranosus taut band.",
+      "referral": "Posterior knee to upper calf.",
+      "referral_tags": [
+        "posterior knee",
+        "calf"
+      ],
+      "protocol": "Ischemic Compression (education): steady sustained pressure to MTrP at discomfort level 45-75s (1-3 passes), stop if sharp/electrical/nerve symptoms; then gentle lengthening into comfort; reassess tenderness + ROM.",
+      "stretch": "Gentle hamstring stretch; reassess.",
+      "caution": false,
+      "caution_note": null
+    },
+    {
+      "id": 93,
+      "card": "093",
+      "muscle": "Biceps femoris",
+      "trp": "TrP 1",
+      "region": "Legs & Feet",
+      "location": "Lateral hamstring belly.",
+      "referral": "Lateral posterior thigh discomfort.",
+      "referral_tags": [
+        "posterior thigh"
+      ],
+      "protocol": "Ischemic Compression (education): steady sustained pressure to MTrP at discomfort level 45-75s (1-3 passes), stop if sharp/electrical/nerve symptoms; then gentle lengthening into comfort; reassess tenderness + ROM.",
+      "stretch": "Supported hamstring stretch; reassess lateral thigh.",
+      "caution": false,
+      "caution_note": null
+    },
+    {
+      "id": 94,
+      "card": "094",
+      "muscle": "Biceps femoris",
+      "trp": "TrP 2",
+      "region": "Legs & Feet",
+      "location": "Distal biceps femoris near fibular head region.",
+      "referral": "Posterior-lateral knee and calf line.",
+      "referral_tags": [
+        "biceps",
+        "lateral knee",
+        "calf"
+      ],
+      "protocol": "Ischemic Compression (education): steady sustained pressure to MTrP at discomfort level 45-75s (1-3 passes), stop if sharp/electrical/nerve symptoms; then gentle lengthening into comfort; reassess tenderness + ROM.",
+      "stretch": "Knee flex/extend within comfort; reassess.",
+      "caution": false,
+      "caution_note": null
+    },
+    {
+      "id": 95,
+      "card": "095",
+      "muscle": "Gastrocnemius",
+      "trp": "TrP 1 - medial",
+      "region": "Legs & Feet",
+      "location": "Medial calf taut band; palpate between gastrocnemius heads.",
+      "referral": "Calf pain; may refer toward Achilles/heel area.",
+      "referral_tags": [
+        "achilles",
+        "heel",
+        "calf"
+      ],
+      "protocol": "Ischemic Compression (education): steady sustained pressure to MTrP at discomfort level 45-75s (1-3 passes), stop if sharp/electrical/nerve symptoms; then gentle lengthening into comfort; reassess tenderness + ROM.",
+      "stretch": "Calf stretch with knee straight; reassess heel tolerance.",
+      "caution": false,
+      "caution_note": null
+    },
+    {
+      "id": 96,
+      "card": "096",
+      "muscle": "Gastrocnemius",
+      "trp": "TrP 2 - lateral",
+      "region": "Legs & Feet",
+      "location": "Lateral gastrocnemius taut band.",
+      "referral": "Lateral calf discomfort; may refer toward Achilles.",
+      "referral_tags": [
+        "achilles",
+        "calf"
+      ],
+      "protocol": "Ischemic Compression (education): steady sustained pressure to MTrP at discomfort level 45-75s (1-3 passes), stop if sharp/electrical/nerve symptoms; then gentle lengthening into comfort; reassess tenderness + ROM.",
+      "stretch": "Calf stretch; reassess lateral calf tenderness.",
+      "caution": false,
+      "caution_note": null
+    },
+    {
+      "id": 97,
+      "card": "097",
+      "muscle": "Soleus",
+      "trp": "TrP 1",
+      "region": "Legs & Feet",
+      "location": "Deeper posterior calf under gastrocnemius; palpation education.",
+      "referral": "Deep calf/soleus discomfort; Achilles line.",
+      "referral_tags": [
+        "achilles",
+        "calf"
+      ],
+      "protocol": "Ischemic Compression (education): steady sustained pressure to MTrP at discomfort level 45-75s (1-3 passes), stop if sharp/electrical/nerve symptoms; then gentle lengthening into comfort; reassess tenderness + ROM.",
+      "stretch": "Bent-knee calf stretch; reassess deep calf pain.",
+      "caution": false,
+      "caution_note": null
+    },
+    {
+      "id": 98,
+      "card": "098",
+      "muscle": "Soleus",
+      "trp": "TrP 2",
+      "region": "Legs & Feet",
+      "location": "Inferior soleus taut spot.",
+      "referral": "Deep calf discomfort; may affect walking.",
+      "referral_tags": [
+        "calf"
+      ],
+      "protocol": "Ischemic Compression (education): steady sustained pressure to MTrP at discomfort level 45-75s (1-3 passes), stop if sharp/electrical/nerve symptoms; then gentle lengthening into comfort; reassess tenderness + ROM.",
+      "stretch": "Bent-knee stretch; reassess.",
+      "caution": false,
+      "caution_note": null
+    },
+    {
+      "id": 99,
+      "card": "099",
+      "muscle": "Tibialis anterior",
+      "trp": "TrP 1",
+      "region": "Legs & Feet",
+      "location": "Anterior shin taut band near lateral border.",
+      "referral": "Front-of-shin discomfort; dorsum foot may be involved.",
+      "referral_tags": [
+        "shin",
+        "foot"
+      ],
+      "protocol": "Ischemic Compression (education): steady sustained pressure to MTrP at discomfort level 45-75s (1-3 passes), stop if sharp/electrical/nerve symptoms; then gentle lengthening into comfort; reassess tenderness + ROM.",
+      "stretch": "Ankle dorsiflex stretch; reassess shin pain.",
+      "caution": false,
+      "caution_note": null
+    },
+    {
+      "id": 100,
+      "card": "100",
+      "muscle": "Tibialis anterior",
+      "trp": "TrP 2",
+      "region": "Legs & Feet",
+      "location": "More distal anterior tib taut band near ankle.",
+      "referral": "Dorsal foot/anterior ankle discomfort.",
+      "referral_tags": [
+        "dorsal foot",
+        "ankle"
+      ],
+      "protocol": "Ischemic Compression (education): steady sustained pressure to MTrP at discomfort level 45-75s (1-3 passes), stop if sharp/electrical/nerve symptoms; then gentle lengthening into comfort; reassess tenderness + ROM.",
+      "stretch": "Ankle/foot stretching drill; reassess.",
+      "caution": false,
+      "caution_note": null
+    }
+  ]
+}
