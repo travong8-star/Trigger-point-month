@@ -1,6 +1,7 @@
 import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+import { MeshoptDecoder } from 'three/addons/libs/meshopt_decoder.module.js';
 import crosswalk from './data/muscle_crosswalk.json';
 
 // ── Mesh node → muscle → trigger point resolver ──
@@ -296,6 +297,10 @@ function loadSkeleton() {
   skeletonToggleEl.textContent = 'Loading…';
 
   const skeletonLoader = new GLTFLoader();
+  // The compressed skeleton GLB (gltf-transform --compress meshopt) needs
+  // this decoder to read its geometry back out; the muscle model isn't
+  // compressed, so its own loader above doesn't need one.
+  skeletonLoader.setMeshoptDecoder(MeshoptDecoder);
   skeletonLoader.load(
     `${import.meta.env.BASE_URL}models/male_skeleton.glb`,
     (gltf) => {
