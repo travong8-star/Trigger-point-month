@@ -30,7 +30,8 @@
               "triangle_count": 2632,
               "glb_size_bytes": 57968
             }
-          }
+          },
+          "load_region": "head-neck"
         }
       ]
     },
@@ -61,7 +62,8 @@
               "triangle_count": 4102,
               "glb_size_bytes": 98372
             }
-          }
+          },
+          "load_region": "head-neck"
         }
       ]
     },
@@ -92,7 +94,8 @@
               "triangle_count": 2778,
               "glb_size_bytes": 65560
             }
-          }
+          },
+          "load_region": "head-neck"
         }
       ]
     },
@@ -123,7 +126,8 @@
               "triangle_count": 10344,
               "glb_size_bytes": 222920
             }
-          }
+          },
+          "load_region": "head-neck"
         }
       ]
     },
@@ -147,7 +151,8 @@
               "triangle_count": 7808,
               "glb_size_bytes": 164484
             }
-          }
+          },
+          "load_region": "head-neck"
         }
       ]
     },
@@ -178,7 +183,8 @@
               "triangle_count": 1032,
               "glb_size_bytes": 24240
             }
-          }
+          },
+          "load_region": "head-neck"
         },
         {
           "bodyparts3d_name": "obliquus capitis superior",
@@ -197,7 +203,8 @@
               "triangle_count": 1410,
               "glb_size_bytes": 47464
             }
-          }
+          },
+          "load_region": "head-neck"
         },
         {
           "bodyparts3d_name": "rectus capitis posterior major",
@@ -216,7 +223,8 @@
               "triangle_count": 1572,
               "glb_size_bytes": 36656
             }
-          }
+          },
+          "load_region": "head-neck"
         },
         {
           "bodyparts3d_name": "rectus capitis posterior minor",
@@ -235,7 +243,8 @@
               "triangle_count": 886,
               "glb_size_bytes": 24568
             }
-          }
+          },
+          "load_region": "head-neck"
         }
       ]
     },
@@ -249,7 +258,8 @@
       ],
       "mapping_type": "unresolved",
       "bodyparts3d_structures": [],
-      "note": "Absent from all supplied BodyParts3D metadata (isa_*/partof_*) -- not fabricated, not inferred from another id. Requires a different source."
+      "note": "Absent from all supplied BodyParts3D metadata (isa_*/partof_*) -- not fabricated, not inferred from another id. Requires a different source.",
+      "load_region_if_resolved": "head-neck"
     },
     {
       "app_muscle_id": "upper-trapezius",
@@ -271,7 +281,8 @@
               "triangle_count": 7108,
               "glb_size_bytes": 164588
             }
-          }
+          },
+          "load_region": "head-neck"
         }
       ]
     },
@@ -295,7 +306,8 @@
               "triangle_count": 4718,
               "glb_size_bytes": 109224
             }
-          }
+          },
+          "load_region": "head-neck"
         }
       ]
     },
@@ -309,7 +321,8 @@
       ],
       "mapping_type": "unresolved",
       "bodyparts3d_structures": [],
-      "note": "Absent from all supplied BodyParts3D metadata (isa_*/partof_*) -- not fabricated, not inferred from another id. Requires a different source."
+      "note": "Absent from all supplied BodyParts3D metadata (isa_*/partof_*) -- not fabricated, not inferred from another id. Requires a different source.",
+      "load_region_if_resolved": "head-neck"
     },
     {
       "app_muscle_id": "gluteus-medius",
@@ -338,7 +351,8 @@
               "triangle_count": 3356,
               "glb_size_bytes": 76944
             }
-          }
+          },
+          "load_region": "hip-pelvis"
         }
       ]
     },
@@ -369,7 +383,8 @@
               "triangle_count": 2376,
               "glb_size_bytes": 64896
             }
-          }
+          },
+          "load_region": "hip-pelvis"
         }
       ]
     },
@@ -400,7 +415,8 @@
               "triangle_count": 4208,
               "glb_size_bytes": 100248
             }
-          }
+          },
+          "load_region": "hip-pelvis"
         }
       ]
     },
@@ -431,7 +447,8 @@
               "triangle_count": 1092,
               "glb_size_bytes": 27096
             }
-          }
+          },
+          "load_region": "hip-pelvis"
         }
       ]
     },
@@ -462,7 +479,8 @@
               "triangle_count": 4900,
               "glb_size_bytes": 118068
             }
-          }
+          },
+          "load_region": "hip-pelvis"
         }
       ]
     },
@@ -493,7 +511,8 @@
               "triangle_count": 2862,
               "glb_size_bytes": 77468
             }
-          }
+          },
+          "load_region": "hip-pelvis"
         }
       ]
     },
@@ -524,7 +543,8 @@
               "triangle_count": 1254,
               "glb_size_bytes": 35056
             }
-          }
+          },
+          "load_region": "hip-pelvis"
         }
       ]
     },
@@ -555,7 +575,8 @@
               "triangle_count": 2616,
               "glb_size_bytes": 54004
             }
-          }
+          },
+          "load_region": "thigh"
         }
       ]
     },
@@ -586,7 +607,8 @@
               "triangle_count": 3172,
               "glb_size_bytes": 70520
             }
-          }
+          },
+          "load_region": "thigh"
         }
       ]
     },
@@ -617,7 +639,8 @@
               "triangle_count": 3444,
               "glb_size_bytes": 85272
             }
-          }
+          },
+          "load_region": "thigh"
         }
       ]
     },
@@ -648,7 +671,8 @@
               "triangle_count": 5688,
               "glb_size_bytes": 115400
             }
-          }
+          },
+          "load_region": "thigh"
         }
       ]
     },
@@ -672,7 +696,8 @@
               "triangle_count": 6688,
               "glb_size_bytes": 136980
             }
-          }
+          },
+          "load_region": "thigh"
         }
       ]
     },
@@ -696,7 +721,8 @@
               "triangle_count": 4552,
               "glb_size_bytes": 95316
             }
-          }
+          },
+          "load_region": "thigh"
         }
       ]
     },
@@ -727,7 +753,8 @@
               "triangle_count": 4260,
               "glb_size_bytes": 92864
             }
-          }
+          },
+          "load_region": "thigh"
         }
       ]
     },
@@ -758,7 +785,8 @@
               "triangle_count": 2712,
               "glb_size_bytes": 61116
             }
-          }
+          },
+          "load_region": "thigh"
         }
       ]
     },
@@ -789,7 +817,8 @@
               "triangle_count": 4612,
               "glb_size_bytes": 91236
             }
-          }
+          },
+          "load_region": "thigh"
         }
       ]
     },
@@ -820,7 +849,8 @@
               "triangle_count": 5110,
               "glb_size_bytes": 100200
             }
-          }
+          },
+          "load_region": "thigh"
         },
         {
           "bodyparts3d_name": "short head of biceps femoris",
@@ -832,7 +862,8 @@
               "triangle_count": 1728,
               "glb_size_bytes": 40880
             }
-          }
+          },
+          "load_region": "thigh"
         }
       ]
     },
@@ -863,7 +894,8 @@
               "triangle_count": 3052,
               "glb_size_bytes": 61668
             }
-          }
+          },
+          "load_region": "lower-leg-foot"
         },
         {
           "bodyparts3d_name": "medial head of gastrocnemius",
@@ -882,7 +914,8 @@
               "triangle_count": 3842,
               "glb_size_bytes": 78840
             }
-          }
+          },
+          "load_region": "lower-leg-foot"
         }
       ]
     },
@@ -913,7 +946,8 @@
               "triangle_count": 4418,
               "glb_size_bytes": 92136
             }
-          }
+          },
+          "load_region": "lower-leg-foot"
         }
       ]
     },
@@ -944,7 +978,8 @@
               "triangle_count": 2510,
               "glb_size_bytes": 69452
             }
-          }
+          },
+          "load_region": "lower-leg-foot"
         }
       ]
     },
@@ -968,7 +1003,8 @@
               "triangle_count": 878,
               "glb_size_bytes": 26944
             }
-          }
+          },
+          "load_region": "shoulder-arm"
         }
       ]
     },
@@ -992,7 +1028,8 @@
               "triangle_count": 866,
               "glb_size_bytes": 24456
             }
-          }
+          },
+          "load_region": "shoulder-arm"
         }
       ]
     },
@@ -1016,7 +1053,8 @@
               "triangle_count": 506,
               "glb_size_bytes": 13888
             }
-          }
+          },
+          "load_region": "shoulder-arm"
         }
       ]
     },
@@ -1040,7 +1078,8 @@
               "triangle_count": 2092,
               "glb_size_bytes": 80600
             }
-          }
+          },
+          "load_region": "shoulder-arm"
         }
       ]
     },
@@ -1064,7 +1103,8 @@
               "triangle_count": 2206,
               "glb_size_bytes": 76892
             }
-          }
+          },
+          "load_region": "shoulder-arm"
         }
       ]
     },
@@ -1088,7 +1128,8 @@
               "triangle_count": 1300,
               "glb_size_bytes": 31228
             }
-          }
+          },
+          "load_region": "shoulder-arm"
         }
       ]
     },
@@ -1112,7 +1153,8 @@
               "triangle_count": 1746,
               "glb_size_bytes": 42308
             }
-          }
+          },
+          "load_region": "shoulder-arm"
         }
       ]
     },
@@ -1136,7 +1178,8 @@
               "triangle_count": 3110,
               "glb_size_bytes": 76944
             }
-          }
+          },
+          "load_region": "forearm-hand"
         }
       ]
     },
@@ -1159,7 +1202,8 @@
               "triangle_count": 832,
               "glb_size_bytes": 21312
             }
-          }
+          },
+          "load_region": "shoulder-arm"
         }
       ]
     },
@@ -1182,7 +1226,8 @@
               "triangle_count": 2606,
               "glb_size_bytes": 57356
             }
-          }
+          },
+          "load_region": "shoulder-arm"
         }
       ]
     },
@@ -1206,7 +1251,8 @@
               "triangle_count": 1042,
               "glb_size_bytes": 32752
             }
-          }
+          },
+          "load_region": "shoulder-arm"
         }
       ]
     },
@@ -1230,7 +1276,8 @@
               "triangle_count": 3072,
               "glb_size_bytes": 75440
             }
-          }
+          },
+          "load_region": "torso"
         },
         {
           "bodyparts3d_name": "longissimus capitis",
@@ -1242,7 +1289,8 @@
               "triangle_count": 2260,
               "glb_size_bytes": 58716
             }
-          }
+          },
+          "load_region": "torso"
         },
         {
           "bodyparts3d_name": "longissimus cervicis",
@@ -1254,7 +1302,8 @@
               "triangle_count": 2816,
               "glb_size_bytes": 74148
             }
-          }
+          },
+          "load_region": "torso"
         }
       ]
     },
@@ -1278,7 +1327,8 @@
               "triangle_count": 8386,
               "glb_size_bytes": 183960
             }
-          }
+          },
+          "load_region": "torso"
         },
         {
           "bodyparts3d_name": "longissimus thoracis",
@@ -1290,7 +1340,8 @@
               "triangle_count": 15068,
               "glb_size_bytes": 405448
             }
-          }
+          },
+          "load_region": "torso"
         },
         {
           "bodyparts3d_name": "spinalis",
@@ -1302,7 +1353,8 @@
               "triangle_count": 1192,
               "glb_size_bytes": 36108
             }
-          }
+          },
+          "load_region": "torso"
         },
         {
           "bodyparts3d_name": "spinalis thoracis",
@@ -1314,7 +1366,8 @@
               "triangle_count": 7422,
               "glb_size_bytes": 184176
             }
-          }
+          },
+          "load_region": "torso"
         }
       ]
     },
@@ -1338,7 +1391,8 @@
               "triangle_count": 15872,
               "glb_size_bytes": 350728
             }
-          }
+          },
+          "load_region": "torso"
         }
       ]
     },
@@ -1362,7 +1416,8 @@
               "triangle_count": 7202,
               "glb_size_bytes": 166032
             }
-          }
+          },
+          "load_region": "torso"
         }
       ]
     },
@@ -1386,7 +1441,8 @@
               "triangle_count": 2206,
               "glb_size_bytes": 50832
             }
-          }
+          },
+          "load_region": "torso"
         }
       ]
     },
@@ -1410,7 +1466,8 @@
               "triangle_count": 49212,
               "glb_size_bytes": 979824
             }
-          }
+          },
+          "load_region": "torso"
         }
       ]
     },
@@ -1434,7 +1491,8 @@
               "triangle_count": 1846,
               "glb_size_bytes": 48264
             }
-          }
+          },
+          "load_region": "torso"
         }
       ]
     },
@@ -1458,7 +1516,8 @@
               "triangle_count": 7114,
               "glb_size_bytes": 175572
             }
-          }
+          },
+          "load_region": "torso"
         }
       ]
     },
@@ -1482,7 +1541,8 @@
               "triangle_count": 9468,
               "glb_size_bytes": 219956
             }
-          }
+          },
+          "load_region": "torso"
         }
       ]
     },
@@ -1496,7 +1556,8 @@
       ],
       "mapping_type": "unresolved",
       "bodyparts3d_structures": [],
-      "note": "Known FJ id (FJ3131) exists in the metadata but that OBJ was not included in either supplied archive block. A single targeted file pull would close this, not a search problem."
+      "note": "Known FJ id (FJ3131) exists in the metadata but that OBJ was not included in either supplied archive block. A single targeted file pull would close this, not a search problem.",
+      "load_region_if_resolved": "torso"
     }
   ],
   "available_extra_not_yet_carded": [
@@ -1505,1211 +1566,1384 @@
       "english_name": "Abdominal part of right pectoralis major",
       "fma_concept_id": "FMA45874",
       "side": "right",
-      "glb_asset": "models/anatomy/muscles/FJ1446.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1446.glb",
+      "load_region": "torso"
     },
     {
       "fj_element_file_id": "FJ1390M",
       "english_name": "Abductor digiti minimi of left foot",
       "fma_concept_id": "FMA37464",
       "side": "left",
-      "glb_asset": "models/anatomy/muscles/FJ1390M.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1390M.glb",
+      "load_region": "lower-leg-foot"
     },
     {
       "fj_element_file_id": "FJ1390",
       "english_name": "Abductor digiti minimi of right foot",
       "fma_concept_id": "FMA37463",
       "side": "right",
-      "glb_asset": "models/anatomy/muscles/FJ1390.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1390.glb",
+      "load_region": "lower-leg-foot"
     },
     {
       "fj_element_file_id": "FJ1466",
       "english_name": "Abductor digiti minimi of right hand",
       "fma_concept_id": "FMA37396",
       "side": "right",
-      "glb_asset": "models/anatomy/muscles/FJ1466.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1466.glb",
+      "load_region": "forearm-hand"
     },
     {
       "fj_element_file_id": "FJ1520",
       "english_name": "Ascending part of right trapezius",
       "fma_concept_id": "FMA33581",
       "side": "right",
-      "glb_asset": "models/anatomy/muscles/FJ1520.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1520.glb",
+      "load_region": "head-neck"
     },
     {
       "fj_element_file_id": "FJ1383M",
       "english_name": "First lumbrical of left foot",
       "fma_concept_id": "FMA37718",
       "side": "left",
-      "glb_asset": "models/anatomy/muscles/FJ1383M.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1383M.glb",
+      "load_region": "lower-leg-foot"
     },
     {
       "fj_element_file_id": "FJ1383",
       "english_name": "First lumbrical of right foot",
       "fma_concept_id": "FMA37717",
       "side": "right",
-      "glb_asset": "models/anatomy/muscles/FJ1383.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1383.glb",
+      "load_region": "lower-leg-foot"
     },
     {
       "fj_element_file_id": "FJ1384M",
       "english_name": "First plantar interosseous of left foot",
       "fma_concept_id": "FMA37746",
       "side": "left",
-      "glb_asset": "models/anatomy/muscles/FJ1384M.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1384M.glb",
+      "load_region": "lower-leg-foot"
     },
     {
       "fj_element_file_id": "FJ1384",
       "english_name": "First plantar interosseous of right foot",
       "fma_concept_id": "FMA37745",
       "side": "right",
-      "glb_asset": "models/anatomy/muscles/FJ1384.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1384.glb",
+      "load_region": "lower-leg-foot"
     },
     {
       "fj_element_file_id": "FJ1391M",
       "english_name": "Flexor digiti minimi brevis of left foot",
       "fma_concept_id": "FMA37472",
       "side": "left",
-      "glb_asset": "models/anatomy/muscles/FJ1391M.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1391M.glb",
+      "load_region": "lower-leg-foot"
     },
     {
       "fj_element_file_id": "FJ1391",
       "english_name": "Flexor digiti minimi brevis of right foot",
       "fma_concept_id": "FMA37471",
       "side": "right",
-      "glb_asset": "models/anatomy/muscles/FJ1391.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1391.glb",
+      "load_region": "lower-leg-foot"
     },
     {
       "fj_element_file_id": "FJ1470",
       "english_name": "Flexor digiti minimi brevis of right hand",
       "fma_concept_id": "FMA37398",
       "side": "right",
-      "glb_asset": "models/anatomy/muscles/FJ1470.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1470.glb",
+      "load_region": "forearm-hand"
     },
     {
       "fj_element_file_id": "FJ1471",
       "english_name": "Flexor retinaculum of right wrist",
       "fma_concept_id": "FMA40120",
       "side": "right",
-      "glb_asset": "models/anatomy/muscles/FJ1471.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1471.glb",
+      "load_region": "forearm-hand"
     },
     {
       "fj_element_file_id": "FJ1389M",
       "english_name": "Fourth lumbrical of left foot",
       "fma_concept_id": "FMA37484",
       "side": "left",
-      "glb_asset": "models/anatomy/muscles/FJ1389M.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1389M.glb",
+      "load_region": "lower-leg-foot"
     },
     {
       "fj_element_file_id": "FJ1389",
       "english_name": "Fourth lumbrical of right foot",
       "fma_concept_id": "FMA37483",
       "side": "right",
-      "glb_asset": "models/anatomy/muscles/FJ1389.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1389.glb",
+      "load_region": "lower-leg-foot"
     },
     {
       "fj_element_file_id": "FJ1473",
       "english_name": "Humeral head of right flexor carpi ulnaris",
       "fma_concept_id": "FMA38617",
       "side": "right",
-      "glb_asset": "models/anatomy/muscles/FJ1473.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1473.glb",
+      "load_region": "forearm-hand"
     },
     {
       "fj_element_file_id": "FJ1474",
       "english_name": "Humeral head of right pronator teres",
       "fma_concept_id": "FMA38560",
       "side": "right",
-      "glb_asset": "models/anatomy/muscles/FJ1474.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1474.glb",
+      "load_region": "forearm-hand"
     },
     {
       "fj_element_file_id": "FJ1557",
       "english_name": "Inferior oblique part of left longus colli",
       "fma_concept_id": "FMA46288",
       "side": "left",
-      "glb_asset": "models/anatomy/muscles/FJ1557.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1557.glb",
+      "load_region": "head-neck"
     },
     {
       "fj_element_file_id": "FJ1393M",
       "english_name": "Lateral head of left flexor hallucis brevis",
       "fma_concept_id": "FMA45974",
       "side": "left",
-      "glb_asset": "models/anatomy/muscles/FJ1393M.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1393M.glb",
+      "load_region": "lower-leg-foot"
     },
     {
       "fj_element_file_id": "FJ1393",
       "english_name": "Lateral head of right flexor hallucis brevis",
       "fma_concept_id": "FMA45973",
       "side": "right",
-      "glb_asset": "models/anatomy/muscles/FJ1393.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1393.glb",
+      "load_region": "lower-leg-foot"
     },
     {
       "fj_element_file_id": "FJ1400M",
       "english_name": "Left abductor hallucis",
       "fma_concept_id": "FMA37460",
       "side": "left",
-      "glb_asset": "models/anatomy/muscles/FJ1400M.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1400M.glb",
+      "load_region": "lower-leg-foot"
     },
     {
       "fj_element_file_id": "FJ1401M",
       "english_name": "Left adductor brevis",
       "fma_concept_id": "FMA22454",
       "side": "left",
-      "glb_asset": "models/anatomy/muscles/FJ1401M.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1401M.glb",
+      "load_region": "thigh"
     },
     {
       "fj_element_file_id": "FJ1403M",
       "english_name": "Left adductor magnus",
       "fma_concept_id": "FMA22460",
       "side": "left",
-      "glb_asset": "models/anatomy/muscles/FJ1403M.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1403M.glb",
+      "load_region": "thigh"
     },
     {
       "fj_element_file_id": "FJ1404M",
       "english_name": "Left adductor minimus",
       "fma_concept_id": "FMA43887",
       "side": "left",
-      "glb_asset": "models/anatomy/muscles/FJ1404M.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1404M.glb",
+      "load_region": "thigh"
     },
     {
       "fj_element_file_id": "FJ1555",
       "english_name": "Left digastric",
       "fma_concept_id": "FMA46293",
       "side": "left",
-      "glb_asset": "models/anatomy/muscles/FJ1555.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1555.glb",
+      "load_region": "head-neck"
     },
     {
       "fj_element_file_id": "FJ1560",
       "english_name": "Left digastric",
       "fma_concept_id": "FMA46293",
       "side": "left",
-      "glb_asset": "models/anatomy/muscles/FJ1560.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1560.glb",
+      "load_region": "head-neck"
     },
     {
       "fj_element_file_id": "FJ1578",
       "english_name": "Left digastric",
       "fma_concept_id": "FMA46293",
       "side": "left",
-      "glb_asset": "models/anatomy/muscles/FJ1578.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1578.glb",
+      "load_region": "head-neck"
     },
     {
       "fj_element_file_id": "FJ1406M",
       "english_name": "Left extensor digitorum longus",
       "fma_concept_id": "FMA22549",
       "side": "left",
-      "glb_asset": "models/anatomy/muscles/FJ1406M.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1406M.glb",
+      "load_region": "lower-leg-foot"
     },
     {
       "fj_element_file_id": "FJ1407M",
       "english_name": "Left extensor hallucis brevis",
       "fma_concept_id": "FMA51145",
       "side": "left",
-      "glb_asset": "models/anatomy/muscles/FJ1407M.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1407M.glb",
+      "load_region": "lower-leg-foot"
     },
     {
       "fj_element_file_id": "FJ1408M",
       "english_name": "Left extensor hallucis longus",
       "fma_concept_id": "FMA22547",
       "side": "left",
-      "glb_asset": "models/anatomy/muscles/FJ1408M.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1408M.glb",
+      "load_region": "lower-leg-foot"
     },
     {
       "fj_element_file_id": "FJ1409M",
       "english_name": "Left fibularis brevis",
       "fma_concept_id": "FMA22555",
       "side": "left",
-      "glb_asset": "models/anatomy/muscles/FJ1409M.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1409M.glb",
+      "load_region": "lower-leg-foot"
     },
     {
       "fj_element_file_id": "FJ1410M",
       "english_name": "Left fibularis longus",
       "fma_concept_id": "FMA22553",
       "side": "left",
-      "glb_asset": "models/anatomy/muscles/FJ1410M.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1410M.glb",
+      "load_region": "lower-leg-foot"
     },
     {
       "fj_element_file_id": "FJ1411M",
       "english_name": "Left fibularis tertius",
       "fma_concept_id": "FMA22551",
       "side": "left",
-      "glb_asset": "models/anatomy/muscles/FJ1411M.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1411M.glb",
+      "load_region": "lower-leg-foot"
     },
     {
       "fj_element_file_id": "FJ1412M",
       "english_name": "Left flexor accessorius",
       "fma_concept_id": "FMA37466",
       "side": "left",
-      "glb_asset": "models/anatomy/muscles/FJ1412M.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1412M.glb",
+      "load_region": "lower-leg-foot"
     },
     {
       "fj_element_file_id": "FJ1413M",
       "english_name": "Left flexor digitorum brevis",
       "fma_concept_id": "FMA37462",
       "side": "left",
-      "glb_asset": "models/anatomy/muscles/FJ1413M.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1413M.glb",
+      "load_region": "lower-leg-foot"
     },
     {
       "fj_element_file_id": "FJ1414M",
       "english_name": "Left flexor digitorum longus",
       "fma_concept_id": "FMA65017",
       "side": "left",
-      "glb_asset": "models/anatomy/muscles/FJ1414M.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1414M.glb",
+      "load_region": "lower-leg-foot"
     },
     {
       "fj_element_file_id": "FJ1415M",
       "english_name": "Left flexor hallucis longus",
       "fma_concept_id": "FMA65015",
       "side": "left",
-      "glb_asset": "models/anatomy/muscles/FJ1415M.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1415M.glb",
+      "load_region": "lower-leg-foot"
     },
     {
       "fj_element_file_id": "FJ1469",
       "english_name": "Left flexor pollicis brevis",
       "fma_concept_id": "FMA37389",
       "side": "left",
-      "glb_asset": "models/anatomy/muscles/FJ1469.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1469.glb",
+      "load_region": "forearm-hand"
     },
     {
       "fj_element_file_id": "FJ1416M",
       "english_name": "Left gemellus inferior",
       "fma_concept_id": "FMA22337",
       "side": "left",
-      "glb_asset": "models/anatomy/muscles/FJ1416M.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1416M.glb",
+      "load_region": "hip-pelvis"
     },
     {
       "fj_element_file_id": "FJ1417M",
       "english_name": "Left gemellus superior",
       "fma_concept_id": "FMA22335",
       "side": "left",
-      "glb_asset": "models/anatomy/muscles/FJ1417M.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1417M.glb",
+      "load_region": "hip-pelvis"
     },
     {
       "fj_element_file_id": "FJ1559",
       "english_name": "Left geniohyoid",
       "fma_concept_id": "FMA46327",
       "side": "left",
-      "glb_asset": "models/anatomy/muscles/FJ1559.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1559.glb",
+      "load_region": "head-neck"
     },
     {
       "fj_element_file_id": "FJ1561",
       "english_name": "Left longus capitis",
       "fma_concept_id": "FMA46310",
       "side": "left",
-      "glb_asset": "models/anatomy/muscles/FJ1561.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1561.glb",
+      "load_region": "head-neck"
     },
     {
       "fj_element_file_id": "FJ1562",
       "english_name": "Left mylohyoid",
       "fma_concept_id": "FMA46322",
       "side": "left",
-      "glb_asset": "models/anatomy/muscles/FJ1562.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1562.glb",
+      "load_region": "head-neck"
     },
     {
       "fj_element_file_id": "FJ1425M",
       "english_name": "Left obturator externus",
       "fma_concept_id": "FMA22327",
       "side": "left",
-      "glb_asset": "models/anatomy/muscles/FJ1425M.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1425M.glb",
+      "load_region": "hip-pelvis"
     },
     {
       "fj_element_file_id": "FJ1426M",
       "english_name": "Left obturator internus",
       "fma_concept_id": "FMA22325",
       "side": "left",
-      "glb_asset": "models/anatomy/muscles/FJ1426M.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1426M.glb",
+      "load_region": "hip-pelvis"
     },
     {
       "fj_element_file_id": "FJ1565",
       "english_name": "Left omohyoid",
       "fma_concept_id": "FMA13349",
       "side": "left",
-      "glb_asset": "models/anatomy/muscles/FJ1565.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1565.glb",
+      "load_region": "head-neck"
     },
     {
       "fj_element_file_id": "FJ1427M",
       "english_name": "Left pectineus",
       "fma_concept_id": "FMA22451",
       "side": "left",
-      "glb_asset": "models/anatomy/muscles/FJ1427M.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1427M.glb",
+      "load_region": "hip-pelvis"
     },
     {
       "fj_element_file_id": "FJ1429M",
       "english_name": "Left plantaris",
       "fma_concept_id": "FMA22561",
       "side": "left",
-      "glb_asset": "models/anatomy/muscles/FJ1429M.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1429M.glb",
+      "load_region": "lower-leg-foot"
     },
     {
       "fj_element_file_id": "FJ1558",
       "english_name": "Left platysma",
       "fma_concept_id": "FMA45740",
       "side": "left",
-      "glb_asset": "models/anatomy/muscles/FJ1558.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1558.glb",
+      "load_region": "head-neck"
     },
     {
       "fj_element_file_id": "FJ1430M",
       "english_name": "Left popliteus",
       "fma_concept_id": "FMA22592",
       "side": "left",
-      "glb_asset": "models/anatomy/muscles/FJ1430M.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1430M.glb",
+      "load_region": "lower-leg-foot"
     },
     {
       "fj_element_file_id": "FJ1432M",
       "english_name": "Left quadratus femoris",
       "fma_concept_id": "FMA22339",
       "side": "left",
-      "glb_asset": "models/anatomy/muscles/FJ1432M.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1432M.glb",
+      "load_region": "hip-pelvis"
     },
     {
       "fj_element_file_id": "FJ1566",
       "english_name": "Left rectus capitis anterior",
       "fma_concept_id": "FMA46314",
       "side": "left",
-      "glb_asset": "models/anatomy/muscles/FJ1566.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1566.glb",
+      "load_region": "head-neck"
     },
     {
       "fj_element_file_id": "FJ1569",
       "english_name": "Left rectus capitis lateralis",
       "fma_concept_id": "FMA46318",
       "side": "left",
-      "glb_asset": "models/anatomy/muscles/FJ1569.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1569.glb",
+      "load_region": "head-neck"
     },
     {
       "fj_element_file_id": "FJ1574",
       "english_name": "Left sternohyoid",
       "fma_concept_id": "FMA13347",
       "side": "left",
-      "glb_asset": "models/anatomy/muscles/FJ1574.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1574.glb",
+      "load_region": "head-neck"
     },
     {
       "fj_element_file_id": "FJ1575",
       "english_name": "Left sternothyroid",
       "fma_concept_id": "FMA13351",
       "side": "left",
-      "glb_asset": "models/anatomy/muscles/FJ1575.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1575.glb",
+      "load_region": "head-neck"
     },
     {
       "fj_element_file_id": "FJ1576",
       "english_name": "Left stylohyoid",
       "fma_concept_id": "FMA45827",
       "side": "left",
-      "glb_asset": "models/anatomy/muscles/FJ1576.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1576.glb",
+      "load_region": "head-neck"
     },
     {
       "fj_element_file_id": "FJ1577",
       "english_name": "Left thyrohyoid",
       "fma_concept_id": "FMA13353",
       "side": "left",
-      "glb_asset": "models/anatomy/muscles/FJ1577.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1577.glb",
+      "load_region": "head-neck"
     },
     {
       "fj_element_file_id": "FJ1440M",
       "english_name": "Left tibialis posterior",
       "fma_concept_id": "FMA65019",
       "side": "left",
-      "glb_asset": "models/anatomy/muscles/FJ1440M.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1440M.glb",
+      "load_region": "lower-leg-foot"
     },
     {
       "fj_element_file_id": "FJ1478",
       "english_name": "Long head of right biceps brachii",
       "fma_concept_id": "FMA37686",
       "side": "right",
-      "glb_asset": "models/anatomy/muscles/FJ1478.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1478.glb",
+      "load_region": "shoulder-arm"
     },
     {
       "fj_element_file_id": "FJ1479",
       "english_name": "Long head of right triceps brachii",
       "fma_concept_id": "FMA37699",
       "side": "right",
-      "glb_asset": "models/anatomy/muscles/FJ1479.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1479.glb",
+      "load_region": "shoulder-arm"
     },
     {
       "fj_element_file_id": "FJ1396M",
       "english_name": "Medial head of left flexor hallucis brevis",
       "fma_concept_id": "FMA45972",
       "side": "left",
-      "glb_asset": "models/anatomy/muscles/FJ1396M.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1396M.glb",
+      "load_region": "lower-leg-foot"
     },
     {
       "fj_element_file_id": "FJ1396",
       "english_name": "Medial head of right flexor hallucis brevis",
       "fma_concept_id": "FMA45971",
       "side": "right",
-      "glb_asset": "models/anatomy/muscles/FJ1396.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1396.glb",
+      "load_region": "lower-leg-foot"
     },
     {
       "fj_element_file_id": "FJ1398M",
       "english_name": "Oblique head of left adductor hallucis",
       "fma_concept_id": "FMA46019",
       "side": "left",
-      "glb_asset": "models/anatomy/muscles/FJ1398M.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1398M.glb",
+      "load_region": "lower-leg-foot"
     },
     {
       "fj_element_file_id": "FJ1398",
       "english_name": "Oblique head of right adductor hallucis",
       "fma_concept_id": "FMA46018",
       "side": "right",
-      "glb_asset": "models/anatomy/muscles/FJ1398.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1398.glb",
+      "load_region": "lower-leg-foot"
     },
     {
       "fj_element_file_id": "FJ1481",
       "english_name": "Oblique head of right adductor pollicis",
       "fma_concept_id": "FMA46121",
       "side": "right",
-      "glb_asset": "models/anatomy/muscles/FJ1481.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1481.glb",
+      "load_region": "forearm-hand"
     },
     {
       "fj_element_file_id": "FJ1399M",
       "english_name": "Opponens digiti minimi of left foot",
       "fma_concept_id": "FMA86035",
       "side": "left",
-      "glb_asset": "models/anatomy/muscles/FJ1399M.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1399M.glb",
+      "load_region": "lower-leg-foot"
     },
     {
       "fj_element_file_id": "FJ1399",
       "english_name": "Opponens digiti minimi of right foot",
       "fma_concept_id": "FMA86034",
       "side": "right",
-      "glb_asset": "models/anatomy/muscles/FJ1399.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1399.glb",
+      "load_region": "lower-leg-foot"
     },
     {
       "fj_element_file_id": "FJ1482",
       "english_name": "Opponens digiti minimi of right hand",
       "fma_concept_id": "FMA37400",
       "side": "right",
-      "glb_asset": "models/anatomy/muscles/FJ1482.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1482.glb",
+      "load_region": "forearm-hand"
     },
     {
       "fj_element_file_id": "FJ1400",
       "english_name": "Right abductor hallucis",
       "fma_concept_id": "FMA37459",
       "side": "right",
-      "glb_asset": "models/anatomy/muscles/FJ1400.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1400.glb",
+      "load_region": "lower-leg-foot"
     },
     {
       "fj_element_file_id": "FJ1483",
       "english_name": "Right abductor pollicis brevis",
       "fma_concept_id": "FMA37386",
       "side": "right",
-      "glb_asset": "models/anatomy/muscles/FJ1483.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1483.glb",
+      "load_region": "forearm-hand"
     },
     {
       "fj_element_file_id": "FJ1484",
       "english_name": "Right abductor pollicis longus",
       "fma_concept_id": "FMA38516",
       "side": "right",
-      "glb_asset": "models/anatomy/muscles/FJ1484.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1484.glb",
+      "load_region": "forearm-hand"
     },
     {
       "fj_element_file_id": "FJ1401",
       "english_name": "Right adductor brevis",
       "fma_concept_id": "FMA22452",
       "side": "right",
-      "glb_asset": "models/anatomy/muscles/FJ1401.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1401.glb",
+      "load_region": "thigh"
     },
     {
       "fj_element_file_id": "FJ1403",
       "english_name": "Right adductor magnus",
       "fma_concept_id": "FMA22459",
       "side": "right",
-      "glb_asset": "models/anatomy/muscles/FJ1403.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1403.glb",
+      "load_region": "thigh"
     },
     {
       "fj_element_file_id": "FJ1404",
       "english_name": "Right adductor minimus",
       "fma_concept_id": "FMA43886",
       "side": "right",
-      "glb_asset": "models/anatomy/muscles/FJ1404.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1404.glb",
+      "load_region": "thigh"
     },
     {
       "fj_element_file_id": "FJ1485",
       "english_name": "Right anconeus",
       "fma_concept_id": "FMA37705",
       "side": "right",
-      "glb_asset": "models/anatomy/muscles/FJ1485.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1485.glb",
+      "load_region": "shoulder-arm"
     },
     {
       "fj_element_file_id": "FJ1487",
       "english_name": "Right brachioradialis",
       "fma_concept_id": "FMA38486",
       "side": "right",
-      "glb_asset": "models/anatomy/muscles/FJ1487.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1487.glb",
+      "load_region": "shoulder-arm"
     },
     {
       "fj_element_file_id": "FJ1524",
       "english_name": "Right cervical rotator",
       "fma_concept_id": "FMA81752",
       "side": "right",
-      "glb_asset": "models/anatomy/muscles/FJ1524.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1524.glb",
+      "load_region": "torso"
     },
     {
       "fj_element_file_id": "FJ1488",
       "english_name": "Right coracobrachialis",
       "fma_concept_id": "FMA37665",
       "side": "right",
-      "glb_asset": "models/anatomy/muscles/FJ1488.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1488.glb",
+      "load_region": "shoulder-arm"
     },
     {
       "fj_element_file_id": "FJ1556",
       "english_name": "Right digastric",
       "fma_concept_id": "FMA46292",
       "side": "right",
-      "glb_asset": "models/anatomy/muscles/FJ1556.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1556.glb",
+      "load_region": "head-neck"
     },
     {
       "fj_element_file_id": "FJ1579",
       "english_name": "Right digastric",
       "fma_concept_id": "FMA46292",
       "side": "right",
-      "glb_asset": "models/anatomy/muscles/FJ1579.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1579.glb",
+      "load_region": "head-neck"
     },
     {
       "fj_element_file_id": "FJ1489",
       "english_name": "Right extensor carpi radialis brevis",
       "fma_concept_id": "FMA38498",
       "side": "right",
-      "glb_asset": "models/anatomy/muscles/FJ1489.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1489.glb",
+      "load_region": "forearm-hand"
     },
     {
       "fj_element_file_id": "FJ1490",
       "english_name": "Right extensor carpi radialis longus",
       "fma_concept_id": "FMA38495",
       "side": "right",
-      "glb_asset": "models/anatomy/muscles/FJ1490.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1490.glb",
+      "load_region": "forearm-hand"
     },
     {
       "fj_element_file_id": "FJ1472",
       "english_name": "Right extensor carpi ulnaris",
       "fma_concept_id": "FMA38507",
       "side": "right",
-      "glb_asset": "models/anatomy/muscles/FJ1472.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1472.glb",
+      "load_region": "forearm-hand"
     },
     {
       "fj_element_file_id": "FJ1517",
       "english_name": "Right extensor carpi ulnaris",
       "fma_concept_id": "FMA38507",
       "side": "right",
-      "glb_asset": "models/anatomy/muscles/FJ1517.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1517.glb",
+      "load_region": "forearm-hand"
     },
     {
       "fj_element_file_id": "FJ1491",
       "english_name": "Right extensor digiti minimi",
       "fma_concept_id": "FMA38504",
       "side": "right",
-      "glb_asset": "models/anatomy/muscles/FJ1491.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1491.glb",
+      "load_region": "forearm-hand"
     },
     {
       "fj_element_file_id": "FJ1492",
       "english_name": "Right extensor digitorum",
       "fma_concept_id": "FMA38501",
       "side": "right",
-      "glb_asset": "models/anatomy/muscles/FJ1492.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1492.glb",
+      "load_region": "forearm-hand"
     },
     {
       "fj_element_file_id": "FJ1406",
       "english_name": "Right extensor digitorum longus",
       "fma_concept_id": "FMA22548",
       "side": "right",
-      "glb_asset": "models/anatomy/muscles/FJ1406.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1406.glb",
+      "load_region": "lower-leg-foot"
     },
     {
       "fj_element_file_id": "FJ1407",
       "english_name": "Right extensor hallucis brevis",
       "fma_concept_id": "FMA51144",
       "side": "right",
-      "glb_asset": "models/anatomy/muscles/FJ1407.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1407.glb",
+      "load_region": "lower-leg-foot"
     },
     {
       "fj_element_file_id": "FJ1408",
       "english_name": "Right extensor hallucis longus",
       "fma_concept_id": "FMA22546",
       "side": "right",
-      "glb_asset": "models/anatomy/muscles/FJ1408.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1408.glb",
+      "load_region": "lower-leg-foot"
     },
     {
       "fj_element_file_id": "FJ1493",
       "english_name": "Right extensor indicis",
       "fma_concept_id": "FMA38525",
       "side": "right",
-      "glb_asset": "models/anatomy/muscles/FJ1493.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1493.glb",
+      "load_region": "forearm-hand"
     },
     {
       "fj_element_file_id": "FJ1494",
       "english_name": "Right extensor pollicis brevis",
       "fma_concept_id": "FMA38519",
       "side": "right",
-      "glb_asset": "models/anatomy/muscles/FJ1494.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1494.glb",
+      "load_region": "forearm-hand"
     },
     {
       "fj_element_file_id": "FJ1495",
       "english_name": "Right extensor pollicis longus",
       "fma_concept_id": "FMA38522",
       "side": "right",
-      "glb_asset": "models/anatomy/muscles/FJ1495.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1495.glb",
+      "load_region": "forearm-hand"
     },
     {
       "fj_element_file_id": "FJ1452",
       "english_name": "Right external oblique",
       "fma_concept_id": "FMA13336",
       "side": "right",
-      "glb_asset": "models/anatomy/muscles/FJ1452.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1452.glb",
+      "load_region": "torso"
     },
     {
       "fj_element_file_id": "FJ1409",
       "english_name": "Right fibularis brevis",
       "fma_concept_id": "FMA22554",
       "side": "right",
-      "glb_asset": "models/anatomy/muscles/FJ1409.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1409.glb",
+      "load_region": "lower-leg-foot"
     },
     {
       "fj_element_file_id": "FJ1410",
       "english_name": "Right fibularis longus",
       "fma_concept_id": "FMA22552",
       "side": "right",
-      "glb_asset": "models/anatomy/muscles/FJ1410.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1410.glb",
+      "load_region": "lower-leg-foot"
     },
     {
       "fj_element_file_id": "FJ1411",
       "english_name": "Right fibularis tertius",
       "fma_concept_id": "FMA22550",
       "side": "right",
-      "glb_asset": "models/anatomy/muscles/FJ1411.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1411.glb",
+      "load_region": "lower-leg-foot"
     },
     {
       "fj_element_file_id": "FJ1412",
       "english_name": "Right flexor accessorius",
       "fma_concept_id": "FMA37465",
       "side": "right",
-      "glb_asset": "models/anatomy/muscles/FJ1412.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1412.glb",
+      "load_region": "lower-leg-foot"
     },
     {
       "fj_element_file_id": "FJ1496",
       "english_name": "Right flexor carpi radialis",
       "fma_concept_id": "FMA38460",
       "side": "right",
-      "glb_asset": "models/anatomy/muscles/FJ1496.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1496.glb",
+      "load_region": "forearm-hand"
     },
     {
       "fj_element_file_id": "FJ1413",
       "english_name": "Right flexor digitorum brevis",
       "fma_concept_id": "FMA37461",
       "side": "right",
-      "glb_asset": "models/anatomy/muscles/FJ1413.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1413.glb",
+      "load_region": "lower-leg-foot"
     },
     {
       "fj_element_file_id": "FJ1414",
       "english_name": "Right flexor digitorum longus",
       "fma_concept_id": "FMA65016",
       "side": "right",
-      "glb_asset": "models/anatomy/muscles/FJ1414.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1414.glb",
+      "load_region": "lower-leg-foot"
     },
     {
       "fj_element_file_id": "FJ1497",
       "english_name": "Right flexor digitorum profundus",
       "fma_concept_id": "FMA38479",
       "side": "right",
-      "glb_asset": "models/anatomy/muscles/FJ1497.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1497.glb",
+      "load_region": "forearm-hand"
     },
     {
       "fj_element_file_id": "FJ1475",
       "english_name": "Right flexor digitorum superficialis",
       "fma_concept_id": "FMA38470",
       "side": "right",
-      "glb_asset": "models/anatomy/muscles/FJ1475.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1475.glb",
+      "load_region": "forearm-hand"
     },
     {
       "fj_element_file_id": "FJ1499",
       "english_name": "Right flexor digitorum superficialis",
       "fma_concept_id": "FMA38470",
       "side": "right",
-      "glb_asset": "models/anatomy/muscles/FJ1499.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1499.glb",
+      "load_region": "forearm-hand"
     },
     {
       "fj_element_file_id": "FJ1415",
       "english_name": "Right flexor hallucis longus",
       "fma_concept_id": "FMA65014",
       "side": "right",
-      "glb_asset": "models/anatomy/muscles/FJ1415.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1415.glb",
+      "load_region": "lower-leg-foot"
     },
     {
       "fj_element_file_id": "FJ1498",
       "english_name": "Right flexor pollicis longus",
       "fma_concept_id": "FMA38482",
       "side": "right",
-      "glb_asset": "models/anatomy/muscles/FJ1498.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1498.glb",
+      "load_region": "forearm-hand"
     },
     {
       "fj_element_file_id": "FJ1416",
       "english_name": "Right gemellus inferior",
       "fma_concept_id": "FMA22336",
       "side": "right",
-      "glb_asset": "models/anatomy/muscles/FJ1416.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1416.glb",
+      "load_region": "hip-pelvis"
     },
     {
       "fj_element_file_id": "FJ1417",
       "english_name": "Right gemellus superior",
       "fma_concept_id": "FMA22334",
       "side": "right",
-      "glb_asset": "models/anatomy/muscles/FJ1417.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1417.glb",
+      "load_region": "hip-pelvis"
     },
     {
       "fj_element_file_id": "FJ1580",
       "english_name": "Right geniohyoid",
       "fma_concept_id": "FMA46326",
       "side": "right",
-      "glb_asset": "models/anatomy/muscles/FJ1580.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1580.glb",
+      "load_region": "head-neck"
     },
     {
       "fj_element_file_id": "FJ1551",
       "english_name": "Right interspinalis thoracis",
       "fma_concept_id": "FMA22890",
       "side": "right",
-      "glb_asset": "models/anatomy/muscles/FJ1551.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1551.glb",
+      "load_region": "torso"
     },
     {
       "fj_element_file_id": "FJ1582",
       "english_name": "Right longus capitis",
       "fma_concept_id": "FMA46309",
       "side": "right",
-      "glb_asset": "models/anatomy/muscles/FJ1582.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1582.glb",
+      "load_region": "head-neck"
     },
     {
       "fj_element_file_id": "FJ1522",
       "english_name": "Right lumbar rotator",
       "fma_concept_id": "FMA23089",
       "side": "right",
-      "glb_asset": "models/anatomy/muscles/FJ1522.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1522.glb",
+      "load_region": "torso"
     },
     {
       "fj_element_file_id": "FJ1583",
       "english_name": "Right mylohyoid",
       "fma_concept_id": "FMA46321",
       "side": "right",
-      "glb_asset": "models/anatomy/muscles/FJ1583.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1583.glb",
+      "load_region": "head-neck"
     },
     {
       "fj_element_file_id": "FJ1425",
       "english_name": "Right obturator externus",
       "fma_concept_id": "FMA22326",
       "side": "right",
-      "glb_asset": "models/anatomy/muscles/FJ1425.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1425.glb",
+      "load_region": "hip-pelvis"
     },
     {
       "fj_element_file_id": "FJ1426",
       "english_name": "Right obturator internus",
       "fma_concept_id": "FMA22324",
       "side": "right",
-      "glb_asset": "models/anatomy/muscles/FJ1426.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1426.glb",
+      "load_region": "hip-pelvis"
     },
     {
       "fj_element_file_id": "FJ1586",
       "english_name": "Right omohyoid",
       "fma_concept_id": "FMA13348",
       "side": "right",
-      "glb_asset": "models/anatomy/muscles/FJ1586.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1586.glb",
+      "load_region": "head-neck"
     },
     {
       "fj_element_file_id": "FJ1501",
       "english_name": "Right opponens pollicis",
       "fma_concept_id": "FMA37390",
       "side": "right",
-      "glb_asset": "models/anatomy/muscles/FJ1501.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1501.glb",
+      "load_region": "forearm-hand"
     },
     {
       "fj_element_file_id": "FJ1502",
       "english_name": "Right palmaris longus",
       "fma_concept_id": "FMA38463",
       "side": "right",
-      "glb_asset": "models/anatomy/muscles/FJ1502.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1502.glb",
+      "load_region": "forearm-hand"
     },
     {
       "fj_element_file_id": "FJ1427",
       "english_name": "Right pectineus",
       "fma_concept_id": "FMA22450",
       "side": "right",
-      "glb_asset": "models/anatomy/muscles/FJ1427.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1427.glb",
+      "load_region": "hip-pelvis"
     },
     {
       "fj_element_file_id": "FJ1429",
       "english_name": "Right plantaris",
       "fma_concept_id": "FMA22560",
       "side": "right",
-      "glb_asset": "models/anatomy/muscles/FJ1429.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1429.glb",
+      "load_region": "lower-leg-foot"
     },
     {
       "fj_element_file_id": "FJ1587",
       "english_name": "Right platysma",
       "fma_concept_id": "FMA45739",
       "side": "right",
-      "glb_asset": "models/anatomy/muscles/FJ1587.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1587.glb",
+      "load_region": "head-neck"
     },
     {
       "fj_element_file_id": "FJ1430",
       "english_name": "Right popliteus",
       "fma_concept_id": "FMA22591",
       "side": "right",
-      "glb_asset": "models/anatomy/muscles/FJ1430.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1430.glb",
+      "load_region": "lower-leg-foot"
     },
     {
       "fj_element_file_id": "FJ1503",
       "english_name": "Right pronator quadratus",
       "fma_concept_id": "FMA38454",
       "side": "right",
-      "glb_asset": "models/anatomy/muscles/FJ1503.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1503.glb",
+      "load_region": "forearm-hand"
     },
     {
       "fj_element_file_id": "FJ1432",
       "english_name": "Right quadratus femoris",
       "fma_concept_id": "FMA22338",
       "side": "right",
-      "glb_asset": "models/anatomy/muscles/FJ1432.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1432.glb",
+      "load_region": "hip-pelvis"
     },
     {
       "fj_element_file_id": "FJ1588",
       "english_name": "Right rectus capitis anterior",
       "fma_concept_id": "FMA46313",
       "side": "right",
-      "glb_asset": "models/anatomy/muscles/FJ1588.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1588.glb",
+      "load_region": "head-neck"
     },
     {
       "fj_element_file_id": "FJ1591",
       "english_name": "Right rectus capitis lateralis",
       "fma_concept_id": "FMA46317",
       "side": "right",
-      "glb_asset": "models/anatomy/muscles/FJ1591.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1591.glb",
+      "load_region": "head-neck"
     },
     {
       "fj_element_file_id": "FJ1538",
       "english_name": "Right semispinalis capitis",
       "fma_concept_id": "FMA22876",
       "side": "right",
-      "glb_asset": "models/anatomy/muscles/FJ1538.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1538.glb",
+      "load_region": "torso"
     },
     {
       "fj_element_file_id": "FJ1539",
       "english_name": "Right semispinalis cervicis",
       "fma_concept_id": "FMA22874",
       "side": "right",
-      "glb_asset": "models/anatomy/muscles/FJ1539.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1539.glb",
+      "load_region": "torso"
     },
     {
       "fj_element_file_id": "FJ1540",
       "english_name": "Right semispinalis thoracis",
       "fma_concept_id": "FMA22872",
       "side": "right",
-      "glb_asset": "models/anatomy/muscles/FJ1540.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1540.glb",
+      "load_region": "torso"
     },
     {
       "fj_element_file_id": "FJ1541",
       "english_name": "Right serratus posterior inferior",
       "fma_concept_id": "FMA13405",
       "side": "right",
-      "glb_asset": "models/anatomy/muscles/FJ1541.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1541.glb",
+      "load_region": "torso"
     },
     {
       "fj_element_file_id": "FJ1542",
       "english_name": "Right serratus posterior superior",
       "fma_concept_id": "FMA13403",
       "side": "right",
-      "glb_asset": "models/anatomy/muscles/FJ1542.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1542.glb",
+      "load_region": "torso"
     },
     {
       "fj_element_file_id": "FJ1546",
       "english_name": "Right splenius cervicis",
       "fma_concept_id": "FMA22726",
       "side": "right",
-      "glb_asset": "models/anatomy/muscles/FJ1546.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1546.glb",
+      "load_region": "head-neck"
     },
     {
       "fj_element_file_id": "FJ1596",
       "english_name": "Right sternohyoid",
       "fma_concept_id": "FMA13346",
       "side": "right",
-      "glb_asset": "models/anatomy/muscles/FJ1596.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1596.glb",
+      "load_region": "head-neck"
     },
     {
       "fj_element_file_id": "FJ1597",
       "english_name": "Right sternothyroid",
       "fma_concept_id": "FMA13350",
       "side": "right",
-      "glb_asset": "models/anatomy/muscles/FJ1597.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1597.glb",
+      "load_region": "head-neck"
     },
     {
       "fj_element_file_id": "FJ1598",
       "english_name": "Right stylohyoid",
       "fma_concept_id": "FMA45826",
       "side": "right",
-      "glb_asset": "models/anatomy/muscles/FJ1598.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1598.glb",
+      "load_region": "head-neck"
     },
     {
       "fj_element_file_id": "FJ1460",
       "english_name": "Right subclavius",
       "fma_concept_id": "FMA13412",
       "side": "right",
-      "glb_asset": "models/anatomy/muscles/FJ1460.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1460.glb",
+      "load_region": "torso"
     },
     {
       "fj_element_file_id": "FJ1599",
       "english_name": "Right thyrohyoid",
       "fma_concept_id": "FMA13352",
       "side": "right",
-      "glb_asset": "models/anatomy/muscles/FJ1599.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1599.glb",
+      "load_region": "head-neck"
     },
     {
       "fj_element_file_id": "FJ1440",
       "english_name": "Right tibialis posterior",
       "fma_concept_id": "FMA65018",
       "side": "right",
-      "glb_asset": "models/anatomy/muscles/FJ1440.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1440.glb",
+      "load_region": "lower-leg-foot"
     },
     {
       "fj_element_file_id": "FJ1461",
       "english_name": "Right transversus thoracis",
       "fma_concept_id": "FMA9761",
       "side": "right",
-      "glb_asset": "models/anatomy/muscles/FJ1461.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1461.glb",
+      "load_region": "torso"
     },
     {
       "fj_element_file_id": "FJ1385M",
       "english_name": "Second lumbrical of left foot",
       "fma_concept_id": "FMA37720",
       "side": "left",
-      "glb_asset": "models/anatomy/muscles/FJ1385M.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1385M.glb",
+      "load_region": "lower-leg-foot"
     },
     {
       "fj_element_file_id": "FJ1385",
       "english_name": "Second lumbrical of right foot",
       "fma_concept_id": "FMA37719",
       "side": "right",
-      "glb_asset": "models/anatomy/muscles/FJ1385.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1385.glb",
+      "load_region": "lower-leg-foot"
     },
     {
       "fj_element_file_id": "FJ1386M",
       "english_name": "Second plantar interosseous of left foot",
       "fma_concept_id": "FMA37744",
       "side": "left",
-      "glb_asset": "models/anatomy/muscles/FJ1386M.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1386M.glb",
+      "load_region": "lower-leg-foot"
     },
     {
       "fj_element_file_id": "FJ1386",
       "english_name": "Second plantar interosseous of right foot",
       "fma_concept_id": "FMA37743",
       "side": "right",
-      "glb_asset": "models/anatomy/muscles/FJ1386.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1386.glb",
+      "load_region": "lower-leg-foot"
     },
     {
       "fj_element_file_id": "FJ1509",
       "english_name": "Set of dorsal interossei of right hand",
       "fma_concept_id": "FMA42404",
       "side": "right",
-      "glb_asset": "models/anatomy/muscles/FJ1509.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1509.glb",
+      "load_region": "forearm-hand"
     },
     {
       "fj_element_file_id": "FJ1510",
       "english_name": "Set of lumbricals of right hand",
       "fma_concept_id": "FMA42398",
       "side": "right",
-      "glb_asset": "models/anatomy/muscles/FJ1510.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1510.glb",
+      "load_region": "forearm-hand"
     },
     {
       "fj_element_file_id": "FJ1511",
       "english_name": "Set of palmar interossei of right hand",
       "fma_concept_id": "FMA42402",
       "side": "right",
-      "glb_asset": "models/anatomy/muscles/FJ1511.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1511.glb",
+      "load_region": "forearm-hand"
     },
     {
       "fj_element_file_id": "FJ1462",
       "english_name": "Set of right levatores costarum breves",
       "fma_concept_id": "FMA74077",
       "side": "right",
-      "glb_asset": "models/anatomy/muscles/FJ1462.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1462.glb",
+      "load_region": "torso"
     },
     {
       "fj_element_file_id": "FJ1463",
       "english_name": "Set of right levatores costarum longi",
       "fma_concept_id": "FMA74075",
       "side": "right",
-      "glb_asset": "models/anatomy/muscles/FJ1463.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1463.glb",
+      "load_region": "torso"
     },
     {
       "fj_element_file_id": "FJ1512",
       "english_name": "Short head of right biceps brachii",
       "fma_concept_id": "FMA37684",
       "side": "right",
-      "glb_asset": "models/anatomy/muscles/FJ1512.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1512.glb",
+      "load_region": "shoulder-arm"
     },
     {
       "fj_element_file_id": "FJ1513",
       "english_name": "Spinal part of right deltoid",
       "fma_concept_id": "FMA34684",
       "side": "right",
-      "glb_asset": "models/anatomy/muscles/FJ1513.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1513.glb",
+      "load_region": "shoulder-arm"
     },
     {
       "fj_element_file_id": "FJ1514",
       "english_name": "Superficial head of right flexor pollicis brevis",
       "fma_concept_id": "FMA65198",
       "side": "right",
-      "glb_asset": "models/anatomy/muscles/FJ1514.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1514.glb",
+      "load_region": "forearm-hand"
     },
     {
       "fj_element_file_id": "FJ1600",
       "english_name": "Superior oblique part of left longus colli",
       "fma_concept_id": "FMA46284",
       "side": "left",
-      "glb_asset": "models/anatomy/muscles/FJ1600.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1600.glb",
+      "load_region": "head-neck"
     },
     {
       "fj_element_file_id": "FJ1387M",
       "english_name": "Third lumbrical of left foot",
       "fma_concept_id": "FMA37486",
       "side": "left",
-      "glb_asset": "models/anatomy/muscles/FJ1387M.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1387M.glb",
+      "load_region": "lower-leg-foot"
     },
     {
       "fj_element_file_id": "FJ1387",
       "english_name": "Third lumbrical of right foot",
       "fma_concept_id": "FMA37485",
       "side": "right",
-      "glb_asset": "models/anatomy/muscles/FJ1387.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1387.glb",
+      "load_region": "lower-leg-foot"
     },
     {
       "fj_element_file_id": "FJ1388M",
       "english_name": "Third plantar interosseous of left foot",
       "fma_concept_id": "FMA37742",
       "side": "left",
-      "glb_asset": "models/anatomy/muscles/FJ1388M.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1388M.glb",
+      "load_region": "lower-leg-foot"
     },
     {
       "fj_element_file_id": "FJ1388",
       "english_name": "Third plantar interosseous of right foot",
       "fma_concept_id": "FMA37741",
       "side": "right",
-      "glb_asset": "models/anatomy/muscles/FJ1388.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1388.glb",
+      "load_region": "lower-leg-foot"
     },
     {
       "fj_element_file_id": "FJ1445",
       "english_name": "Transverse head of right adductor hallucis",
       "fma_concept_id": "FMA46020",
       "side": "right",
-      "glb_asset": "models/anatomy/muscles/FJ1445.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1445.glb",
+      "load_region": "lower-leg-foot"
     },
     {
       "fj_element_file_id": "FJ1515",
       "english_name": "Transverse head of right adductor pollicis",
       "fma_concept_id": "FMA46123",
       "side": "right",
-      "glb_asset": "models/anatomy/muscles/FJ1515.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1515.glb",
+      "load_region": "forearm-hand"
     },
     {
       "fj_element_file_id": "FJ1554",
       "english_name": "Transverse part of right trapezius",
       "fma_concept_id": "FMA33584",
       "side": "right",
-      "glb_asset": "models/anatomy/muscles/FJ1554.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1554.glb",
+      "load_region": "head-neck"
     },
     {
       "fj_element_file_id": "FJ1518",
       "english_name": "Ulnar head of right flexor carpi ulnaris",
       "fma_concept_id": "FMA38619",
       "side": "right",
-      "glb_asset": "models/anatomy/muscles/FJ1518.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1518.glb",
+      "load_region": "forearm-hand"
     },
     {
       "fj_element_file_id": "FJ1516",
       "english_name": "Ulnar head of right pronator teres",
       "fma_concept_id": "FMA38562",
       "side": "right",
-      "glb_asset": "models/anatomy/muscles/FJ1516.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1516.glb",
+      "load_region": "forearm-hand"
     },
     {
       "fj_element_file_id": "FJ1601",
       "english_name": "Vertical intermediate part of left longus colli",
       "fma_concept_id": "FMA46286",
       "side": "left",
-      "glb_asset": "models/anatomy/muscles/FJ1601.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1601.glb",
+      "load_region": "head-neck"
     },
     {
       "fj_element_file_id": "FJ1451",
       "english_name": "external intercostal muscle",
       "fma_concept_id": "FMA9756",
       "side": "midline",
-      "glb_asset": "models/anatomy/muscles/FJ1451.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1451.glb",
+      "load_region": "torso"
     },
     {
       "fj_element_file_id": "FJ1454",
       "english_name": "innermost intercostal muscle",
       "fma_concept_id": "FMA9758",
       "side": "midline",
-      "glb_asset": "models/anatomy/muscles/FJ1454.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1454.glb",
+      "load_region": "torso"
     },
     {
       "fj_element_file_id": "FJ1455",
       "english_name": "internal intercostal muscle",
       "fma_concept_id": "FMA9757",
       "side": "midline",
-      "glb_asset": "models/anatomy/muscles/FJ1455.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1455.glb",
+      "load_region": "torso"
     },
     {
       "fj_element_file_id": "FJ1547",
       "english_name": "lateral lumbar intertransversarius",
       "fma_concept_id": "FMA22850",
       "side": "midline",
-      "glb_asset": "models/anatomy/muscles/FJ1547.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1547.glb",
+      "load_region": "torso"
     },
     {
       "fj_element_file_id": "FJ1548",
       "english_name": "medial lumbar intertransversarius",
       "fma_concept_id": "FMA22851",
       "side": "midline",
-      "glb_asset": "models/anatomy/muscles/FJ1548.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1548.glb",
+      "load_region": "torso"
     },
     {
       "fj_element_file_id": "FJ1549",
       "english_name": "set of anterior cervical intertransversarii",
       "fma_concept_id": "FMA71442",
       "side": "midline",
-      "glb_asset": "models/anatomy/muscles/FJ1549.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1549.glb",
+      "load_region": "torso"
     },
     {
       "fj_element_file_id": "FJ1552",
       "english_name": "set of interspinales cervicis",
       "fma_concept_id": "FMA71309",
       "side": "midline",
-      "glb_asset": "models/anatomy/muscles/FJ1552.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1552.glb",
+      "load_region": "torso"
     },
     {
       "fj_element_file_id": "FJ1550",
       "english_name": "set of interspinales lumborum",
       "fma_concept_id": "FMA71307",
       "side": "midline",
-      "glb_asset": "models/anatomy/muscles/FJ1550.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1550.glb",
+      "load_region": "torso"
     },
     {
       "fj_element_file_id": "FJ1553",
       "english_name": "set of posterior cervical intertransversarii",
       "fma_concept_id": "FMA71443",
       "side": "midline",
-      "glb_asset": "models/anatomy/muscles/FJ1553.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1553.glb",
+      "load_region": "torso"
     },
     {
       "fj_element_file_id": "FJ1450",
       "english_name": "superficial perineal muscle",
       "fma_concept_id": "FMA20347",
       "side": "midline",
-      "glb_asset": "models/anatomy/muscles/FJ1450.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1450.glb",
+      "load_region": "torso"
     },
     {
       "fj_element_file_id": "FJ1465",
       "english_name": "tendinous arch of levator ani",
       "fma_concept_id": "FMA46442",
       "side": "midline",
-      "glb_asset": "models/anatomy/muscles/FJ1465.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1465.glb",
+      "load_region": "torso"
     },
     {
       "fj_element_file_id": "FJ1525",
       "english_name": "thoracic rotator",
       "fma_concept_id": "FMA23083",
       "side": "midline",
-      "glb_asset": "models/anatomy/muscles/FJ1525.glb"
+      "glb_asset": "models/anatomy/muscles/FJ1525.glb",
+      "load_region": "torso"
     }
   ]
 }

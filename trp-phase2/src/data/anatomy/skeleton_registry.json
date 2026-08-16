@@ -12,7 +12,8 @@
       "anatomical_category": "bone - pelvic girdle",
       "glb_asset": "models/anatomy/skeleton/FJ3152.glb",
       "triangle_count": 2374,
-      "glb_size_bytes": 46460
+      "glb_size_bytes": 46460,
+      "load_region": "hip-pelvis"
     },
     {
       "fj_element_file_id": "FJ3153",
@@ -23,7 +24,8 @@
       "anatomical_category": "bone - thorax",
       "glb_asset": "models/anatomy/skeleton/FJ3153.glb",
       "triangle_count": 922,
-      "glb_size_bytes": 18852
+      "glb_size_bytes": 18852,
+      "load_region": "torso"
     },
     {
       "fj_element_file_id": "FJ3154",
@@ -34,7 +36,8 @@
       "anatomical_category": "bone - vertebral column",
       "glb_asset": "models/anatomy/skeleton/FJ3154.glb",
       "triangle_count": 2790,
-      "glb_size_bytes": 56204
+      "glb_size_bytes": 56204,
+      "load_region": "torso"
     },
     {
       "fj_element_file_id": "FJ3155",
@@ -45,7 +48,8 @@
       "anatomical_category": "bone - vertebral column",
       "glb_asset": "models/anatomy/skeleton/FJ3155.glb",
       "triangle_count": 2674,
-      "glb_size_bytes": 55724
+      "glb_size_bytes": 55724,
+      "load_region": "torso"
     },
     {
       "fj_element_file_id": "FJ3156",
@@ -56,7 +60,8 @@
       "anatomical_category": "bone - vertebral column",
       "glb_asset": "models/anatomy/skeleton/FJ3156.glb",
       "triangle_count": 2772,
-      "glb_size_bytes": 56312
+      "glb_size_bytes": 56312,
+      "load_region": "torso"
     },
     {
       "fj_element_file_id": "FJ3157",
@@ -67,7 +72,8 @@
       "anatomical_category": "bone - vertebral column",
       "glb_asset": "models/anatomy/skeleton/FJ3157.glb",
       "triangle_count": 2972,
-      "glb_size_bytes": 59644
+      "glb_size_bytes": 59644,
+      "load_region": "torso"
     },
     {
       "fj_element_file_id": "FJ3158",
@@ -78,7 +84,8 @@
       "anatomical_category": "bone - vertebral column",
       "glb_asset": "models/anatomy/skeleton/FJ3158.glb",
       "triangle_count": 1700,
-      "glb_size_bytes": 37520
+      "glb_size_bytes": 37520,
+      "load_region": "torso"
     },
     {
       "fj_element_file_id": "FJ3159",
@@ -89,7 +96,8 @@
       "anatomical_category": "bone - vertebral column",
       "glb_asset": "models/anatomy/skeleton/FJ3159.glb",
       "triangle_count": 3214,
-      "glb_size_bytes": 65732
+      "glb_size_bytes": 65732,
+      "load_region": "torso"
     },
     {
       "fj_element_file_id": "FJ3160",
@@ -100,7 +108,8 @@
       "anatomical_category": "bone - vertebral column",
       "glb_asset": "models/anatomy/skeleton/FJ3160.glb",
       "triangle_count": 1938,
-      "glb_size_bytes": 40940
+      "glb_size_bytes": 40940,
+      "load_region": "torso"
     },
     {
       "fj_element_file_id": "FJ3161",
@@ -111,7 +120,8 @@
       "anatomical_category": "bone - vertebral column",
       "glb_asset": "models/anatomy/skeleton/FJ3161.glb",
       "triangle_count": 2030,
-      "glb_size_bytes": 45384
+      "glb_size_bytes": 45384,
+      "load_region": "head-neck"
     },
     {
       "fj_element_file_id": "FJ3162",
@@ -122,7 +132,8 @@
       "anatomical_category": "bone - vertebral column",
       "glb_asset": "models/anatomy/skeleton/FJ3162.glb",
       "triangle_count": 3272,
-      "glb_size_bytes": 65456
+      "glb_size_bytes": 65456,
+      "load_region": "torso"
     },
     {
       "fj_element_file_id": "FJ3163",
@@ -133,7 +144,8 @@
       "anatomical_category": "bone - vertebral column",
       "glb_asset": "models/anatomy/skeleton/FJ3163.glb",
       "triangle_count": 2038,
-      "glb_size_bytes": 41876
+      "glb_size_bytes": 41876,
+      "load_region": "torso"
     },
     {
       "fj_element_file_id": "FJ3164",
@@ -144,7 +156,8 @@
       "anatomical_category": "bone - vertebral column",
       "glb_asset": "models/anatomy/skeleton/FJ3164.glb",
       "triangle_count": 2410,
-      "glb_size_bytes": 51164
+      "glb_size_bytes": 51164,
+      "load_region": "head-neck"
     },
     {
       "fj_element_file_id": "FJ3165",
@@ -155,7 +168,8 @@
       "anatomical_category": "bone - vertebral column",
       "glb_asset": "models/anatomy/skeleton/FJ3165.glb",
       "triangle_count": 3512,
-      "glb_size_bytes": 69752
+      "glb_size_bytes": 69752,
+      "load_region": "torso"
     },
     {
       "fj_element_file_id": "FJ3166",
@@ -166,7 +180,8 @@
       "anatomical_category": "bone - vertebral column",
       "glb_asset": "models/anatomy/skeleton/FJ3166.glb",
       "triangle_count": 2066,
-      "glb_size_bytes": 42888
+      "glb_size_bytes": 42888,
+      "load_region": "torso"
     },
     {
       "fj_element_file_id": "FJ3167",
@@ -177,7 +192,8 @@
       "anatomical_category": "bone - vertebral column",
       "glb_asset": "models/anatomy/skeleton/FJ3167.glb",
       "triangle_count": 2196,
-      "glb_size_bytes": 51560
+      "glb_size_bytes": 51560,
+      "load_region": "head-neck"
     },
     {
       "fj_element_file_id": "FJ3168",
@@ -188,7 +204,8 @@
       "anatomical_category": "bone - vertebral column",
       "glb_asset": "models/anatomy/skeleton/FJ3168.glb",
       "triangle_count": 3892,
-      "glb_size_bytes": 75564
+      "glb_size_bytes": 75564,
+      "load_region": "torso"
     },
     {
       "fj_element_file_id": "FJ3169",
@@ -199,7 +216,8 @@
       "anatomical_category": "bone - vertebral column",
       "glb_asset": "models/anatomy/skeleton/FJ3169.glb",
       "triangle_count": 2280,
-      "glb_size_bytes": 46832
+      "glb_size_bytes": 46832,
+      "load_region": "torso"
     },
     {
       "fj_element_file_id": "FJ3170",
@@ -210,7 +228,8 @@
       "anatomical_category": "bone - vertebral column",
       "glb_asset": "models/anatomy/skeleton/FJ3170.glb",
       "triangle_count": 2374,
-      "glb_size_bytes": 51648
+      "glb_size_bytes": 51648,
+      "load_region": "head-neck"
     },
     {
       "fj_element_file_id": "FJ3171",
@@ -221,7 +240,8 @@
       "anatomical_category": "bone - vertebral column",
       "glb_asset": "models/anatomy/skeleton/FJ3171.glb",
       "triangle_count": 2248,
-      "glb_size_bytes": 47408
+      "glb_size_bytes": 47408,
+      "load_region": "torso"
     },
     {
       "fj_element_file_id": "FJ3172",
@@ -232,7 +252,8 @@
       "anatomical_category": "bone - vertebral column",
       "glb_asset": "models/anatomy/skeleton/FJ3172.glb",
       "triangle_count": 1820,
-      "glb_size_bytes": 44144
+      "glb_size_bytes": 44144,
+      "load_region": "head-neck"
     },
     {
       "fj_element_file_id": "FJ3173",
@@ -243,7 +264,8 @@
       "anatomical_category": "bone - vertebral column",
       "glb_asset": "models/anatomy/skeleton/FJ3173.glb",
       "triangle_count": 2574,
-      "glb_size_bytes": 52364
+      "glb_size_bytes": 52364,
+      "load_region": "torso"
     },
     {
       "fj_element_file_id": "FJ3174",
@@ -254,7 +276,8 @@
       "anatomical_category": "bone - vertebral column",
       "glb_asset": "models/anatomy/skeleton/FJ3174.glb",
       "triangle_count": 2424,
-      "glb_size_bytes": 49400
+      "glb_size_bytes": 49400,
+      "load_region": "torso"
     },
     {
       "fj_element_file_id": "FJ3175",
@@ -265,7 +288,8 @@
       "anatomical_category": "bone - vertebral column",
       "glb_asset": "models/anatomy/skeleton/FJ3175.glb",
       "triangle_count": 2586,
-      "glb_size_bytes": 51596
+      "glb_size_bytes": 51596,
+      "load_region": "torso"
     },
     {
       "fj_element_file_id": "FJ3176",
@@ -276,7 +300,8 @@
       "anatomical_category": "bone or cartilage - other (name not in keyword list)",
       "glb_asset": "models/anatomy/skeleton/FJ3176.glb",
       "triangle_count": 2094,
-      "glb_size_bytes": 48404
+      "glb_size_bytes": 48404,
+      "load_region": "head-neck"
     },
     {
       "fj_element_file_id": "FJ3177",
@@ -287,7 +312,8 @@
       "anatomical_category": "bone or cartilage - other (name not in keyword list)",
       "glb_asset": "models/anatomy/skeleton/FJ3177.glb",
       "triangle_count": 2288,
-      "glb_size_bytes": 52140
+      "glb_size_bytes": 52140,
+      "load_region": "head-neck"
     },
     {
       "fj_element_file_id": "FJ3178",
@@ -298,7 +324,8 @@
       "anatomical_category": "bone - thorax",
       "glb_asset": "models/anatomy/skeleton/FJ3178.glb",
       "triangle_count": 4646,
-      "glb_size_bytes": 117912
+      "glb_size_bytes": 117912,
+      "load_region": "torso"
     },
     {
       "fj_element_file_id": "FJ3179",
@@ -309,7 +336,8 @@
       "anatomical_category": "bone - hand/foot (digit) (foot)",
       "glb_asset": "models/anatomy/skeleton/FJ3179.glb",
       "triangle_count": 240,
-      "glb_size_bytes": 6932
+      "glb_size_bytes": 6932,
+      "load_region": "forearm-hand"
     },
     {
       "fj_element_file_id": "FJ3180",
@@ -320,7 +348,8 @@
       "anatomical_category": "bone - hand/foot (digit) (foot)",
       "glb_asset": "models/anatomy/skeleton/FJ3180.glb",
       "triangle_count": 336,
-      "glb_size_bytes": 7968
+      "glb_size_bytes": 7968,
+      "load_region": "forearm-hand"
     },
     {
       "fj_element_file_id": "FJ3181",
@@ -331,7 +360,8 @@
       "anatomical_category": "bone - hand/foot (digit) (foot)",
       "glb_asset": "models/anatomy/skeleton/FJ3181.glb",
       "triangle_count": 226,
-      "glb_size_bytes": 6300
+      "glb_size_bytes": 6300,
+      "load_region": "forearm-hand"
     },
     {
       "fj_element_file_id": "FJ3182",
@@ -342,7 +372,8 @@
       "anatomical_category": "bone - hand/foot (digit) (foot)",
       "glb_asset": "models/anatomy/skeleton/FJ3182.glb",
       "triangle_count": 378,
-      "glb_size_bytes": 9848
+      "glb_size_bytes": 9848,
+      "load_region": "forearm-hand"
     },
     {
       "fj_element_file_id": "FJ3183",
@@ -353,7 +384,8 @@
       "anatomical_category": "bone - hand/foot (digit) (hand)",
       "glb_asset": "models/anatomy/skeleton/FJ3183.glb",
       "triangle_count": 328,
-      "glb_size_bytes": 8300
+      "glb_size_bytes": 8300,
+      "load_region": "forearm-hand"
     },
     {
       "fj_element_file_id": "FJ3184",
@@ -364,7 +396,8 @@
       "anatomical_category": "bone - hand/foot (digit) (hand)",
       "glb_asset": "models/anatomy/skeleton/FJ3184.glb",
       "triangle_count": 198,
-      "glb_size_bytes": 6320
+      "glb_size_bytes": 6320,
+      "load_region": "forearm-hand"
     },
     {
       "fj_element_file_id": "FJ3185",
@@ -375,7 +408,8 @@
       "anatomical_category": "bone - hand/foot (digit) (foot)",
       "glb_asset": "models/anatomy/skeleton/FJ3185.glb",
       "triangle_count": 220,
-      "glb_size_bytes": 6600
+      "glb_size_bytes": 6600,
+      "load_region": "forearm-hand"
     },
     {
       "fj_element_file_id": "FJ3186",
@@ -386,7 +420,8 @@
       "anatomical_category": "bone - hand/foot (digit) (hand)",
       "glb_asset": "models/anatomy/skeleton/FJ3186.glb",
       "triangle_count": 266,
-      "glb_size_bytes": 7184
+      "glb_size_bytes": 7184,
+      "load_region": "forearm-hand"
     },
     {
       "fj_element_file_id": "FJ3187",
@@ -397,7 +432,8 @@
       "anatomical_category": "bone - hand/foot (digit) (hand)",
       "glb_asset": "models/anatomy/skeleton/FJ3187.glb",
       "triangle_count": 196,
-      "glb_size_bytes": 5972
+      "glb_size_bytes": 5972,
+      "load_region": "forearm-hand"
     },
     {
       "fj_element_file_id": "FJ3188",
@@ -408,7 +444,8 @@
       "anatomical_category": "bone - hand/foot (digit) (hand)",
       "glb_asset": "models/anatomy/skeleton/FJ3188.glb",
       "triangle_count": 270,
-      "glb_size_bytes": 7588
+      "glb_size_bytes": 7588,
+      "load_region": "forearm-hand"
     },
     {
       "fj_element_file_id": "FJ3189",
@@ -419,7 +456,8 @@
       "anatomical_category": "bone - hand/foot (digit) (foot)",
       "glb_asset": "models/anatomy/skeleton/FJ3189.glb",
       "triangle_count": 200,
-      "glb_size_bytes": 6724
+      "glb_size_bytes": 6724,
+      "load_region": "forearm-hand"
     },
     {
       "fj_element_file_id": "FJ3190",
@@ -430,7 +468,8 @@
       "anatomical_category": "bone - hand/foot (digit) (foot)",
       "glb_asset": "models/anatomy/skeleton/FJ3190.glb",
       "triangle_count": 260,
-      "glb_size_bytes": 6888
+      "glb_size_bytes": 6888,
+      "load_region": "forearm-hand"
     },
     {
       "fj_element_file_id": "FJ3191",
@@ -441,7 +480,8 @@
       "anatomical_category": "bone - hand/foot (digit) (foot)",
       "glb_asset": "models/anatomy/skeleton/FJ3191.glb",
       "triangle_count": 244,
-      "glb_size_bytes": 6360
+      "glb_size_bytes": 6360,
+      "load_region": "forearm-hand"
     },
     {
       "fj_element_file_id": "FJ3192",
@@ -452,7 +492,8 @@
       "anatomical_category": "bone - hand/foot (digit) (foot)",
       "glb_asset": "models/anatomy/skeleton/FJ3192.glb",
       "triangle_count": 440,
-      "glb_size_bytes": 11016
+      "glb_size_bytes": 11016,
+      "load_region": "forearm-hand"
     },
     {
       "fj_element_file_id": "FJ3193",
@@ -463,7 +504,8 @@
       "anatomical_category": "bone - hand/foot (digit) (hand)",
       "glb_asset": "models/anatomy/skeleton/FJ3193.glb",
       "triangle_count": 210,
-      "glb_size_bytes": 7208
+      "glb_size_bytes": 7208,
+      "load_region": "forearm-hand"
     },
     {
       "fj_element_file_id": "FJ3194",
@@ -474,7 +516,8 @@
       "anatomical_category": "bone - hand/foot (digit) (hand)",
       "glb_asset": "models/anatomy/skeleton/FJ3194.glb",
       "triangle_count": 188,
-      "glb_size_bytes": 5920
+      "glb_size_bytes": 5920,
+      "load_region": "forearm-hand"
     },
     {
       "fj_element_file_id": "FJ3195",
@@ -485,7 +528,8 @@
       "anatomical_category": "bone - hand/foot (digit) (foot)",
       "glb_asset": "models/anatomy/skeleton/FJ3195.glb",
       "triangle_count": 210,
-      "glb_size_bytes": 6972
+      "glb_size_bytes": 6972,
+      "load_region": "forearm-hand"
     },
     {
       "fj_element_file_id": "FJ3196",
@@ -496,7 +540,8 @@
       "anatomical_category": "bone - hand/foot (digit) (hand)",
       "glb_asset": "models/anatomy/skeleton/FJ3196.glb",
       "triangle_count": 174,
-      "glb_size_bytes": 5912
+      "glb_size_bytes": 5912,
+      "load_region": "forearm-hand"
     },
     {
       "fj_element_file_id": "FJ3197",
@@ -507,7 +552,8 @@
       "anatomical_category": "bone - hand/foot (digit) (hand)",
       "glb_asset": "models/anatomy/skeleton/FJ3197.glb",
       "triangle_count": 112,
-      "glb_size_bytes": 4840
+      "glb_size_bytes": 4840,
+      "load_region": "forearm-hand"
     },
     {
       "fj_element_file_id": "FJ3198",
@@ -518,7 +564,8 @@
       "anatomical_category": "bone - hand/foot (digit) (hand)",
       "glb_asset": "models/anatomy/skeleton/FJ3198.glb",
       "triangle_count": 240,
-      "glb_size_bytes": 7360
+      "glb_size_bytes": 7360,
+      "load_region": "forearm-hand"
     },
     {
       "fj_element_file_id": "FJ3199",
@@ -529,7 +576,8 @@
       "anatomical_category": "bone - skull",
       "glb_asset": "models/anatomy/skeleton/FJ3199.glb",
       "triangle_count": 22276,
-      "glb_size_bytes": 434696
+      "glb_size_bytes": 434696,
+      "load_region": "head-neck"
     },
     {
       "fj_element_file_id": "FJ3200",
@@ -540,7 +588,8 @@
       "anatomical_category": "bone - skull",
       "glb_asset": "models/anatomy/skeleton/FJ3200.glb",
       "triangle_count": 14510,
-      "glb_size_bytes": 291840
+      "glb_size_bytes": 291840,
+      "load_region": "head-neck"
     },
     {
       "fj_element_file_id": "FJ3201",
@@ -551,7 +600,8 @@
       "anatomical_category": "bone or cartilage - other (name not in keyword list)",
       "glb_asset": "models/anatomy/skeleton/FJ3201.glb",
       "triangle_count": 1196,
-      "glb_size_bytes": 25108
+      "glb_size_bytes": 25108,
+      "load_region": "head-neck"
     },
     {
       "fj_element_file_id": "FJ3202",
@@ -562,7 +612,8 @@
       "anatomical_category": "bone or cartilage - other (name not in keyword list)",
       "glb_asset": "models/anatomy/skeleton/FJ3202.glb",
       "triangle_count": 3712,
-      "glb_size_bytes": 70304
+      "glb_size_bytes": 70304,
+      "load_region": "head-neck"
     },
     {
       "fj_element_file_id": "FJ3203",
@@ -573,7 +624,8 @@
       "anatomical_category": "bone - vertebral column",
       "glb_asset": "models/anatomy/skeleton/FJ3203.glb",
       "triangle_count": 1560,
-      "glb_size_bytes": 38740
+      "glb_size_bytes": 38740,
+      "load_region": "torso"
     },
     {
       "fj_element_file_id": "FJ3204",
@@ -584,7 +636,8 @@
       "anatomical_category": "bone - vertebral column",
       "glb_asset": "models/anatomy/skeleton/FJ3204.glb",
       "triangle_count": 1836,
-      "glb_size_bytes": 47740
+      "glb_size_bytes": 47740,
+      "load_region": "torso"
     },
     {
       "fj_element_file_id": "FJ3205",
@@ -595,7 +648,8 @@
       "anatomical_category": "bone - vertebral column",
       "glb_asset": "models/anatomy/skeleton/FJ3205.glb",
       "triangle_count": 2564,
-      "glb_size_bytes": 67376
+      "glb_size_bytes": 67376,
+      "load_region": "torso"
     },
     {
       "fj_element_file_id": "FJ3206",
@@ -606,7 +660,8 @@
       "anatomical_category": "bone - vertebral column",
       "glb_asset": "models/anatomy/skeleton/FJ3206.glb",
       "triangle_count": 2630,
-      "glb_size_bytes": 67748
+      "glb_size_bytes": 67748,
+      "load_region": "torso"
     },
     {
       "fj_element_file_id": "FJ3207",
@@ -617,7 +672,8 @@
       "anatomical_category": "bone - vertebral column",
       "glb_asset": "models/anatomy/skeleton/FJ3207.glb",
       "triangle_count": 2894,
-      "glb_size_bytes": 88852
+      "glb_size_bytes": 88852,
+      "load_region": "torso"
     },
     {
       "fj_element_file_id": "FJ3208",
@@ -628,7 +684,8 @@
       "anatomical_category": "bone - vertebral column",
       "glb_asset": "models/anatomy/skeleton/FJ3208.glb",
       "triangle_count": 2940,
-      "glb_size_bytes": 88092
+      "glb_size_bytes": 88092,
+      "load_region": "torso"
     },
     {
       "fj_element_file_id": "FJ3209",
@@ -639,7 +696,8 @@
       "anatomical_category": "bone - vertebral column",
       "glb_asset": "models/anatomy/skeleton/FJ3209.glb",
       "triangle_count": 3102,
-      "glb_size_bytes": 91172
+      "glb_size_bytes": 91172,
+      "load_region": "torso"
     },
     {
       "fj_element_file_id": "FJ3210",
@@ -650,7 +708,8 @@
       "anatomical_category": "bone - vertebral column",
       "glb_asset": "models/anatomy/skeleton/FJ3210.glb",
       "triangle_count": 3336,
-      "glb_size_bytes": 101920
+      "glb_size_bytes": 101920,
+      "load_region": "torso"
     },
     {
       "fj_element_file_id": "FJ3211",
@@ -661,7 +720,8 @@
       "anatomical_category": "bone or cartilage - other (name not in keyword list)",
       "glb_asset": "models/anatomy/skeleton/FJ3211.glb",
       "triangle_count": 3476,
-      "glb_size_bytes": 121452
+      "glb_size_bytes": 121452,
+      "load_region": "torso"
     },
     {
       "fj_element_file_id": "FJ3212",
@@ -672,7 +732,8 @@
       "anatomical_category": "bone - vertebral column",
       "glb_asset": "models/anatomy/skeleton/FJ3212.glb",
       "triangle_count": 3498,
-      "glb_size_bytes": 115416
+      "glb_size_bytes": 115416,
+      "load_region": "torso"
     },
     {
       "fj_element_file_id": "FJ3213",
@@ -683,7 +744,8 @@
       "anatomical_category": "bone - vertebral column",
       "glb_asset": "models/anatomy/skeleton/FJ3213.glb",
       "triangle_count": 770,
-      "glb_size_bytes": 20656
+      "glb_size_bytes": 20656,
+      "load_region": "head-neck"
     },
     {
       "fj_element_file_id": "FJ3214",
@@ -694,7 +756,8 @@
       "anatomical_category": "bone - vertebral column",
       "glb_asset": "models/anatomy/skeleton/FJ3214.glb",
       "triangle_count": 3406,
-      "glb_size_bytes": 106304
+      "glb_size_bytes": 106304,
+      "load_region": "torso"
     },
     {
       "fj_element_file_id": "FJ3215",
@@ -705,7 +768,8 @@
       "anatomical_category": "bone - vertebral column",
       "glb_asset": "models/anatomy/skeleton/FJ3215.glb",
       "triangle_count": 3454,
-      "glb_size_bytes": 121800
+      "glb_size_bytes": 121800,
+      "load_region": "torso"
     },
     {
       "fj_element_file_id": "FJ3216",
@@ -716,7 +780,8 @@
       "anatomical_category": "bone - vertebral column",
       "glb_asset": "models/anatomy/skeleton/FJ3216.glb",
       "triangle_count": 3512,
-      "glb_size_bytes": 110120
+      "glb_size_bytes": 110120,
+      "load_region": "torso"
     },
     {
       "fj_element_file_id": "FJ3217",
@@ -727,7 +792,8 @@
       "anatomical_category": "bone - vertebral column",
       "glb_asset": "models/anatomy/skeleton/FJ3217.glb",
       "triangle_count": 3498,
-      "glb_size_bytes": 84408
+      "glb_size_bytes": 84408,
+      "load_region": "torso"
     },
     {
       "fj_element_file_id": "FJ3218",
@@ -738,7 +804,8 @@
       "anatomical_category": "bone - vertebral column",
       "glb_asset": "models/anatomy/skeleton/FJ3218.glb",
       "triangle_count": 926,
-      "glb_size_bytes": 23224
+      "glb_size_bytes": 23224,
+      "load_region": "head-neck"
     },
     {
       "fj_element_file_id": "FJ3219",
@@ -749,7 +816,8 @@
       "anatomical_category": "bone - vertebral column",
       "glb_asset": "models/anatomy/skeleton/FJ3219.glb",
       "triangle_count": 956,
-      "glb_size_bytes": 23620
+      "glb_size_bytes": 23620,
+      "load_region": "head-neck"
     },
     {
       "fj_element_file_id": "FJ3220",
@@ -760,7 +828,8 @@
       "anatomical_category": "bone - vertebral column",
       "glb_asset": "models/anatomy/skeleton/FJ3220.glb",
       "triangle_count": 892,
-      "glb_size_bytes": 28108
+      "glb_size_bytes": 28108,
+      "load_region": "head-neck"
     },
     {
       "fj_element_file_id": "FJ3221",
@@ -771,7 +840,8 @@
       "anatomical_category": "bone - vertebral column",
       "glb_asset": "models/anatomy/skeleton/FJ3221.glb",
       "triangle_count": 1092,
-      "glb_size_bytes": 30740
+      "glb_size_bytes": 30740,
+      "load_region": "head-neck"
     },
     {
       "fj_element_file_id": "FJ3222",
@@ -782,7 +852,8 @@
       "anatomical_category": "bone - vertebral column",
       "glb_asset": "models/anatomy/skeleton/FJ3222.glb",
       "triangle_count": 1232,
-      "glb_size_bytes": 34012
+      "glb_size_bytes": 34012,
+      "load_region": "torso"
     },
     {
       "fj_element_file_id": "FJ3223",
@@ -793,7 +864,8 @@
       "anatomical_category": "bone - vertebral column",
       "glb_asset": "models/anatomy/skeleton/FJ3223.glb",
       "triangle_count": 1374,
-      "glb_size_bytes": 39380
+      "glb_size_bytes": 39380,
+      "load_region": "torso"
     },
     {
       "fj_element_file_id": "FJ3224",
@@ -804,7 +876,8 @@
       "anatomical_category": "bone - vertebral column",
       "glb_asset": "models/anatomy/skeleton/FJ3224.glb",
       "triangle_count": 1474,
-      "glb_size_bytes": 46140
+      "glb_size_bytes": 46140,
+      "load_region": "torso"
     },
     {
       "fj_element_file_id": "FJ3225",
@@ -815,7 +888,8 @@
       "anatomical_category": "bone - thorax",
       "glb_asset": "models/anatomy/skeleton/FJ3225.glb",
       "triangle_count": 6826,
-      "glb_size_bytes": 124460
+      "glb_size_bytes": 124460,
+      "load_region": "torso"
     },
     {
       "fj_element_file_id": "FJ3226",
@@ -826,7 +900,8 @@
       "anatomical_category": "bone - thorax",
       "glb_asset": "models/anatomy/skeleton/FJ3226.glb",
       "triangle_count": 4866,
-      "glb_size_bytes": 89084
+      "glb_size_bytes": 89084,
+      "load_region": "torso"
     },
     {
       "fj_element_file_id": "FJ3227",
@@ -837,7 +912,8 @@
       "anatomical_category": "bone - thorax",
       "glb_asset": "models/anatomy/skeleton/FJ3227.glb",
       "triangle_count": 2818,
-      "glb_size_bytes": 52220
+      "glb_size_bytes": 52220,
+      "load_region": "torso"
     },
     {
       "fj_element_file_id": "FJ3228",
@@ -848,7 +924,8 @@
       "anatomical_category": "bone - thorax",
       "glb_asset": "models/anatomy/skeleton/FJ3228.glb",
       "triangle_count": 3276,
-      "glb_size_bytes": 60488
+      "glb_size_bytes": 60488,
+      "load_region": "torso"
     },
     {
       "fj_element_file_id": "FJ3229",
@@ -859,7 +936,8 @@
       "anatomical_category": "bone - thorax",
       "glb_asset": "models/anatomy/skeleton/FJ3229.glb",
       "triangle_count": 5594,
-      "glb_size_bytes": 103700
+      "glb_size_bytes": 103700,
+      "load_region": "torso"
     },
     {
       "fj_element_file_id": "FJ3230",
@@ -870,7 +948,8 @@
       "anatomical_category": "bone - thorax",
       "glb_asset": "models/anatomy/skeleton/FJ3230.glb",
       "triangle_count": 7254,
-      "glb_size_bytes": 132260
+      "glb_size_bytes": 132260,
+      "load_region": "torso"
     },
     {
       "fj_element_file_id": "FJ3231",
@@ -881,7 +960,8 @@
       "anatomical_category": "bone - thorax",
       "glb_asset": "models/anatomy/skeleton/FJ3231.glb",
       "triangle_count": 8850,
-      "glb_size_bytes": 161228
+      "glb_size_bytes": 161228,
+      "load_region": "torso"
     },
     {
       "fj_element_file_id": "FJ3232",
@@ -892,7 +972,8 @@
       "anatomical_category": "bone - thorax",
       "glb_asset": "models/anatomy/skeleton/FJ3232.glb",
       "triangle_count": 9710,
-      "glb_size_bytes": 177596
+      "glb_size_bytes": 177596,
+      "load_region": "torso"
     },
     {
       "fj_element_file_id": "FJ3233",
@@ -903,7 +984,8 @@
       "anatomical_category": "bone - thorax",
       "glb_asset": "models/anatomy/skeleton/FJ3233.glb",
       "triangle_count": 10264,
-      "glb_size_bytes": 187160
+      "glb_size_bytes": 187160,
+      "load_region": "torso"
     },
     {
       "fj_element_file_id": "FJ3234",
@@ -914,7 +996,8 @@
       "anatomical_category": "bone - thorax",
       "glb_asset": "models/anatomy/skeleton/FJ3234.glb",
       "triangle_count": 10032,
-      "glb_size_bytes": 182936
+      "glb_size_bytes": 182936,
+      "load_region": "torso"
     },
     {
       "fj_element_file_id": "FJ3235",
@@ -925,7 +1008,8 @@
       "anatomical_category": "bone - thorax",
       "glb_asset": "models/anatomy/skeleton/FJ3235.glb",
       "triangle_count": 8336,
-      "glb_size_bytes": 152528
+      "glb_size_bytes": 152528,
+      "load_region": "torso"
     },
     {
       "fj_element_file_id": "FJ3236",
@@ -936,7 +1020,8 @@
       "anatomical_category": "bone - thorax",
       "glb_asset": "models/anatomy/skeleton/FJ3236.glb",
       "triangle_count": 7576,
-      "glb_size_bytes": 138224
+      "glb_size_bytes": 138224,
+      "load_region": "torso"
     },
     {
       "fj_element_file_id": "FJ3237",
@@ -947,7 +1032,8 @@
       "anatomical_category": "bone - shoulder girdle",
       "glb_asset": "models/anatomy/skeleton/FJ3237.glb",
       "triangle_count": 1176,
-      "glb_size_bytes": 22944
+      "glb_size_bytes": 22944,
+      "load_region": "shoulder-arm"
     },
     {
       "fj_element_file_id": "FJ3239",
@@ -958,7 +1044,8 @@
       "anatomical_category": "bone or cartilage - other (name not in keyword list)",
       "glb_asset": "models/anatomy/skeleton/FJ3239.glb",
       "triangle_count": 642,
-      "glb_size_bytes": 15324
+      "glb_size_bytes": 15324,
+      "load_region": "torso"
     },
     {
       "fj_element_file_id": "FJ3240",
@@ -969,7 +1056,8 @@
       "anatomical_category": "bone - hand",
       "glb_asset": "models/anatomy/skeleton/FJ3240.glb",
       "triangle_count": 578,
-      "glb_size_bytes": 12200
+      "glb_size_bytes": 12200,
+      "load_region": "forearm-hand"
     },
     {
       "fj_element_file_id": "FJ3241",
@@ -980,7 +1068,8 @@
       "anatomical_category": "bone - foot",
       "glb_asset": "models/anatomy/skeleton/FJ3241.glb",
       "triangle_count": 1172,
-      "glb_size_bytes": 23212
+      "glb_size_bytes": 23212,
+      "load_region": "lower-leg-foot"
     },
     {
       "fj_element_file_id": "FJ3242",
@@ -991,7 +1080,8 @@
       "anatomical_category": "bone or cartilage - other (name not in keyword list)",
       "glb_asset": "models/anatomy/skeleton/FJ3242.glb",
       "triangle_count": 588,
-      "glb_size_bytes": 12884
+      "glb_size_bytes": 12884,
+      "load_region": "torso"
     },
     {
       "fj_element_file_id": "FJ3243",
@@ -1002,7 +1092,8 @@
       "anatomical_category": "bone - hand",
       "glb_asset": "models/anatomy/skeleton/FJ3243.glb",
       "triangle_count": 774,
-      "glb_size_bytes": 16160
+      "glb_size_bytes": 16160,
+      "load_region": "forearm-hand"
     },
     {
       "fj_element_file_id": "FJ3244",
@@ -1013,7 +1104,8 @@
       "anatomical_category": "bone - foot",
       "glb_asset": "models/anatomy/skeleton/FJ3244.glb",
       "triangle_count": 774,
-      "glb_size_bytes": 17776
+      "glb_size_bytes": 17776,
+      "load_region": "lower-leg-foot"
     },
     {
       "fj_element_file_id": "FJ3245",
@@ -1024,7 +1116,8 @@
       "anatomical_category": "bone or cartilage - other (name not in keyword list)",
       "glb_asset": "models/anatomy/skeleton/FJ3245.glb",
       "triangle_count": 604,
-      "glb_size_bytes": 12932
+      "glb_size_bytes": 12932,
+      "load_region": "torso"
     },
     {
       "fj_element_file_id": "FJ3246",
@@ -1035,7 +1128,8 @@
       "anatomical_category": "bone - hand",
       "glb_asset": "models/anatomy/skeleton/FJ3246.glb",
       "triangle_count": 708,
-      "glb_size_bytes": 15092
+      "glb_size_bytes": 15092,
+      "load_region": "forearm-hand"
     },
     {
       "fj_element_file_id": "FJ3247",
@@ -1046,7 +1140,8 @@
       "anatomical_category": "bone - foot",
       "glb_asset": "models/anatomy/skeleton/FJ3247.glb",
       "triangle_count": 742,
-      "glb_size_bytes": 16192
+      "glb_size_bytes": 16192,
+      "load_region": "lower-leg-foot"
     },
     {
       "fj_element_file_id": "FJ3248",
@@ -1057,7 +1152,8 @@
       "anatomical_category": "bone or cartilage - other (name not in keyword list)",
       "glb_asset": "models/anatomy/skeleton/FJ3248.glb",
       "triangle_count": 658,
-      "glb_size_bytes": 14292
+      "glb_size_bytes": 14292,
+      "load_region": "torso"
     },
     {
       "fj_element_file_id": "FJ3249",
@@ -1068,7 +1164,8 @@
       "anatomical_category": "bone - hand",
       "glb_asset": "models/anatomy/skeleton/FJ3249.glb",
       "triangle_count": 528,
-      "glb_size_bytes": 12192
+      "glb_size_bytes": 12192,
+      "load_region": "forearm-hand"
     },
     {
       "fj_element_file_id": "FJ3250",
@@ -1079,7 +1176,8 @@
       "anatomical_category": "bone - foot",
       "glb_asset": "models/anatomy/skeleton/FJ3250.glb",
       "triangle_count": 772,
-      "glb_size_bytes": 16560
+      "glb_size_bytes": 16560,
+      "load_region": "lower-leg-foot"
     },
     {
       "fj_element_file_id": "FJ3251",
@@ -1090,7 +1188,8 @@
       "anatomical_category": "bone or cartilage - other (name not in keyword list)",
       "glb_asset": "models/anatomy/skeleton/FJ3251.glb",
       "triangle_count": 1086,
-      "glb_size_bytes": 22212
+      "glb_size_bytes": 22212,
+      "load_region": "torso"
     },
     {
       "fj_element_file_id": "FJ3252",
@@ -1101,7 +1200,8 @@
       "anatomical_category": "bone - hand",
       "glb_asset": "models/anatomy/skeleton/FJ3252.glb",
       "triangle_count": 500,
-      "glb_size_bytes": 11208
+      "glb_size_bytes": 11208,
+      "load_region": "forearm-hand"
     },
     {
       "fj_element_file_id": "FJ3253",
@@ -1112,7 +1212,8 @@
       "anatomical_category": "bone - foot",
       "glb_asset": "models/anatomy/skeleton/FJ3253.glb",
       "triangle_count": 864,
-      "glb_size_bytes": 17356
+      "glb_size_bytes": 17356,
+      "load_region": "lower-leg-foot"
     },
     {
       "fj_element_file_id": "FJ3254",
@@ -1123,7 +1224,8 @@
       "anatomical_category": "bone or cartilage - other (name not in keyword list)",
       "glb_asset": "models/anatomy/skeleton/FJ3254.glb",
       "triangle_count": 1498,
-      "glb_size_bytes": 29984
+      "glb_size_bytes": 29984,
+      "load_region": "torso"
     },
     {
       "fj_element_file_id": "FJ3255",
@@ -1134,7 +1236,8 @@
       "anatomical_category": "bone or cartilage - other (name not in keyword list)",
       "glb_asset": "models/anatomy/skeleton/FJ3255.glb",
       "triangle_count": 2314,
-      "glb_size_bytes": 48136
+      "glb_size_bytes": 48136,
+      "load_region": "torso"
     },
     {
       "fj_element_file_id": "FJ3256",
@@ -1145,7 +1248,8 @@
       "anatomical_category": "bone - foot",
       "glb_asset": "models/anatomy/skeleton/FJ3256.glb",
       "triangle_count": 1288,
-      "glb_size_bytes": 26424
+      "glb_size_bytes": 26424,
+      "load_region": "lower-leg-foot"
     },
     {
       "fj_element_file_id": "FJ3257",
@@ -1156,7 +1260,8 @@
       "anatomical_category": "bone - hand",
       "glb_asset": "models/anatomy/skeleton/FJ3257.glb",
       "triangle_count": 402,
-      "glb_size_bytes": 9536
+      "glb_size_bytes": 9536,
+      "load_region": "forearm-hand"
     },
     {
       "fj_element_file_id": "FJ3258",
@@ -1167,7 +1272,8 @@
       "anatomical_category": "bone - foot",
       "glb_asset": "models/anatomy/skeleton/FJ3258.glb",
       "triangle_count": 886,
-      "glb_size_bytes": 18616
+      "glb_size_bytes": 18616,
+      "load_region": "lower-leg-foot"
     },
     {
       "fj_element_file_id": "FJ3259",
@@ -1178,7 +1284,8 @@
       "anatomical_category": "bone - lower limb",
       "glb_asset": "models/anatomy/skeleton/FJ3259.glb",
       "triangle_count": 3204,
-      "glb_size_bytes": 59624
+      "glb_size_bytes": 59624,
+      "load_region": "thigh"
     },
     {
       "fj_element_file_id": "FJ3260",
@@ -1189,7 +1296,8 @@
       "anatomical_category": "bone - lower limb",
       "glb_asset": "models/anatomy/skeleton/FJ3260.glb",
       "triangle_count": 1124,
-      "glb_size_bytes": 22032
+      "glb_size_bytes": 22032,
+      "load_region": "lower-leg-foot"
     },
     {
       "fj_element_file_id": "FJ3261",
@@ -1200,7 +1308,8 @@
       "anatomical_category": "bone - hand",
       "glb_asset": "models/anatomy/skeleton/FJ3261.glb",
       "triangle_count": 452,
-      "glb_size_bytes": 10872
+      "glb_size_bytes": 10872,
+      "load_region": "forearm-hand"
     },
     {
       "fj_element_file_id": "FJ3262",
@@ -1211,7 +1320,8 @@
       "anatomical_category": "bone - upper limb",
       "glb_asset": "models/anatomy/skeleton/FJ3262.glb",
       "triangle_count": 3844,
-      "glb_size_bytes": 74264
+      "glb_size_bytes": 74264,
+      "load_region": "shoulder-arm"
     },
     {
       "fj_element_file_id": "FJ3263",
@@ -1222,7 +1332,8 @@
       "anatomical_category": "bone or cartilage - other (name not in keyword list)",
       "glb_asset": "models/anatomy/skeleton/FJ3263.glb",
       "triangle_count": 738,
-      "glb_size_bytes": 17432
+      "glb_size_bytes": 17432,
+      "load_region": "head-neck"
     },
     {
       "fj_element_file_id": "FJ3264",
@@ -1233,7 +1344,8 @@
       "anatomical_category": "bone - foot",
       "glb_asset": "models/anatomy/skeleton/FJ3264.glb",
       "triangle_count": 466,
-      "glb_size_bytes": 11556
+      "glb_size_bytes": 11556,
+      "load_region": "lower-leg-foot"
     },
     {
       "fj_element_file_id": "FJ3265",
@@ -1244,7 +1356,8 @@
       "anatomical_category": "bone or cartilage - other (name not in keyword list)",
       "glb_asset": "models/anatomy/skeleton/FJ3265.glb",
       "triangle_count": 640,
-      "glb_size_bytes": 14064
+      "glb_size_bytes": 14064,
+      "load_region": "head-neck"
     },
     {
       "fj_element_file_id": "FJ3266",
@@ -1255,7 +1368,8 @@
       "anatomical_category": "bone or cartilage - other (name not in keyword list)",
       "glb_asset": "models/anatomy/skeleton/FJ3266.glb",
       "triangle_count": 100,
-      "glb_size_bytes": 3904
+      "glb_size_bytes": 3904,
+      "load_region": "lower-leg-foot"
     },
     {
       "fj_element_file_id": "FJ3267",
@@ -1266,7 +1380,8 @@
       "anatomical_category": "bone - foot",
       "glb_asset": "models/anatomy/skeleton/FJ3267.glb",
       "triangle_count": 680,
-      "glb_size_bytes": 15244
+      "glb_size_bytes": 15244,
+      "load_region": "lower-leg-foot"
     },
     {
       "fj_element_file_id": "FJ3268",
@@ -1277,7 +1392,8 @@
       "anatomical_category": "bone - hand",
       "glb_asset": "models/anatomy/skeleton/FJ3268.glb",
       "triangle_count": 314,
-      "glb_size_bytes": 7808
+      "glb_size_bytes": 7808,
+      "load_region": "forearm-hand"
     },
     {
       "fj_element_file_id": "FJ3269",
@@ -1288,7 +1404,8 @@
       "anatomical_category": "bone - skull",
       "glb_asset": "models/anatomy/skeleton/FJ3269.glb",
       "triangle_count": 5198,
-      "glb_size_bytes": 118468
+      "glb_size_bytes": 118468,
+      "load_region": "head-neck"
     },
     {
       "fj_element_file_id": "FJ3270",
@@ -1299,7 +1416,8 @@
       "anatomical_category": "bone or cartilage - other (name not in keyword list)",
       "glb_asset": "models/anatomy/skeleton/FJ3270.glb",
       "triangle_count": 144,
-      "glb_size_bytes": 4604
+      "glb_size_bytes": 4604,
+      "load_region": "lower-leg-foot"
     },
     {
       "fj_element_file_id": "FJ3271",
@@ -1310,7 +1428,8 @@
       "anatomical_category": "bone - foot",
       "glb_asset": "models/anatomy/skeleton/FJ3271.glb",
       "triangle_count": 996,
-      "glb_size_bytes": 21384
+      "glb_size_bytes": 21384,
+      "load_region": "lower-leg-foot"
     },
     {
       "fj_element_file_id": "FJ3272",
@@ -1321,7 +1440,8 @@
       "anatomical_category": "bone or cartilage - other (name not in keyword list)",
       "glb_asset": "models/anatomy/skeleton/FJ3272.glb",
       "triangle_count": 438,
-      "glb_size_bytes": 10380
+      "glb_size_bytes": 10380,
+      "load_region": "head-neck"
     },
     {
       "fj_element_file_id": "FJ3273",
@@ -1332,7 +1452,8 @@
       "anatomical_category": "bone or cartilage - other (name not in keyword list)",
       "glb_asset": "models/anatomy/skeleton/FJ3273.glb",
       "triangle_count": 1938,
-      "glb_size_bytes": 41016
+      "glb_size_bytes": 41016,
+      "load_region": "head-neck"
     },
     {
       "fj_element_file_id": "FJ3274",
@@ -1343,7 +1464,8 @@
       "anatomical_category": "bone - skull",
       "glb_asset": "models/anatomy/skeleton/FJ3274.glb",
       "triangle_count": 13210,
-      "glb_size_bytes": 281520
+      "glb_size_bytes": 281520,
+      "load_region": "head-neck"
     },
     {
       "fj_element_file_id": "FJ3275",
@@ -1354,7 +1476,8 @@
       "anatomical_category": "bone - lower limb",
       "glb_asset": "models/anatomy/skeleton/FJ3275.glb",
       "triangle_count": 310,
-      "glb_size_bytes": 7616
+      "glb_size_bytes": 7616,
+      "load_region": "thigh"
     },
     {
       "fj_element_file_id": "FJ3276",
@@ -1365,7 +1488,8 @@
       "anatomical_category": "bone - hand",
       "glb_asset": "models/anatomy/skeleton/FJ3276.glb",
       "triangle_count": 210,
-      "glb_size_bytes": 5476
+      "glb_size_bytes": 5476,
+      "load_region": "forearm-hand"
     },
     {
       "fj_element_file_id": "FJ3277",
@@ -1376,7 +1500,8 @@
       "anatomical_category": "bone - upper limb",
       "glb_asset": "models/anatomy/skeleton/FJ3277.glb",
       "triangle_count": 632,
-      "glb_size_bytes": 14064
+      "glb_size_bytes": 14064,
+      "load_region": "forearm-hand"
     },
     {
       "fj_element_file_id": "FJ3278",
@@ -1387,7 +1512,8 @@
       "anatomical_category": "bone - hand",
       "glb_asset": "models/anatomy/skeleton/FJ3278.glb",
       "triangle_count": 312,
-      "glb_size_bytes": 7528
+      "glb_size_bytes": 7528,
+      "load_region": "forearm-hand"
     },
     {
       "fj_element_file_id": "FJ3279",
@@ -1398,7 +1524,8 @@
       "anatomical_category": "bone - shoulder girdle",
       "glb_asset": "models/anatomy/skeleton/FJ3279.glb",
       "triangle_count": 28106,
-      "glb_size_bytes": 507728
+      "glb_size_bytes": 507728,
+      "load_region": "shoulder-arm"
     },
     {
       "fj_element_file_id": "FJ3280",
@@ -1409,7 +1536,8 @@
       "anatomical_category": "bone - foot",
       "glb_asset": "models/anatomy/skeleton/FJ3280.glb",
       "triangle_count": 1356,
-      "glb_size_bytes": 28208
+      "glb_size_bytes": 28208,
+      "load_region": "lower-leg-foot"
     },
     {
       "fj_element_file_id": "FJ3281",
@@ -1420,7 +1548,8 @@
       "anatomical_category": "bone - skull",
       "glb_asset": "models/anatomy/skeleton/FJ3281.glb",
       "triangle_count": 4936,
-      "glb_size_bytes": 103376
+      "glb_size_bytes": 103376,
+      "load_region": "head-neck"
     },
     {
       "fj_element_file_id": "FJ3282",
@@ -1431,7 +1560,8 @@
       "anatomical_category": "bone - lower limb",
       "glb_asset": "models/anatomy/skeleton/FJ3282.glb",
       "triangle_count": 1692,
-      "glb_size_bytes": 32716
+      "glb_size_bytes": 32716,
+      "load_region": "lower-leg-foot"
     },
     {
       "fj_element_file_id": "FJ3283",
@@ -1442,7 +1572,8 @@
       "anatomical_category": "bone - hand",
       "glb_asset": "models/anatomy/skeleton/FJ3283.glb",
       "triangle_count": 356,
-      "glb_size_bytes": 8996
+      "glb_size_bytes": 8996,
+      "load_region": "forearm-hand"
     },
     {
       "fj_element_file_id": "FJ3284",
@@ -1453,7 +1584,8 @@
       "anatomical_category": "bone - hand",
       "glb_asset": "models/anatomy/skeleton/FJ3284.glb",
       "triangle_count": 398,
-      "glb_size_bytes": 10520
+      "glb_size_bytes": 10520,
+      "load_region": "forearm-hand"
     },
     {
       "fj_element_file_id": "FJ3285",
@@ -1464,7 +1596,8 @@
       "anatomical_category": "bone or cartilage - other (name not in keyword list)",
       "glb_asset": "models/anatomy/skeleton/FJ3285.glb",
       "triangle_count": 304,
-      "glb_size_bytes": 7580
+      "glb_size_bytes": 7580,
+      "load_region": "forearm-hand"
     },
     {
       "fj_element_file_id": "FJ3286",
@@ -1475,7 +1608,8 @@
       "anatomical_category": "bone - upper limb",
       "glb_asset": "models/anatomy/skeleton/FJ3286.glb",
       "triangle_count": 824,
-      "glb_size_bytes": 18288
+      "glb_size_bytes": 18288,
+      "load_region": "forearm-hand"
     },
     {
       "fj_element_file_id": "FJ3287",
@@ -1486,7 +1620,8 @@
       "anatomical_category": "bone - skull",
       "glb_asset": "models/anatomy/skeleton/FJ3287.glb",
       "triangle_count": 1434,
-      "glb_size_bytes": 32344
+      "glb_size_bytes": 32344,
+      "load_region": "head-neck"
     },
     {
       "fj_element_file_id": "FJ3288",
@@ -1497,7 +1632,8 @@
       "anatomical_category": "bone - pelvic girdle",
       "glb_asset": "models/anatomy/skeleton/FJ3288.glb",
       "triangle_count": 2332,
-      "glb_size_bytes": 45608
+      "glb_size_bytes": 45608,
+      "load_region": "hip-pelvis"
     },
     {
       "fj_element_file_id": "FJ3289",
@@ -1508,7 +1644,8 @@
       "anatomical_category": "bone - skull",
       "glb_asset": "models/anatomy/skeleton/FJ3289.glb",
       "triangle_count": 5576,
-      "glb_size_bytes": 103184
+      "glb_size_bytes": 103184,
+      "load_region": "head-neck"
     },
     {
       "fj_element_file_id": "FJ3290",
@@ -1519,7 +1656,8 @@
       "anatomical_category": "bone - thorax",
       "glb_asset": "models/anatomy/skeleton/FJ3290.glb",
       "triangle_count": 2546,
-      "glb_size_bytes": 51428
+      "glb_size_bytes": 51428,
+      "load_region": "torso"
     },
     {
       "fj_element_file_id": "FJ3291",
@@ -1530,7 +1668,8 @@
       "anatomical_category": "bone - hand/foot (digit) (hand)",
       "glb_asset": "models/anatomy/skeleton/FJ3291.glb",
       "triangle_count": 340,
-      "glb_size_bytes": 8656
+      "glb_size_bytes": 8656,
+      "load_region": "forearm-hand"
     },
     {
       "fj_element_file_id": "FJ3292",
@@ -1541,7 +1680,8 @@
       "anatomical_category": "bone - hand/foot (digit) (hand)",
       "glb_asset": "models/anatomy/skeleton/FJ3292.glb",
       "triangle_count": 316,
-      "glb_size_bytes": 8588
+      "glb_size_bytes": 8588,
+      "load_region": "forearm-hand"
     },
     {
       "fj_element_file_id": "FJ3293",
@@ -1552,7 +1692,8 @@
       "anatomical_category": "bone - hand/foot (digit) (foot)",
       "glb_asset": "models/anatomy/skeleton/FJ3293.glb",
       "triangle_count": 324,
-      "glb_size_bytes": 8112
+      "glb_size_bytes": 8112,
+      "load_region": "forearm-hand"
     },
     {
       "fj_element_file_id": "FJ3294",
@@ -1563,7 +1704,8 @@
       "anatomical_category": "bone - hand/foot (digit) (foot)",
       "glb_asset": "models/anatomy/skeleton/FJ3294.glb",
       "triangle_count": 294,
-      "glb_size_bytes": 7640
+      "glb_size_bytes": 7640,
+      "load_region": "forearm-hand"
     },
     {
       "fj_element_file_id": "FJ3295",
@@ -1574,7 +1716,8 @@
       "anatomical_category": "bone - hand/foot (digit) (foot)",
       "glb_asset": "models/anatomy/skeleton/FJ3295.glb",
       "triangle_count": 284,
-      "glb_size_bytes": 7536
+      "glb_size_bytes": 7536,
+      "load_region": "forearm-hand"
     },
     {
       "fj_element_file_id": "FJ3296",
@@ -1585,7 +1728,8 @@
       "anatomical_category": "bone - hand/foot (digit) (hand)",
       "glb_asset": "models/anatomy/skeleton/FJ3296.glb",
       "triangle_count": 306,
-      "glb_size_bytes": 7780
+      "glb_size_bytes": 7780,
+      "load_region": "forearm-hand"
     },
     {
       "fj_element_file_id": "FJ3297",
@@ -1596,7 +1740,8 @@
       "anatomical_category": "bone - hand/foot (digit) (hand)",
       "glb_asset": "models/anatomy/skeleton/FJ3297.glb",
       "triangle_count": 254,
-      "glb_size_bytes": 7564
+      "glb_size_bytes": 7564,
+      "load_region": "forearm-hand"
     },
     {
       "fj_element_file_id": "FJ3298",
@@ -1607,7 +1752,8 @@
       "anatomical_category": "bone - hand/foot (digit) (foot)",
       "glb_asset": "models/anatomy/skeleton/FJ3298.glb",
       "triangle_count": 226,
-      "glb_size_bytes": 6224
+      "glb_size_bytes": 6224,
+      "load_region": "forearm-hand"
     },
     {
       "fj_element_file_id": "FJ3299",
@@ -1618,7 +1764,8 @@
       "anatomical_category": "bone - hand/foot (digit) (hand)",
       "glb_asset": "models/anatomy/skeleton/FJ3299.glb",
       "triangle_count": 384,
-      "glb_size_bytes": 9232
+      "glb_size_bytes": 9232,
+      "load_region": "forearm-hand"
     },
     {
       "fj_element_file_id": "FJ3300",
@@ -1629,7 +1776,8 @@
       "anatomical_category": "bone - hand/foot (digit) (foot)",
       "glb_asset": "models/anatomy/skeleton/FJ3300.glb",
       "triangle_count": 264,
-      "glb_size_bytes": 7632
+      "glb_size_bytes": 7632,
+      "load_region": "forearm-hand"
     },
     {
       "fj_element_file_id": "FJ3301",
@@ -1640,7 +1788,8 @@
       "anatomical_category": "bone - hand/foot (digit) (foot)",
       "glb_asset": "models/anatomy/skeleton/FJ3301.glb",
       "triangle_count": 292,
-      "glb_size_bytes": 7752
+      "glb_size_bytes": 7752,
+      "load_region": "forearm-hand"
     },
     {
       "fj_element_file_id": "FJ3302",
@@ -1651,7 +1800,8 @@
       "anatomical_category": "bone - hand/foot (digit) (foot)",
       "glb_asset": "models/anatomy/skeleton/FJ3302.glb",
       "triangle_count": 350,
-      "glb_size_bytes": 8820
+      "glb_size_bytes": 8820,
+      "load_region": "forearm-hand"
     },
     {
       "fj_element_file_id": "FJ3303",
@@ -1662,7 +1812,8 @@
       "anatomical_category": "bone - hand/foot (digit) (hand)",
       "glb_asset": "models/anatomy/skeleton/FJ3303.glb",
       "triangle_count": 264,
-      "glb_size_bytes": 7580
+      "glb_size_bytes": 7580,
+      "load_region": "forearm-hand"
     },
     {
       "fj_element_file_id": "FJ3304",
@@ -1673,7 +1824,8 @@
       "anatomical_category": "bone - hand/foot (digit) (hand)",
       "glb_asset": "models/anatomy/skeleton/FJ3304.glb",
       "triangle_count": 208,
-      "glb_size_bytes": 6736
+      "glb_size_bytes": 6736,
+      "load_region": "forearm-hand"
     },
     {
       "fj_element_file_id": "FJ3305",
@@ -1684,7 +1836,8 @@
       "anatomical_category": "bone - hand/foot (digit) (foot)",
       "glb_asset": "models/anatomy/skeleton/FJ3305.glb",
       "triangle_count": 136,
-      "glb_size_bytes": 4704
+      "glb_size_bytes": 4704,
+      "load_region": "forearm-hand"
     },
     {
       "fj_element_file_id": "FJ3306",
@@ -1695,7 +1848,8 @@
       "anatomical_category": "bone - hand/foot (digit) (hand)",
       "glb_asset": "models/anatomy/skeleton/FJ3306.glb",
       "triangle_count": 342,
-      "glb_size_bytes": 8936
+      "glb_size_bytes": 8936,
+      "load_region": "forearm-hand"
     },
     {
       "fj_element_file_id": "FJ3307",
@@ -1706,7 +1860,8 @@
       "anatomical_category": "bone - foot",
       "glb_asset": "models/anatomy/skeleton/FJ3307.glb",
       "triangle_count": 744,
-      "glb_size_bytes": 16920
+      "glb_size_bytes": 16920,
+      "load_region": "lower-leg-foot"
     },
     {
       "fj_element_file_id": "FJ3308",
@@ -1717,7 +1872,8 @@
       "anatomical_category": "bone - foot",
       "glb_asset": "models/anatomy/skeleton/FJ3308.glb",
       "triangle_count": 716,
-      "glb_size_bytes": 16660
+      "glb_size_bytes": 16660,
+      "load_region": "lower-leg-foot"
     },
     {
       "fj_element_file_id": "FJ3309",
@@ -1728,7 +1884,8 @@
       "anatomical_category": "bone - skull",
       "glb_asset": "models/anatomy/skeleton/FJ3309.glb",
       "triangle_count": 12450,
-      "glb_size_bytes": 244032
+      "glb_size_bytes": 244032,
+      "load_region": "head-neck"
     },
     {
       "fj_element_file_id": "FJ3310",
@@ -1739,7 +1896,8 @@
       "anatomical_category": "bone - hand/foot (digit) (foot)",
       "glb_asset": "models/anatomy/skeleton/FJ3310.glb",
       "triangle_count": 486,
-      "glb_size_bytes": 11104
+      "glb_size_bytes": 11104,
+      "load_region": "forearm-hand"
     },
     {
       "fj_element_file_id": "FJ3311",
@@ -1750,7 +1908,8 @@
       "anatomical_category": "bone - hand/foot (digit) (foot)",
       "glb_asset": "models/anatomy/skeleton/FJ3311.glb",
       "triangle_count": 408,
-      "glb_size_bytes": 9840
+      "glb_size_bytes": 9840,
+      "load_region": "forearm-hand"
     },
     {
       "fj_element_file_id": "FJ3312",
@@ -1761,7 +1920,8 @@
       "anatomical_category": "bone - hand/foot (digit) (foot)",
       "glb_asset": "models/anatomy/skeleton/FJ3312.glb",
       "triangle_count": 438,
-      "glb_size_bytes": 10184
+      "glb_size_bytes": 10184,
+      "load_region": "forearm-hand"
     },
     {
       "fj_element_file_id": "FJ3313",
@@ -1772,7 +1932,8 @@
       "anatomical_category": "bone - hand/foot (digit) (hand)",
       "glb_asset": "models/anatomy/skeleton/FJ3313.glb",
       "triangle_count": 392,
-      "glb_size_bytes": 9116
+      "glb_size_bytes": 9116,
+      "load_region": "forearm-hand"
     },
     {
       "fj_element_file_id": "FJ3314",
@@ -1783,7 +1944,8 @@
       "anatomical_category": "bone - hand/foot (digit) (hand)",
       "glb_asset": "models/anatomy/skeleton/FJ3314.glb",
       "triangle_count": 274,
-      "glb_size_bytes": 7016
+      "glb_size_bytes": 7016,
+      "load_region": "forearm-hand"
     },
     {
       "fj_element_file_id": "FJ3315",
@@ -1794,7 +1956,8 @@
       "anatomical_category": "bone - hand/foot (digit) (foot)",
       "glb_asset": "models/anatomy/skeleton/FJ3315.glb",
       "triangle_count": 396,
-      "glb_size_bytes": 9360
+      "glb_size_bytes": 9360,
+      "load_region": "forearm-hand"
     },
     {
       "fj_element_file_id": "FJ3316",
@@ -1805,7 +1968,8 @@
       "anatomical_category": "bone - hand/foot (digit) (hand)",
       "glb_asset": "models/anatomy/skeleton/FJ3316.glb",
       "triangle_count": 460,
-      "glb_size_bytes": 10532
+      "glb_size_bytes": 10532,
+      "load_region": "forearm-hand"
     },
     {
       "fj_element_file_id": "FJ3317",
@@ -1816,7 +1980,8 @@
       "anatomical_category": "bone - hand/foot (digit) (hand)",
       "glb_asset": "models/anatomy/skeleton/FJ3317.glb",
       "triangle_count": 376,
-      "glb_size_bytes": 8612
+      "glb_size_bytes": 8612,
+      "load_region": "forearm-hand"
     },
     {
       "fj_element_file_id": "FJ3318",
@@ -1827,7 +1992,8 @@
       "anatomical_category": "bone - hand/foot (digit) (hand)",
       "glb_asset": "models/anatomy/skeleton/FJ3318.glb",
       "triangle_count": 346,
-      "glb_size_bytes": 8356
+      "glb_size_bytes": 8356,
+      "load_region": "forearm-hand"
     },
     {
       "fj_element_file_id": "FJ3319",
@@ -1838,7 +2004,8 @@
       "anatomical_category": "bone - hand/foot (digit) (foot)",
       "glb_asset": "models/anatomy/skeleton/FJ3319.glb",
       "triangle_count": 414,
-      "glb_size_bytes": 9588
+      "glb_size_bytes": 9588,
+      "load_region": "forearm-hand"
     },
     {
       "fj_element_file_id": "FJ3320",
@@ -1849,7 +2016,8 @@
       "anatomical_category": "bone - hand/foot (digit) (foot)",
       "glb_asset": "models/anatomy/skeleton/FJ3320.glb",
       "triangle_count": 422,
-      "glb_size_bytes": 10596
+      "glb_size_bytes": 10596,
+      "load_region": "forearm-hand"
     },
     {
       "fj_element_file_id": "FJ3321",
@@ -1860,7 +2028,8 @@
       "anatomical_category": "bone - hand/foot (digit) (foot)",
       "glb_asset": "models/anatomy/skeleton/FJ3321.glb",
       "triangle_count": 438,
-      "glb_size_bytes": 10164
+      "glb_size_bytes": 10164,
+      "load_region": "forearm-hand"
     },
     {
       "fj_element_file_id": "FJ3322",
@@ -1871,7 +2040,8 @@
       "anatomical_category": "bone - hand/foot (digit) (hand)",
       "glb_asset": "models/anatomy/skeleton/FJ3322.glb",
       "triangle_count": 386,
-      "glb_size_bytes": 9176
+      "glb_size_bytes": 9176,
+      "load_region": "forearm-hand"
     },
     {
       "fj_element_file_id": "FJ3323",
@@ -1882,7 +2052,8 @@
       "anatomical_category": "bone - hand/foot (digit) (hand)",
       "glb_asset": "models/anatomy/skeleton/FJ3323.glb",
       "triangle_count": 314,
-      "glb_size_bytes": 7808
+      "glb_size_bytes": 7808,
+      "load_region": "forearm-hand"
     },
     {
       "fj_element_file_id": "FJ3324",
@@ -1893,7 +2064,8 @@
       "anatomical_category": "bone - hand/foot (digit) (foot)",
       "glb_asset": "models/anatomy/skeleton/FJ3324.glb",
       "triangle_count": 406,
-      "glb_size_bytes": 9592
+      "glb_size_bytes": 9592,
+      "load_region": "forearm-hand"
     },
     {
       "fj_element_file_id": "FJ3325",
@@ -1904,7 +2076,8 @@
       "anatomical_category": "bone - hand/foot (digit) (hand)",
       "glb_asset": "models/anatomy/skeleton/FJ3325.glb",
       "triangle_count": 458,
-      "glb_size_bytes": 10692
+      "glb_size_bytes": 10692,
+      "load_region": "forearm-hand"
     },
     {
       "fj_element_file_id": "FJ3326",
@@ -1915,7 +2088,8 @@
       "anatomical_category": "bone - hand/foot (digit) (hand)",
       "glb_asset": "models/anatomy/skeleton/FJ3326.glb",
       "triangle_count": 376,
-      "glb_size_bytes": 8708
+      "glb_size_bytes": 8708,
+      "load_region": "forearm-hand"
     },
     {
       "fj_element_file_id": "FJ3327",
@@ -1926,7 +2100,8 @@
       "anatomical_category": "bone - hand/foot (digit) (hand)",
       "glb_asset": "models/anatomy/skeleton/FJ3327.glb",
       "triangle_count": 318,
-      "glb_size_bytes": 8068
+      "glb_size_bytes": 8068,
+      "load_region": "forearm-hand"
     },
     {
       "fj_element_file_id": "FJ3328",
@@ -1937,7 +2112,8 @@
       "anatomical_category": "bone - hand/foot (digit) (foot)",
       "glb_asset": "models/anatomy/skeleton/FJ3328.glb",
       "triangle_count": 380,
-      "glb_size_bytes": 9312
+      "glb_size_bytes": 9312,
+      "load_region": "forearm-hand"
     },
     {
       "fj_element_file_id": "FJ3329",
@@ -1948,7 +2124,8 @@
       "anatomical_category": "bone - hand/foot (digit) (foot)",
       "glb_asset": "models/anatomy/skeleton/FJ3329.glb",
       "triangle_count": 516,
-      "glb_size_bytes": 12168
+      "glb_size_bytes": 12168,
+      "load_region": "forearm-hand"
     },
     {
       "fj_element_file_id": "FJ3330",
@@ -1959,7 +2136,8 @@
       "anatomical_category": "bone - thorax",
       "glb_asset": "models/anatomy/skeleton/FJ3330.glb",
       "triangle_count": 6820,
-      "glb_size_bytes": 124328
+      "glb_size_bytes": 124328,
+      "load_region": "torso"
     },
     {
       "fj_element_file_id": "FJ3331",
@@ -1970,7 +2148,8 @@
       "anatomical_category": "bone - thorax",
       "glb_asset": "models/anatomy/skeleton/FJ3331.glb",
       "triangle_count": 4866,
-      "glb_size_bytes": 89132
+      "glb_size_bytes": 89132,
+      "load_region": "torso"
     },
     {
       "fj_element_file_id": "FJ3332",
@@ -1981,7 +2160,8 @@
       "anatomical_category": "bone - thorax",
       "glb_asset": "models/anatomy/skeleton/FJ3332.glb",
       "triangle_count": 2818,
-      "glb_size_bytes": 52248
+      "glb_size_bytes": 52248,
+      "load_region": "torso"
     },
     {
       "fj_element_file_id": "FJ3333",
@@ -1992,7 +2172,8 @@
       "anatomical_category": "bone or cartilage - other (name not in keyword list)",
       "glb_asset": "models/anatomy/skeleton/FJ3333.glb",
       "triangle_count": 676,
-      "glb_size_bytes": 15960
+      "glb_size_bytes": 15960,
+      "load_region": "torso"
     },
     {
       "fj_element_file_id": "FJ3334",
@@ -2003,7 +2184,8 @@
       "anatomical_category": "bone - thorax",
       "glb_asset": "models/anatomy/skeleton/FJ3334.glb",
       "triangle_count": 3276,
-      "glb_size_bytes": 60512
+      "glb_size_bytes": 60512,
+      "load_region": "torso"
     },
     {
       "fj_element_file_id": "FJ3335",
@@ -2014,7 +2196,8 @@
       "anatomical_category": "bone or cartilage - other (name not in keyword list)",
       "glb_asset": "models/anatomy/skeleton/FJ3335.glb",
       "triangle_count": 658,
-      "glb_size_bytes": 14580
+      "glb_size_bytes": 14580,
+      "load_region": "torso"
     },
     {
       "fj_element_file_id": "FJ3336",
@@ -2025,7 +2208,8 @@
       "anatomical_category": "bone - thorax",
       "glb_asset": "models/anatomy/skeleton/FJ3336.glb",
       "triangle_count": 5594,
-      "glb_size_bytes": 103680
+      "glb_size_bytes": 103680,
+      "load_region": "torso"
     },
     {
       "fj_element_file_id": "FJ3337",
@@ -2036,7 +2220,8 @@
       "anatomical_category": "bone or cartilage - other (name not in keyword list)",
       "glb_asset": "models/anatomy/skeleton/FJ3337.glb",
       "triangle_count": 652,
-      "glb_size_bytes": 14616
+      "glb_size_bytes": 14616,
+      "load_region": "torso"
     },
     {
       "fj_element_file_id": "FJ3338",
@@ -2047,7 +2232,8 @@
       "anatomical_category": "bone - thorax",
       "glb_asset": "models/anatomy/skeleton/FJ3338.glb",
       "triangle_count": 7254,
-      "glb_size_bytes": 132188
+      "glb_size_bytes": 132188,
+      "load_region": "torso"
     },
     {
       "fj_element_file_id": "FJ3339",
@@ -2058,7 +2244,8 @@
       "anatomical_category": "bone or cartilage - other (name not in keyword list)",
       "glb_asset": "models/anatomy/skeleton/FJ3339.glb",
       "triangle_count": 694,
-      "glb_size_bytes": 14988
+      "glb_size_bytes": 14988,
+      "load_region": "torso"
     },
     {
       "fj_element_file_id": "FJ3340",
@@ -2069,7 +2256,8 @@
       "anatomical_category": "bone - thorax",
       "glb_asset": "models/anatomy/skeleton/FJ3340.glb",
       "triangle_count": 8832,
-      "glb_size_bytes": 160884
+      "glb_size_bytes": 160884,
+      "load_region": "torso"
     },
     {
       "fj_element_file_id": "FJ3341",
@@ -2080,7 +2268,8 @@
       "anatomical_category": "bone or cartilage - other (name not in keyword list)",
       "glb_asset": "models/anatomy/skeleton/FJ3341.glb",
       "triangle_count": 1168,
-      "glb_size_bytes": 24096
+      "glb_size_bytes": 24096,
+      "load_region": "torso"
     },
     {
       "fj_element_file_id": "FJ3342",
@@ -2091,7 +2280,8 @@
       "anatomical_category": "bone - thorax",
       "glb_asset": "models/anatomy/skeleton/FJ3342.glb",
       "triangle_count": 9710,
-      "glb_size_bytes": 177552
+      "glb_size_bytes": 177552,
+      "load_region": "torso"
     },
     {
       "fj_element_file_id": "FJ3343",
@@ -2102,7 +2292,8 @@
       "anatomical_category": "bone or cartilage - other (name not in keyword list)",
       "glb_asset": "models/anatomy/skeleton/FJ3343.glb",
       "triangle_count": 1546,
-      "glb_size_bytes": 34024
+      "glb_size_bytes": 34024,
+      "load_region": "torso"
     },
     {
       "fj_element_file_id": "FJ3344",
@@ -2113,7 +2304,8 @@
       "anatomical_category": "bone - thorax",
       "glb_asset": "models/anatomy/skeleton/FJ3344.glb",
       "triangle_count": 10246,
-      "glb_size_bytes": 186960
+      "glb_size_bytes": 186960,
+      "load_region": "torso"
     },
     {
       "fj_element_file_id": "FJ3345",
@@ -2124,7 +2316,8 @@
       "anatomical_category": "bone or cartilage - other (name not in keyword list)",
       "glb_asset": "models/anatomy/skeleton/FJ3345.glb",
       "triangle_count": 2450,
-      "glb_size_bytes": 53056
+      "glb_size_bytes": 53056,
+      "load_region": "torso"
     },
     {
       "fj_element_file_id": "FJ3346",
@@ -2135,7 +2328,8 @@
       "anatomical_category": "bone - thorax",
       "glb_asset": "models/anatomy/skeleton/FJ3346.glb",
       "triangle_count": 10032,
-      "glb_size_bytes": 183036
+      "glb_size_bytes": 183036,
+      "load_region": "torso"
     },
     {
       "fj_element_file_id": "FJ3347",
@@ -2146,7 +2340,8 @@
       "anatomical_category": "bone - thorax",
       "glb_asset": "models/anatomy/skeleton/FJ3347.glb",
       "triangle_count": 8336,
-      "glb_size_bytes": 152240
+      "glb_size_bytes": 152240,
+      "load_region": "torso"
     },
     {
       "fj_element_file_id": "FJ3348",
@@ -2157,7 +2352,8 @@
       "anatomical_category": "bone - thorax",
       "glb_asset": "models/anatomy/skeleton/FJ3348.glb",
       "triangle_count": 7576,
-      "glb_size_bytes": 138296
+      "glb_size_bytes": 138296,
+      "load_region": "torso"
     },
     {
       "fj_element_file_id": "FJ3349",
@@ -2168,7 +2364,8 @@
       "anatomical_category": "bone - upper limb",
       "glb_asset": "models/anatomy/skeleton/FJ3349.glb",
       "triangle_count": 672,
-      "glb_size_bytes": 14784
+      "glb_size_bytes": 14784,
+      "load_region": "forearm-hand"
     },
     {
       "fj_element_file_id": "FJ3350",
@@ -2179,7 +2376,8 @@
       "anatomical_category": "bone - hand",
       "glb_asset": "models/anatomy/skeleton/FJ3350.glb",
       "triangle_count": 566,
-      "glb_size_bytes": 12204
+      "glb_size_bytes": 12204,
+      "load_region": "forearm-hand"
     },
     {
       "fj_element_file_id": "FJ3351",
@@ -2190,7 +2388,8 @@
       "anatomical_category": "bone - foot",
       "glb_asset": "models/anatomy/skeleton/FJ3351.glb",
       "triangle_count": 1122,
-      "glb_size_bytes": 22620
+      "glb_size_bytes": 22620,
+      "load_region": "lower-leg-foot"
     },
     {
       "fj_element_file_id": "FJ3352",
@@ -2201,7 +2400,8 @@
       "anatomical_category": "bone - hand",
       "glb_asset": "models/anatomy/skeleton/FJ3352.glb",
       "triangle_count": 748,
-      "glb_size_bytes": 15960
+      "glb_size_bytes": 15960,
+      "load_region": "forearm-hand"
     },
     {
       "fj_element_file_id": "FJ3353",
@@ -2212,7 +2412,8 @@
       "anatomical_category": "bone - foot",
       "glb_asset": "models/anatomy/skeleton/FJ3353.glb",
       "triangle_count": 752,
-      "glb_size_bytes": 18316
+      "glb_size_bytes": 18316,
+      "load_region": "lower-leg-foot"
     },
     {
       "fj_element_file_id": "FJ3354",
@@ -2223,7 +2424,8 @@
       "anatomical_category": "bone - hand",
       "glb_asset": "models/anatomy/skeleton/FJ3354.glb",
       "triangle_count": 702,
-      "glb_size_bytes": 15348
+      "glb_size_bytes": 15348,
+      "load_region": "forearm-hand"
     },
     {
       "fj_element_file_id": "FJ3355",
@@ -2234,7 +2436,8 @@
       "anatomical_category": "bone - foot",
       "glb_asset": "models/anatomy/skeleton/FJ3355.glb",
       "triangle_count": 700,
-      "glb_size_bytes": 15796
+      "glb_size_bytes": 15796,
+      "load_region": "lower-leg-foot"
     },
     {
       "fj_element_file_id": "FJ3356",
@@ -2245,7 +2448,8 @@
       "anatomical_category": "bone - hand",
       "glb_asset": "models/anatomy/skeleton/FJ3356.glb",
       "triangle_count": 536,
-      "glb_size_bytes": 12816
+      "glb_size_bytes": 12816,
+      "load_region": "forearm-hand"
     },
     {
       "fj_element_file_id": "FJ3357",
@@ -2256,7 +2460,8 @@
       "anatomical_category": "bone - foot",
       "glb_asset": "models/anatomy/skeleton/FJ3357.glb",
       "triangle_count": 674,
-      "glb_size_bytes": 15016
+      "glb_size_bytes": 15016,
+      "load_region": "lower-leg-foot"
     },
     {
       "fj_element_file_id": "FJ3358",
@@ -2267,7 +2472,8 @@
       "anatomical_category": "bone - hand",
       "glb_asset": "models/anatomy/skeleton/FJ3358.glb",
       "triangle_count": 506,
-      "glb_size_bytes": 11168
+      "glb_size_bytes": 11168,
+      "load_region": "forearm-hand"
     },
     {
       "fj_element_file_id": "FJ3359",
@@ -2278,7 +2484,8 @@
       "anatomical_category": "bone - foot",
       "glb_asset": "models/anatomy/skeleton/FJ3359.glb",
       "triangle_count": 794,
-      "glb_size_bytes": 16676
+      "glb_size_bytes": 16676,
+      "load_region": "lower-leg-foot"
     },
     {
       "fj_element_file_id": "FJ3360",
@@ -2289,7 +2496,8 @@
       "anatomical_category": "bone - foot",
       "glb_asset": "models/anatomy/skeleton/FJ3360.glb",
       "triangle_count": 1262,
-      "glb_size_bytes": 26756
+      "glb_size_bytes": 26756,
+      "load_region": "lower-leg-foot"
     },
     {
       "fj_element_file_id": "FJ3361",
@@ -2300,7 +2508,8 @@
       "anatomical_category": "bone - hand",
       "glb_asset": "models/anatomy/skeleton/FJ3361.glb",
       "triangle_count": 428,
-      "glb_size_bytes": 10148
+      "glb_size_bytes": 10148,
+      "load_region": "forearm-hand"
     },
     {
       "fj_element_file_id": "FJ3362",
@@ -2311,7 +2520,8 @@
       "anatomical_category": "bone - shoulder girdle",
       "glb_asset": "models/anatomy/skeleton/FJ3362.glb",
       "triangle_count": 1146,
-      "glb_size_bytes": 22308
+      "glb_size_bytes": 22308,
+      "load_region": "shoulder-arm"
     },
     {
       "fj_element_file_id": "FJ3364",
@@ -2322,7 +2532,8 @@
       "anatomical_category": "bone - foot",
       "glb_asset": "models/anatomy/skeleton/FJ3364.glb",
       "triangle_count": 932,
-      "glb_size_bytes": 20068
+      "glb_size_bytes": 20068,
+      "load_region": "lower-leg-foot"
     },
     {
       "fj_element_file_id": "FJ3365",
@@ -2333,7 +2544,8 @@
       "anatomical_category": "bone - lower limb",
       "glb_asset": "models/anatomy/skeleton/FJ3365.glb",
       "triangle_count": 3102,
-      "glb_size_bytes": 57840
+      "glb_size_bytes": 57840,
+      "load_region": "thigh"
     },
     {
       "fj_element_file_id": "FJ3366",
@@ -2344,7 +2556,8 @@
       "anatomical_category": "bone - lower limb",
       "glb_asset": "models/anatomy/skeleton/FJ3366.glb",
       "triangle_count": 1142,
-      "glb_size_bytes": 22528
+      "glb_size_bytes": 22528,
+      "load_region": "lower-leg-foot"
     },
     {
       "fj_element_file_id": "FJ3367",
@@ -2355,7 +2568,8 @@
       "anatomical_category": "bone - hand",
       "glb_asset": "models/anatomy/skeleton/FJ3367.glb",
       "triangle_count": 522,
-      "glb_size_bytes": 12608
+      "glb_size_bytes": 12608,
+      "load_region": "forearm-hand"
     },
     {
       "fj_element_file_id": "FJ3368",
@@ -2366,7 +2580,8 @@
       "anatomical_category": "bone - upper limb",
       "glb_asset": "models/anatomy/skeleton/FJ3368.glb",
       "triangle_count": 3784,
-      "glb_size_bytes": 77748
+      "glb_size_bytes": 77748,
+      "load_region": "shoulder-arm"
     },
     {
       "fj_element_file_id": "FJ3369",
@@ -2377,7 +2592,8 @@
       "anatomical_category": "bone or cartilage - other (name not in keyword list)",
       "glb_asset": "models/anatomy/skeleton/FJ3369.glb",
       "triangle_count": 714,
-      "glb_size_bytes": 19452
+      "glb_size_bytes": 19452,
+      "load_region": "head-neck"
     },
     {
       "fj_element_file_id": "FJ3370",
@@ -2388,7 +2604,8 @@
       "anatomical_category": "bone - foot",
       "glb_asset": "models/anatomy/skeleton/FJ3370.glb",
       "triangle_count": 450,
-      "glb_size_bytes": 11056
+      "glb_size_bytes": 11056,
+      "load_region": "lower-leg-foot"
     },
     {
       "fj_element_file_id": "FJ3371",
@@ -2399,7 +2616,8 @@
       "anatomical_category": "bone or cartilage - other (name not in keyword list)",
       "glb_asset": "models/anatomy/skeleton/FJ3371.glb",
       "triangle_count": 702,
-      "glb_size_bytes": 15276
+      "glb_size_bytes": 15276,
+      "load_region": "head-neck"
     },
     {
       "fj_element_file_id": "FJ3372",
@@ -2410,7 +2628,8 @@
       "anatomical_category": "bone or cartilage - other (name not in keyword list)",
       "glb_asset": "models/anatomy/skeleton/FJ3372.glb",
       "triangle_count": 80,
-      "glb_size_bytes": 3664
+      "glb_size_bytes": 3664,
+      "load_region": "lower-leg-foot"
     },
     {
       "fj_element_file_id": "FJ3373",
@@ -2421,7 +2640,8 @@
       "anatomical_category": "bone - foot",
       "glb_asset": "models/anatomy/skeleton/FJ3373.glb",
       "triangle_count": 626,
-      "glb_size_bytes": 14680
+      "glb_size_bytes": 14680,
+      "load_region": "lower-leg-foot"
     },
     {
       "fj_element_file_id": "FJ3374",
@@ -2432,7 +2652,8 @@
       "anatomical_category": "bone - hand",
       "glb_asset": "models/anatomy/skeleton/FJ3374.glb",
       "triangle_count": 332,
-      "glb_size_bytes": 8132
+      "glb_size_bytes": 8132,
+      "load_region": "forearm-hand"
     },
     {
       "fj_element_file_id": "FJ3375",
@@ -2443,7 +2664,8 @@
       "anatomical_category": "bone - skull",
       "glb_asset": "models/anatomy/skeleton/FJ3375.glb",
       "triangle_count": 5324,
-      "glb_size_bytes": 117708
+      "glb_size_bytes": 117708,
+      "load_region": "head-neck"
     },
     {
       "fj_element_file_id": "FJ3376",
@@ -2454,7 +2676,8 @@
       "anatomical_category": "bone or cartilage - other (name not in keyword list)",
       "glb_asset": "models/anatomy/skeleton/FJ3376.glb",
       "triangle_count": 158,
-      "glb_size_bytes": 4884
+      "glb_size_bytes": 4884,
+      "load_region": "lower-leg-foot"
     },
     {
       "fj_element_file_id": "FJ3377",
@@ -2465,7 +2688,8 @@
       "anatomical_category": "bone - foot",
       "glb_asset": "models/anatomy/skeleton/FJ3377.glb",
       "triangle_count": 952,
-      "glb_size_bytes": 21916
+      "glb_size_bytes": 21916,
+      "load_region": "lower-leg-foot"
     },
     {
       "fj_element_file_id": "FJ3378",
@@ -2476,7 +2700,8 @@
       "anatomical_category": "bone or cartilage - other (name not in keyword list)",
       "glb_asset": "models/anatomy/skeleton/FJ3378.glb",
       "triangle_count": 416,
-      "glb_size_bytes": 10296
+      "glb_size_bytes": 10296,
+      "load_region": "head-neck"
     },
     {
       "fj_element_file_id": "FJ3379",
@@ -2487,7 +2712,8 @@
       "anatomical_category": "bone or cartilage - other (name not in keyword list)",
       "glb_asset": "models/anatomy/skeleton/FJ3379.glb",
       "triangle_count": 1736,
-      "glb_size_bytes": 39036
+      "glb_size_bytes": 39036,
+      "load_region": "head-neck"
     },
     {
       "fj_element_file_id": "FJ3380",
@@ -2498,7 +2724,8 @@
       "anatomical_category": "bone - skull",
       "glb_asset": "models/anatomy/skeleton/FJ3380.glb",
       "triangle_count": 13002,
-      "glb_size_bytes": 272116
+      "glb_size_bytes": 272116,
+      "load_region": "head-neck"
     },
     {
       "fj_element_file_id": "FJ3381",
@@ -2509,7 +2736,8 @@
       "anatomical_category": "bone - lower limb",
       "glb_asset": "models/anatomy/skeleton/FJ3381.glb",
       "triangle_count": 306,
-      "glb_size_bytes": 7548
+      "glb_size_bytes": 7548,
+      "load_region": "thigh"
     },
     {
       "fj_element_file_id": "FJ3382",
@@ -2520,7 +2748,8 @@
       "anatomical_category": "bone - hand",
       "glb_asset": "models/anatomy/skeleton/FJ3382.glb",
       "triangle_count": 190,
-      "glb_size_bytes": 5216
+      "glb_size_bytes": 5216,
+      "load_region": "forearm-hand"
     },
     {
       "fj_element_file_id": "FJ3383",
@@ -2531,7 +2760,8 @@
       "anatomical_category": "bone - hand",
       "glb_asset": "models/anatomy/skeleton/FJ3383.glb",
       "triangle_count": 322,
-      "glb_size_bytes": 8048
+      "glb_size_bytes": 8048,
+      "load_region": "forearm-hand"
     },
     {
       "fj_element_file_id": "FJ3384",
@@ -2542,7 +2772,8 @@
       "anatomical_category": "bone - shoulder girdle",
       "glb_asset": "models/anatomy/skeleton/FJ3384.glb",
       "triangle_count": 26172,
-      "glb_size_bytes": 473308
+      "glb_size_bytes": 473308,
+      "load_region": "shoulder-arm"
     },
     {
       "fj_element_file_id": "FJ3385",
@@ -2553,7 +2784,8 @@
       "anatomical_category": "bone - foot",
       "glb_asset": "models/anatomy/skeleton/FJ3385.glb",
       "triangle_count": 1380,
-      "glb_size_bytes": 29212
+      "glb_size_bytes": 29212,
+      "load_region": "lower-leg-foot"
     },
     {
       "fj_element_file_id": "FJ3386",
@@ -2564,7 +2796,8 @@
       "anatomical_category": "bone - skull",
       "glb_asset": "models/anatomy/skeleton/FJ3386.glb",
       "triangle_count": 4928,
-      "glb_size_bytes": 105468
+      "glb_size_bytes": 105468,
+      "load_region": "head-neck"
     },
     {
       "fj_element_file_id": "FJ3387",
@@ -2575,7 +2808,8 @@
       "anatomical_category": "bone - lower limb",
       "glb_asset": "models/anatomy/skeleton/FJ3387.glb",
       "triangle_count": 1664,
-      "glb_size_bytes": 32000
+      "glb_size_bytes": 32000,
+      "load_region": "lower-leg-foot"
     },
     {
       "fj_element_file_id": "FJ3388",
@@ -2586,7 +2820,8 @@
       "anatomical_category": "bone - hand",
       "glb_asset": "models/anatomy/skeleton/FJ3388.glb",
       "triangle_count": 434,
-      "glb_size_bytes": 10684
+      "glb_size_bytes": 10684,
+      "load_region": "forearm-hand"
     },
     {
       "fj_element_file_id": "FJ3389",
@@ -2597,7 +2832,8 @@
       "anatomical_category": "bone - hand",
       "glb_asset": "models/anatomy/skeleton/FJ3389.glb",
       "triangle_count": 360,
-      "glb_size_bytes": 10104
+      "glb_size_bytes": 10104,
+      "load_region": "forearm-hand"
     },
     {
       "fj_element_file_id": "FJ3390",
@@ -2608,7 +2844,8 @@
       "anatomical_category": "bone or cartilage - other (name not in keyword list)",
       "glb_asset": "models/anatomy/skeleton/FJ3390.glb",
       "triangle_count": 170,
-      "glb_size_bytes": 5792
+      "glb_size_bytes": 5792,
+      "load_region": "forearm-hand"
     },
     {
       "fj_element_file_id": "FJ3391",
@@ -2619,7 +2856,8 @@
       "anatomical_category": "bone - upper limb",
       "glb_asset": "models/anatomy/skeleton/FJ3391.glb",
       "triangle_count": 834,
-      "glb_size_bytes": 18448
+      "glb_size_bytes": 18448,
+      "load_region": "forearm-hand"
     },
     {
       "fj_element_file_id": "FJ3392",
@@ -2630,7 +2868,8 @@
       "anatomical_category": "bone - skull",
       "glb_asset": "models/anatomy/skeleton/FJ3392.glb",
       "triangle_count": 1556,
-      "glb_size_bytes": 33196
+      "glb_size_bytes": 33196,
+      "load_region": "head-neck"
     },
     {
       "fj_element_file_id": "FJ3393",
@@ -2641,7 +2880,8 @@
       "anatomical_category": "bone - vertebral column",
       "glb_asset": "models/anatomy/skeleton/FJ3393.glb",
       "triangle_count": 9922,
-      "glb_size_bytes": 188016
+      "glb_size_bytes": 188016,
+      "load_region": "torso"
     },
     {
       "fj_element_file_id": "FJ3394",
@@ -2652,7 +2892,8 @@
       "anatomical_category": "bone - skull",
       "glb_asset": "models/anatomy/skeleton/FJ3394.glb",
       "triangle_count": 8154,
-      "glb_size_bytes": 169344
+      "glb_size_bytes": 169344,
+      "load_region": "head-neck"
     },
     {
       "fj_element_file_id": "FJ3395",
@@ -2663,7 +2904,8 @@
       "anatomical_category": "bone or cartilage - other (name not in keyword list)",
       "glb_asset": "models/anatomy/skeleton/FJ3395.glb",
       "triangle_count": 7218,
-      "glb_size_bytes": 132600
+      "glb_size_bytes": 132600,
+      "load_region": "head-neck"
     }
   ]
 }
