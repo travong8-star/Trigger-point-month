@@ -179,18 +179,19 @@ panelCloseEl.addEventListener('click', closePanel);
 // recoverable, not deleted or modified.
 const loadingEl = document.getElementById('loading');
 const hintEl = document.getElementById('hint');
+const bgProgressEl = document.getElementById('bg-progress');
 
 const oldGroup = new THREE.Group();
 const newGroup = new THREE.Group();
-scene.add(oldGroup, newGroup);
+const newSkeletonGroup = new THREE.Group();
+scene.add(oldGroup, newGroup, newSkeletonGroup);
 oldGroup.visible = false;
-newGroup.visible = false; // becomes true once the initial load completes
+newGroup.visible = false; // becomes true once the first anatomy region loads
+newSkeletonGroup.visible = false;
 
 let oldClickable = [];
 let newClickable = [];
 let oldLoaded = false;
-let newLoaded = false;
-let oldLoading = false;
 
 let anatomyMode = 'new';
 
@@ -212,110 +213,290 @@ function prepareMeshMaterial(mesh, tint) {
     : new THREE.Color(0x000000);
 }
 
-// ── OLD anatomy: single merged GLB, node-name → crosswalk resolution ──
-function loadOldAnatomy() {
-  if (oldLoaded || oldLoading) return Promise.resolve();
-  oldLoading = true;
-  const loader = new GLTFLoader();
-  return new Promise((resolve, reject) => {
-    loader.load(
-      `${import.meta.env.BASE_URL}models/TrP_Muscles_web.glb`,
-      (gltf) => {
-        gltf.scene.traverse((o) => {
-          if (!o.isMesh) return;
-          prepareMeshMaterial(o, 0xa8615f);
-          const muscle = nodeToMuscle.get(o.name);
-          o.userData.appMuscle = muscle || null;
-          if (muscle) oldClickable.push(o);
-        });
-        oldGroup.add(gltf.scene);
-        oldLoaded = true;
-        oldLoading = false;
-        console.log(`[OLD anatomy] Loaded ${oldClickable.length} clickable meshes`);
-        resolve();
-      },
-      undefined,
-      (err) => {
-        oldLoading = false;
-        console.error('[OLD anatomy] GLB load failed:', err);
-        reject(err);
-      }
-    );
-  });
-}
-
-// ── NEW anatomy: BodyParts3D, one GLB per structure, registry-driven ──
-// Each structure's identity is known at load time from anatomy_registry.json
-// (built from the validated BodyParts3D asset manifest), so there's no
-// name-sanitizing/crosswalk lookup step the way the OLD single-file model
-// needs -- the loader just tags userData.appMuscle directly per file.
+// ── Shared loading infrastructure ──
+// Every GLB load in this file -- OLD's single merged file, NEW's
+// per-structure muscle files, NEW's per-bone skeleton files -- goes
+// through these two primitives:
 //
-// Measured while testing: loading N more files while several hundred
-// meshes are already in the scene took 10-40x longer than the initial
-// cold load of the same N files (44s to add 242 skeleton files after 500
-// muscles were already rendering, vs 1.7s to load those 500 from empty).
-// The render loop competes with fetch/parse callbacks for the main thread
-// every frame once draw-call count is high. bulkLoadDepth throttles
-// rendering to ~10fps for the duration of a bulk load (see animate())
-// instead of the full 60fps, freeing most of the main thread for loading
-// without freezing the picture. This is a stopgap, not the real fix --
-// true regional lazy-loading / geometry batching is deferred per the
-// stated priority (working integration first).
-let bulkLoadDepth = 0;
+//  - glbSemaphore: one global concurrency limiter. Previously each bulk
+//    load spun up its own independent N-worker pool, so overlapping loads
+//    (toggling skeleton right after the initial muscle load, or switching
+//    anatomy mode mid-load) could stack multiple pools at once with no
+//    shared ceiling. That overlap is what produced the reproduced
+//    "Failed to fetch" errors under heavy back-to-back loading. One
+//    shared limiter makes total simultaneous in-flight fetches
+//    structurally bounded no matter how many logical loaders are active.
+//  - loadGlbCached: a path-keyed promise cache. Dedupes duplicate/racing
+//    requests for the same asset, and is the single point a failed fetch
+//    is recorded (loadFailures) and swallowed to `null` rather than
+//    thrown, so one bad asset never aborts a whole batch.
+const GLB_CONCURRENCY = 12;
 
-async function loadWithConcurrency(tasks, limit) {
-  bulkLoadDepth++;
-  let i = 0;
-  let completed = 0;
-  const total = tasks.length;
-  async function worker() {
-    while (i < tasks.length) {
-      const idx = i++;
-      try {
-        await tasks[idx]();
-      } catch (err) {
-        console.error('[NEW anatomy] a load task failed:', err);
-      }
-      completed++;
-      if (loadingEl && anatomyMode === 'new' && !newLoaded) {
-        loadingEl.textContent = `Loading anatomy… ${completed}/${total}`;
-      }
+class Semaphore {
+  constructor(limit) {
+    this.limit = limit;
+    this.active = 0;
+    this.queue = [];
+  }
+  acquire() {
+    if (this.active < this.limit) {
+      this.active++;
+      return Promise.resolve();
+    }
+    return new Promise((resolve) => this.queue.push(resolve)).then(() => {
+      this.active++;
+    });
+  }
+  release() {
+    this.active--;
+    const next = this.queue.shift();
+    if (next) next();
+  }
+  async run(fn) {
+    await this.acquire();
+    try {
+      return await fn();
+    } finally {
+      this.release();
     }
   }
-  try {
-    await Promise.all(Array.from({ length: limit }, worker));
-  } finally {
-    bulkLoadDepth--;
-  }
+}
+const glbSemaphore = new Semaphore(GLB_CONCURRENCY);
+
+const assetCache = new Map();
+const loadFailures = [];
+// Exposed unconditionally (negligible cost -- a handful of arrays/Maps)
+// so a failed optional asset is inspectable via the browser console or a
+// Playwright test in any build, not just dev. Never read by the app
+// itself.
+window.__anatomyDebug = {
+  loadFailures,
+  isMuscleRegionsFullyLoaded: () => newMuscleLoader.isFullyLoaded(),
+  isSkeletonRegionsFullyLoaded: () => newSkeletonLoader.isFullyLoaded(),
+  clickableCount: () => newClickable.length,
+};
+
+function loadGlbCached(loader, path) {
+  if (assetCache.has(path)) return assetCache.get(path);
+  const promise = glbSemaphore
+    .run(() => loader.loadAsync(`${import.meta.env.BASE_URL}${path}`))
+    .catch((err) => {
+      loadFailures.push({ path, error: String((err && err.message) || err), time: Date.now() });
+      console.error(`[anatomy] failed to load ${path}:`, err);
+      return null;
+    });
+  assetCache.set(path, promise);
+  return promise;
 }
 
-function loadNewAnatomy() {
-  if (newLoaded) return Promise.resolve();
-  const glbLoader = new GLTFLoader();
-  const tasks = [];
+// Throttles the render loop (see animate()) while any bulk region load is
+// in flight -- kept from the original mitigation. It alone took the
+// 242-file skeleton load from ~44s to ~11s by freeing the main thread
+// from competing with rendering every frame; regional loading below is
+// what removes the remaining stall and the fetch failures.
+let bulkLoadDepth = 0;
 
+function showBgProgress(text) {
+  if (!bgProgressEl) return;
+  bgProgressEl.textContent = text;
+  bgProgressEl.classList.add('visible');
+}
+function hideBgProgress() {
+  if (!bgProgressEl) return;
+  bgProgressEl.classList.remove('visible');
+}
+
+// ── Regional loading taxonomy ──
+// 7 loading regions (see bodyparts3d/scripts/assign_regions.py), used to
+// break both the muscle set and the skeleton set into progressively
+// loaded waves instead of one all-at-once burst. Order is loading
+// priority: torso first (visually central, always in frame, largest
+// coherent mass), then the rest.
+const REGION_PRIORITY = [
+  'torso', 'head-neck', 'hip-pelvis', 'shoulder-arm',
+  'thigh', 'lower-leg-foot', 'forearm-hand',
+];
+
+// Only anatomyRegistry.muscles (the 51 app-carded entries) is indexed --
+// available_extra_not_yet_carded is intentionally left untouched, exactly
+// as before this change. This is a loading-performance fix, not an
+// anatomy addition.
+function indexMusclesByRegion() {
+  const byRegion = new Map(REGION_PRIORITY.map((r) => [r, []]));
   anatomyRegistry.muscles.forEach((entry) => {
     entry.bodyparts3d_structures.forEach((structure) => {
+      const list = byRegion.get(structure.load_region);
+      if (!list) {
+        console.warn('[NEW anatomy] structure has no known load_region, skipped:', structure.bodyparts3d_name);
+        return;
+      }
       Object.values(structure.sides).forEach((side) => {
-        tasks.push(() =>
-          glbLoader.loadAsync(`${import.meta.env.BASE_URL}${side.glb_asset}`).then((gltf) => {
-            gltf.scene.traverse((o) => {
-              if (!o.isMesh) return;
-              prepareMeshMaterial(o, 0xa8615f);
-              o.userData.appMuscle = { muscle: entry.app_muscle_name, cards: entry.trigger_point_card_ids };
-              newClickable.push(o);
-            });
-            newGroup.add(gltf.scene);
-          })
-        );
+        list.push({
+          path: side.glb_asset,
+          appMuscle: { muscle: entry.app_muscle_name, cards: entry.trigger_point_card_ids },
+        });
       });
     });
   });
+  return byRegion;
+}
 
-  return loadWithConcurrency(tasks, 12).then(() => {
-    newLoaded = true;
-    console.log(`[NEW anatomy] Loaded ${newClickable.length} clickable meshes from ${tasks.length} files`);
+function indexSkeletonByRegion() {
+  const byRegion = new Map(REGION_PRIORITY.map((r) => [r, []]));
+  skeletonRegistry.structures.forEach((s) => {
+    const list = byRegion.get(s.load_region);
+    if (!list) {
+      console.warn('[NEW skeleton] bone has no known load_region, skipped:', s.english_name);
+      return;
+    }
+    list.push({ path: s.glb_asset });
   });
+  return byRegion;
+}
+
+const muscleRegionIndex = indexMusclesByRegion();
+const skeletonRegionIndex = indexSkeletonByRegion();
+
+// Builds a region-aware loader. loadRegion(name) returns a promise that
+// resolves once that region's own files are done, but the FIRST call to
+// loadRegion (for any region) submits every file from every region to
+// loadGlbCached/glbSemaphore immediately, in REGION_PRIORITY order --
+// dispatchAll() below, not a per-region loop.
+//
+// An earlier version processed regions strictly sequentially (fully
+// drain region N via Promise.all before even submitting region N+1's
+// files). That produced a real regression under measurement: small
+// regions (e.g. 2-file hip-pelvis skeleton) only use 2 of the 12
+// concurrency slots for their whole wave, leaving the rest idle instead
+// of already pulling ahead on the next region -- total 242-file skeleton
+// time went from ~11s (flat single pool) to ~14.4s (strict sequential
+// regions). Submitting everything up front lets the shared semaphore's
+// FIFO queue keep all 12 workers continuously busy across region
+// boundaries while still resolving earlier regions first, since their
+// files were queued first.
+function makeRegionLoader(regionIndex, onAssetLoaded) {
+  const state = new Map(REGION_PRIORITY.map((r) => [r, 'unloaded']));
+  const regionTotals = new Map(REGION_PRIORITY.map((r) => [r, (regionIndex.get(r) || []).length]));
+  const regionCompleted = new Map(REGION_PRIORITY.map((r) => [r, 0]));
+  const regionProgressCb = new Map();
+  const regionDeferreds = new Map(
+    REGION_PRIORITY.map((r) => {
+      let resolve;
+      const promise = new Promise((res) => { resolve = res; });
+      return [r, { promise, resolve }];
+    })
+  );
+
+  let dispatched = false;
+  function dispatchAll() {
+    if (dispatched) return;
+    dispatched = true;
+    const totalItems = REGION_PRIORITY.reduce((sum, r) => sum + regionTotals.get(r), 0);
+    if (totalItems === 0) return;
+    const loader = new GLTFLoader();
+    bulkLoadDepth++;
+    let remaining = totalItems;
+    REGION_PRIORITY.forEach((region) => {
+      const items = regionIndex.get(region) || [];
+      if (items.length === 0) {
+        state.set(region, 'loaded');
+        regionDeferreds.get(region).resolve();
+        return;
+      }
+      state.set(region, 'loading');
+      items.forEach((item) => {
+        loadGlbCached(loader, item.path).then((gltf) => {
+          if (gltf) onAssetLoaded(gltf, item); // failure already recorded in loadFailures otherwise
+          const done = regionCompleted.get(region) + 1;
+          regionCompleted.set(region, done);
+          const cb = regionProgressCb.get(region);
+          if (cb) cb(done, regionTotals.get(region));
+          if (done >= regionTotals.get(region)) {
+            state.set(region, 'loaded');
+            regionDeferreds.get(region).resolve();
+          }
+          remaining--;
+          if (remaining === 0) bulkLoadDepth--;
+        });
+      });
+    });
+  }
+
+  function loadRegion(region, { onFileProgress } = {}) {
+    if (onFileProgress) regionProgressCb.set(region, onFileProgress);
+    dispatchAll();
+    return regionDeferreds.get(region).promise;
+  }
+
+  function isFullyLoaded() {
+    return REGION_PRIORITY.every((r) => state.get(r) === 'loaded');
+  }
+
+  return { loadRegion, isFullyLoaded };
+}
+
+// NEW anatomy: BodyParts3D, one GLB per structure, registry-driven. Each
+// structure's identity is known at load time from anatomy_registry.json,
+// so there's no name-sanitizing/crosswalk lookup step the way OLD's
+// single-file model needs -- the loader just tags userData.appMuscle
+// directly per file.
+const newMuscleLoader = makeRegionLoader(muscleRegionIndex, (gltf, item) => {
+  gltf.scene.traverse((o) => {
+    if (!o.isMesh) return;
+    prepareMeshMaterial(o, 0xa8615f);
+    o.userData.appMuscle = item.appMuscle;
+    newClickable.push(o);
+  });
+  newGroup.add(gltf.scene);
+});
+
+const newSkeletonLoader = makeRegionLoader(skeletonRegionIndex, (gltf) => {
+  gltf.scene.traverse((o) => {
+    if (o.isMesh) {
+      o.material = new THREE.MeshStandardMaterial({ color: 0xd9d3c7, roughness: 0.7, metalness: 0.05 });
+      o.material.side = THREE.DoubleSide;
+    }
+  });
+  newSkeletonGroup.add(gltf.scene);
+});
+
+// The remaining regions' files are already in flight by the time this is
+// called (dispatchAll() inside makeRegionLoader queued everything on the
+// very first loadRegion() call) -- this just watches their promises to
+// drive the non-blocking progress pill, it doesn't trigger any loading.
+function watchRemainingRegionsForProgress(loader, regions, labelPrefix) {
+  if (regions.length === 0) return;
+  let done = 0;
+  showBgProgress(`${labelPrefix}… 0/${regions.length}`);
+  Promise.all(
+    regions.map((region) =>
+      loader.loadRegion(region).then(() => {
+        done++;
+        showBgProgress(`${labelPrefix}… ${done}/${regions.length}`);
+      })
+    )
+  ).then(() => hideBgProgress());
+}
+
+// ── OLD anatomy: single merged GLB, node-name → crosswalk resolution ──
+let oldAnatomyPromise = null;
+function loadOldAnatomy() {
+  if (oldAnatomyPromise) return oldAnatomyPromise;
+  const loader = new GLTFLoader();
+  oldAnatomyPromise = loadGlbCached(loader, 'models/TrP_Muscles_web.glb').then((gltf) => {
+    if (!gltf) throw new Error('OLD anatomy failed to load');
+    gltf.scene.traverse((o) => {
+      if (!o.isMesh) return;
+      prepareMeshMaterial(o, 0xa8615f);
+      const muscle = nodeToMuscle.get(o.name);
+      o.userData.appMuscle = muscle || null;
+      if (muscle) oldClickable.push(o);
+    });
+    oldGroup.add(gltf.scene);
+    oldLoaded = true;
+    console.log(`[OLD anatomy] Loaded ${oldClickable.length} clickable meshes`);
+  });
+  return oldAnatomyPromise;
 }
 
 // ── Interaction: raycast on click ──
@@ -361,20 +542,15 @@ canvas.addEventListener('click', onCanvasClick);
 
 // ── Skeleton overlay (reference layer, not clickable) ──
 // OLD mode keeps its existing Sketchfab skeleton unchanged. NEW mode gets
-// its own BodyParts3D skeleton (242 files, skeleton_registry.json) instead
-// of reusing the unrelated Sketchfab one. Both are lazy-loaded on first
-// toggle and mutually exclusive -- only the active anatomy mode's skeleton
-// is ever shown.
+// its own BodyParts3D skeleton (skeleton_registry.json), loaded region by
+// region on first toggle instead of all 242 files at once. Both are
+// mutually exclusive -- only the active anatomy mode's skeleton is shown.
 const SKELETON_SCALE = 1.61726744 / 1.7395376; // OLD skeleton only; NEW skeleton is already in the app's coordinate convention
 const skeletonToggleEl = document.getElementById('skeleton-toggle');
 let oldSkeletonScene = null;
-let oldSkeletonLoading = false;
-const newSkeletonGroup = new THREE.Group();
-scene.add(newSkeletonGroup);
-newSkeletonGroup.visible = false;
-let newSkeletonLoaded = false;
-let newSkeletonLoading = false;
+let oldSkeletonPromise = null;
 let skeletonVisible = false;
+let skeletonToggleBusy = false;
 
 function setXray(meshes, on) {
   meshes.forEach((mesh) => {
@@ -391,52 +567,47 @@ function applySkeletonVisibility() {
 }
 
 function loadOldSkeleton() {
-  if (oldSkeletonScene || oldSkeletonLoading) return Promise.resolve();
-  oldSkeletonLoading = true;
+  if (oldSkeletonPromise) return oldSkeletonPromise;
   const skeletonLoader = new GLTFLoader();
   // The compressed skeleton GLB (gltf-transform --compress meshopt) needs
   // this decoder to read its geometry back out.
   skeletonLoader.setMeshoptDecoder(MeshoptDecoder);
-  return skeletonLoader.loadAsync(`${import.meta.env.BASE_URL}models/male_skeleton.glb`).then((gltf) => {
+  oldSkeletonPromise = loadGlbCached(skeletonLoader, 'models/male_skeleton.glb').then((gltf) => {
+    if (!gltf) {
+      console.error('[OLD skeleton] load failed');
+      return;
+    }
     oldSkeletonScene = gltf.scene;
     oldSkeletonScene.scale.setScalar(SKELETON_SCALE);
     oldGroup.add(oldSkeletonScene);
-    oldSkeletonLoading = false;
-  }).catch((err) => {
-    oldSkeletonLoading = false;
-    console.error('[OLD skeleton] load failed:', err);
   });
+  return oldSkeletonPromise;
 }
 
-function loadNewSkeleton() {
-  if (newSkeletonLoaded || newSkeletonLoading) return Promise.resolve();
-  newSkeletonLoading = true;
-  const skeletonLoader = new GLTFLoader();
-  const tasks = skeletonRegistry.structures.map((s) => () =>
-    skeletonLoader.loadAsync(`${import.meta.env.BASE_URL}${s.glb_asset}`).then((gltf) => {
-      gltf.scene.traverse((o) => {
-        if (o.isMesh) {
-          o.material = new THREE.MeshStandardMaterial({ color: 0xd9d3c7, roughness: 0.7, metalness: 0.05 });
-          o.material.side = THREE.DoubleSide;
-        }
-      });
-      newSkeletonGroup.add(gltf.scene);
-    })
-  );
-  return loadWithConcurrency(tasks, 12).then(() => {
-    newSkeletonLoaded = true;
-    newSkeletonLoading = false;
+// Loads the highest-priority skeleton region eagerly (so the toggle can
+// flip from "Loading…" back to normal quickly), then fills in the rest
+// of the regions in the background behind the shared bg-progress
+// indicator. Idempotent -- safe to call on every toggle-on / mode switch.
+async function ensureNewSkeletonReady() {
+  const [firstRegion, ...restRegions] = REGION_PRIORITY;
+  await newSkeletonLoader.loadRegion(firstRegion, {
+    onFileProgress: (done, total) => {
+      skeletonToggleEl.textContent = `Loading… ${done}/${total}`;
+    },
   });
+  watchRemainingRegionsForProgress(newSkeletonLoader, restRegions, 'Loading more skeleton');
 }
 
 skeletonToggleEl.addEventListener('click', async () => {
-  if (oldSkeletonLoading || newSkeletonLoading) return;
+  if (skeletonToggleBusy) return;
   skeletonVisible = !skeletonVisible;
   if (skeletonVisible) {
+    skeletonToggleBusy = true;
     skeletonToggleEl.textContent = 'Loading…';
     if (anatomyMode === 'old') await loadOldSkeleton();
-    else await loadNewSkeleton();
+    else await ensureNewSkeletonReady();
     skeletonToggleEl.textContent = 'Skeleton';
+    skeletonToggleBusy = false;
   }
   applySkeletonVisibility();
 });
@@ -475,10 +646,12 @@ async function setAnatomyMode(mode) {
   // own skeleton loaded too -- otherwise switching modes silently leaves
   // muscles transparent with nothing visible underneath them.
   if (skeletonVisible) {
+    skeletonToggleBusy = true;
     skeletonToggleEl.textContent = 'Loading…';
     if (mode === 'old') await loadOldSkeleton();
-    else await loadNewSkeleton();
+    else await ensureNewSkeletonReady();
     skeletonToggleEl.textContent = 'Skeleton';
+    skeletonToggleBusy = false;
   }
 
   // Re-apply skeleton/x-ray state for whichever anatomy is now active.
@@ -489,9 +662,21 @@ anatomyToggleEl.addEventListener('click', () => {
   setAnatomyMode(anatomyMode === 'new' ? 'old' : 'new');
 });
 
-// ── Initial load: NEW anatomy by default ──
+// ── Initial load: NEW anatomy by default, region-by-region ──
+// The highest-priority region (torso) loads eagerly and blocks the
+// full-screen loading indicator; the remaining 6 regions then load
+// progressively in the background through the same shared semaphore/
+// cache, so the viewer becomes interactive after ~1 region's worth of
+// files (14 for torso) instead of waiting for all 85 carded muscle files.
 if (loadingEl) loadingEl.style.display = 'block';
-loadNewAnatomy()
+const [firstMuscleRegion, ...restMuscleRegions] = REGION_PRIORITY;
+
+newMuscleLoader
+  .loadRegion(firstMuscleRegion, {
+    onFileProgress: (done, total) => {
+      if (loadingEl) loadingEl.textContent = `Loading anatomy… ${done}/${total}`;
+    },
+  })
   .then(() => {
     newGroup.visible = true;
     if (loadingEl) loadingEl.style.display = 'none';
@@ -499,9 +684,11 @@ loadNewAnatomy()
       hintEl.classList.add('visible');
       setTimeout(() => hintEl.classList.remove('visible'), 4000);
     }
+    console.log(`[NEW anatomy] Base region "${firstMuscleRegion}" ready, ${newClickable.length} clickable meshes so far`);
+    watchRemainingRegionsForProgress(newMuscleLoader, restMuscleRegions, 'Loading more anatomy');
   })
   .catch((err) => {
-    console.error('[NEW anatomy] initial load failed:', err);
+    console.error('[NEW anatomy] initial region load failed:', err);
     if (loadingEl) {
       loadingEl.innerHTML = 'Failed to load anatomy model.';
       loadingEl.style.color = '#dc2626';
@@ -521,7 +708,7 @@ function animate() {
   requestAnimationFrame(animate);
   controls.update();
   frameCount++;
-  // Throttle to ~10fps during bulk loads (see loadWithConcurrency) instead
+  // Throttle to ~10fps during bulk loads (see makeRegionLoader) instead
   // of skipping rendering outright, so the view stays live, just choppier,
   // while most of the main thread goes to finishing the load faster.
   if (bulkLoadDepth > 0 && frameCount % 6 !== 0) return;

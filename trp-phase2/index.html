@@ -78,6 +78,19 @@
     }
     .hint.visible { opacity: 1; }
 
+    /* Background progress: non-blocking, shown while additional anatomy
+       regions load after the viewer is already interactive. Sits above
+       the tap hint so the two never overlap when both are briefly
+       visible right after the initial region finishes. */
+    #bg-progress {
+      position: fixed; bottom: 62px; left: 50%; transform: translateX(-50%);
+      background: rgba(17,24,39,0.82); color: #fff;
+      font-size: 10.5px; padding: 5px 12px; border-radius: 20px;
+      pointer-events: none; opacity: 0; transition: opacity 0.25s;
+      z-index: 20; white-space: nowrap; letter-spacing: 0.01em;
+    }
+    #bg-progress.visible { opacity: 1; }
+
     /* Skeleton toggle */
     .skeleton-toggle {
       flex-shrink: 0; margin-left: auto;
@@ -152,6 +165,7 @@
 
   <div id="loading">Loading anatomy model…</div>
   <div id="hint" class="hint">Tap any muscle to see its trigger points</div>
+  <div id="bg-progress"></div>
 
   <canvas id="canvas"></canvas>
 
