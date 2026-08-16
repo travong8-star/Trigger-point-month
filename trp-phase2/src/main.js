@@ -323,13 +323,13 @@ const REGION_PRIORITY = [
 // already converted but have no trigger_points.json card yet. They're
 // still fully clickable: openPanelForMuscle's existing "Trigger point
 // data for this muscle is coming soon" fallback (empty cards array)
-// already handles them with no changes. Scoped to torso only for now --
-// that's where the gap between true anatomical geometry (thin, precise,
-// real gaps between individual muscles) and the small carded set was
-// visually severe (compared side-by-side against OLD anatomy, which
-// masks the same small card count with broader/stylized muscle shapes).
-// Other regions' extras remain dormant in the registry until requested.
-const UNCARDED_EXTRA_REGIONS = new Set(['torso']);
+// already handles them with no changes. Originally scoped to torso only
+// (where the gap between true anatomical geometry -- thin, precise, real
+// gaps between individual muscles -- and the small carded set was
+// visually severe next to OLD anatomy's broader/stylized shapes for the
+// same small card count); now covers all 7 regions so all 258 available
+// muscle structures (85 carded + 173 extra) are represented.
+const UNCARDED_EXTRA_REGIONS = new Set(REGION_PRIORITY);
 
 function indexMusclesByRegion() {
   const byRegion = new Map(REGION_PRIORITY.map((r) => [r, []]));
