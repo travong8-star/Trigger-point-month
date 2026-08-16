@@ -70,9 +70,9 @@
   },
   "records": [
     {
-      "english_name": "Upper jaw",
-      "fma_concept_id": "FMA54397",
-      "bodyparts3d_representation_id": "BP7408",
+      "english_name": "Maxillary part of mouth",
+      "fma_concept_id": "FMA59399",
+      "bodyparts3d_representation_id": "BP7407",
       "fj_element_file_id": "FJ1252",
       "source_package": "Send_to_Chat.zip",
       "source_obj_filename": "FJ1252.obj",
@@ -966,9 +966,9 @@
       "availability_status": "present_in_supplied_package"
     },
     {
-      "english_name": "Subdivisionof autonomic nervous system",
-      "fma_concept_id": "FMA65551",
-      "bodyparts3d_representation_id": "BP6620",
+      "english_name": "Set of heterogeneous clusters",
+      "fma_concept_id": "FMA78590",
+      "bodyparts3d_representation_id": "BP6618",
       "fj_element_file_id": "FJ1319",
       "source_package": "Send_to_Chat.zip",
       "source_obj_filename": "FJ1319.obj",
@@ -1078,9 +1078,9 @@
       "availability_status": "present_in_supplied_package"
     },
     {
-      "english_name": "Left lower eyelid",
-      "fma_concept_id": "FMA54444",
-      "bodyparts3d_representation_id": "BP7381",
+      "english_name": "Tarsal plate of left lower eyelid",
+      "fma_concept_id": "FMA59090",
+      "bodyparts3d_representation_id": "BP4643",
       "fj_element_file_id": "FJ1328",
       "source_package": "Send_to_Chat.zip",
       "source_obj_filename": "FJ1328.obj",
@@ -1288,13 +1288,13 @@
       "availability_status": "present_in_supplied_package"
     },
     {
-      "english_name": "Tendon of right levator palpebrae superioris",
-      "fma_concept_id": "FMA54159",
-      "bodyparts3d_representation_id": "BP6511",
+      "english_name": "Tendon of levator palpebrae superioris",
+      "fma_concept_id": "FMA54158",
+      "bodyparts3d_representation_id": "BP6510",
       "fj_element_file_id": "FJ1343",
       "source_package": "Send_to_Chat.zip",
       "source_obj_filename": "FJ1343.obj",
-      "laterality": "right",
+      "laterality": "midline_or_unpaired",
       "anatomical_category": "eye / orbital anatomy",
       "structure_type": "other",
       "trigger_point_relevance": "teeth_or_eye_not_relevant",
@@ -1624,9 +1624,9 @@
       "availability_status": "present_in_supplied_package"
     },
     {
-      "english_name": "Subdivisionof autonomic nervous system",
-      "fma_concept_id": "FMA65551",
-      "bodyparts3d_representation_id": "BP6620",
+      "english_name": "Set of heterogeneous clusters",
+      "fma_concept_id": "FMA78590",
+      "bodyparts3d_representation_id": "BP6618",
       "fj_element_file_id": "FJ1370",
       "source_package": "Send_to_Chat.zip",
       "source_obj_filename": "FJ1370.obj",
@@ -1736,9 +1736,9 @@
       "availability_status": "present_in_supplied_package"
     },
     {
-      "english_name": "Tarsal plate of right lower eyelid",
-      "fma_concept_id": "FMA59089",
-      "bodyparts3d_representation_id": "BP4642",
+      "english_name": "Right lower eyelid",
+      "fma_concept_id": "FMA54443",
+      "bodyparts3d_representation_id": "BP7418",
       "fj_element_file_id": "FJ1379",
       "source_package": "Send_to_Chat.zip",
       "source_obj_filename": "FJ1379.obj",
@@ -3038,9 +3038,9 @@
       "availability_status": "present_in_supplied_package"
     },
     {
-      "english_name": "Fascia lata of right thigh",
-      "fma_concept_id": "FMA51044",
-      "bodyparts3d_representation_id": "BP6716",
+      "english_name": "Investing fascia of right thigh",
+      "fma_concept_id": "FMA58742",
+      "bodyparts3d_representation_id": "BP6715",
       "fj_element_file_id": "FJ1423",
       "source_package": "Send_to_Chat.zip",
       "source_obj_filename": "FJ1423.obj",
@@ -3836,9 +3836,9 @@
       "availability_status": "present_in_supplied_package"
     },
     {
-      "english_name": "superficial perineal muscle",
-      "fma_concept_id": "FMA19728",
-      "bodyparts3d_representation_id": "BP8935",
+      "english_name": "anal part of perineum",
+      "fma_concept_id": "FMA20347",
+      "bodyparts3d_representation_id": "BP10062",
       "fj_element_file_id": "FJ1450",
       "source_package": "BodyParts3D_muscle_block_FJ1443-FJ1601.zip",
       "source_obj_filename": "FJ1450.obj",
@@ -4389,15 +4389,8 @@
       "laterality": "right",
       "anatomical_category": "muscle",
       "structure_type": "muscle",
-      "trigger_point_relevance": "core_dataset_muscle",
-      "current_application_mapping": {
-        "muscle": "Brachialis",
-        "region": "Shoulder & Arm",
-        "card_ids": [
-          33,
-          34
-        ]
-      },
+      "trigger_point_relevance": "identified_as_missing_muscle_in_audit",
+      "current_application_mapping": null,
       "availability_status": "present_in_supplied_package"
     },
     {

@@ -12,6 +12,8 @@ Generated from three real, now-supplied OBJ packages, cross-referenced against t
 
 A data-quality note surfaced while building this: the muscle package's own bundled manifest had a parser fallback bug — for OBJ files whose header `English name` field was blank (13 files, e.g. `FJ1451`, `FJ1543`), it substituted the file's `Bounds(mm)` comment line as if it were the name. Caught and corrected by resolving those 13 directly against `isa_element_parts.txt`/`partof_element_parts.txt` instead — none were left mislabeled in the final manifest.
 
+**Addendum (found while building the anatomy registry):** the same naive-substring bug pattern documented in §B also affected `match_current_app` in the generator script — `"brachialis" in "coracobrachialis"` wrongly attached Coracobrachialis to the app's "Brachialis" card as a false one-to-many split. Fixed with word-boundary matching (`\bbrachialis\b`, which correctly matches inside "long head of biceps femoris" but not inside the fused word "coracobrachialis") and the manifest regenerated. The headline counts in this report (45 matched / 6 missing) were already correct and are unchanged; only the specific structures attached to "Brachialis" and "Biceps femoris"/"Gastrocnemius" (which had briefly regressed to *not* matching during the fix, from an over-corrected exact-match attempt, then were restored) were affected mid-process. Final state verified directly against the manifest before proceeding.
+
 ---
 
 ## A. COMPLETE MUSCLE COVERAGE
