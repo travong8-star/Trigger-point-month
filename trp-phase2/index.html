@@ -90,6 +90,17 @@
       color: #fff; background: var(--teal-600); border-color: var(--teal-600);
     }
 
+    /* Anatomy dev switch (OLD vs NEW) — development-only, not a
+       production-facing feature; kept visually distinct (dashed, amber) */
+    .anatomy-toggle {
+      display: block; margin-top: 8px;
+      font-size: 10px; font-weight: 600; color: #92400e;
+      background: #fffbeb; border: 1px dashed #d97706; border-radius: 999px;
+      padding: 4px 10px; cursor: pointer; white-space: nowrap;
+    }
+    .anatomy-toggle.old-mode { color: var(--gray-500); background: var(--gray-50); border-color: var(--gray-200); }
+    .anatomy-toggle:disabled { opacity: 0.6; cursor: wait; }
+
     /* Detail panel: bottom sheet */
     .detail-panel {
       position: fixed; left: 0; right: 0; bottom: 0;
@@ -136,6 +147,7 @@
       <button id="skeleton-toggle" class="skeleton-toggle" type="button">Skeleton</button>
     </div>
     <div class="disclaimer">Educational only. Not medical advice. Use under supervision. Stop if sharp, electrical, or nerve-like sensations occur.</div>
+    <button id="anatomy-toggle" class="anatomy-toggle" type="button">Anatomy: NEW (BodyParts3D)</button>
   </header>
 
   <div id="loading">Loading anatomy model…</div>
@@ -148,10 +160,10 @@
     <div id="panel-content" class="panel-content"></div>
   </div>
 
-  <footer class="attribution">
-    3D anatomical meshes derived from <strong>Z-Anatomy</strong>, 
-    <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a>.
-    Modified: muscle subset extracted, converted to glTF, decimated for web delivery.
+  <footer class="attribution" id="attribution">
+    3D anatomical meshes derived from <strong>BodyParts3D</strong>, © The Database Center for Life Science,
+    <a href="http://dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html" target="_blank" rel="noopener">CC BY-SA 2.1 Japan</a>.
+    Converted to glTF for web delivery.
   </footer>
 
   <script type="module" src="/src/main.js"></script>
