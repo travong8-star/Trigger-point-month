@@ -317,10 +317,20 @@ const REGION_PRIORITY = [
   'thigh', 'lower-leg-foot', 'forearm-hand',
 ];
 
-// Only anatomyRegistry.muscles (the 51 app-carded entries) is indexed --
-// available_extra_not_yet_carded is intentionally left untouched, exactly
-// as before this change. This is a loading-performance fix, not an
-// anatomy addition.
+// anatomyRegistry.muscles (the 51 app-carded entries) is always indexed.
+// UNCARDED_EXTRA_REGIONS additionally pulls in available_extra_not_yet_carded
+// entries for the listed regions -- real BodyParts3D muscles that are
+// already converted but have no trigger_points.json card yet. They're
+// still fully clickable: openPanelForMuscle's existing "Trigger point
+// data for this muscle is coming soon" fallback (empty cards array)
+// already handles them with no changes. Scoped to torso only for now --
+// that's where the gap between true anatomical geometry (thin, precise,
+// real gaps between individual muscles) and the small carded set was
+// visually severe (compared side-by-side against OLD anatomy, which
+// masks the same small card count with broader/stylized muscle shapes).
+// Other regions' extras remain dormant in the registry until requested.
+const UNCARDED_EXTRA_REGIONS = new Set(['torso']);
+
 function indexMusclesByRegion() {
   const byRegion = new Map(REGION_PRIORITY.map((r) => [r, []]));
   anatomyRegistry.muscles.forEach((entry) => {
@@ -338,6 +348,21 @@ function indexMusclesByRegion() {
       });
     });
   });
+
+  anatomyRegistry.available_extra_not_yet_carded
+    .filter((extra) => UNCARDED_EXTRA_REGIONS.has(extra.load_region))
+    .forEach((extra) => {
+      const list = byRegion.get(extra.load_region);
+      if (!list) {
+        console.warn('[NEW anatomy] uncarded extra has no known load_region, skipped:', extra.english_name);
+        return;
+      }
+      list.push({
+        path: extra.glb_asset,
+        appMuscle: { muscle: extra.english_name, cards: [] },
+      });
+    });
+
   return byRegion;
 }
 
@@ -667,7 +692,7 @@ anatomyToggleEl.addEventListener('click', () => {
 // full-screen loading indicator; the remaining 6 regions then load
 // progressively in the background through the same shared semaphore/
 // cache, so the viewer becomes interactive after ~1 region's worth of
-// files (14 for torso) instead of waiting for all 85 carded muscle files.
+// files instead of waiting for the entire muscle set.
 if (loadingEl) loadingEl.style.display = 'block';
 const [firstMuscleRegion, ...restMuscleRegions] = REGION_PRIORITY;
 
