@@ -472,6 +472,7 @@ const newMuscleLoader = makeRegionLoader(muscleRegionIndex, (gltf, item) => {
     o.userData.appMuscle = item.appMuscle;
     newClickable.push(o);
   });
+  gltf.scene.visible = true;
   newGroup.add(gltf.scene);
 });
 
@@ -482,6 +483,7 @@ const newSkeletonLoader = makeRegionLoader(skeletonRegionIndex, (gltf) => {
       o.material.side = THREE.DoubleSide;
     }
   });
+  gltf.scene.visible = true;
   newSkeletonGroup.add(gltf.scene);
 });
 
