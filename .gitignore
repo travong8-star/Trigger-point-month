@@ -1,3 +1,10 @@
 .claude/
 node_modules/
 *.log
+dist/
+__pycache__/
+
+# Extracted BodyParts3D source OBJs (160MB) -- the original zips in
+# bodyparts3d/source_archives/ are the committed source of truth; re-extract
+# with `unzip` as needed. Keeps the repo from carrying both forms.
+bodyparts3d/source_objs/

@@ -6,7 +6,15 @@
 // free/paid line without touching any rendering or data code.
 export const FREE_REGIONS = ["Head & Neck"];
 
+// Dev/preview override: ?preview=all unlocks everything for this page load
+// only (no persistence, so it can't be mistaken for a real entitlement).
+// Useful for reviewing paid content locally without touching FREE_REGIONS.
+const DEV_UNLOCK =
+  typeof location !== "undefined" &&
+  new URLSearchParams(location.search).get("preview") === "all";
+
 export function isRegionLocked(regionName) {
+  if (DEV_UNLOCK) return false;
   return !FREE_REGIONS.includes(regionName);
 }
 
