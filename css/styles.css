@@ -46,6 +46,24 @@ button {
   top: 0;
   background: var(--white);
   z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.view-toggle {
+  flex-shrink: 0;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--teal);
+  text-decoration: none;
+  border: 1px solid var(--teal);
+  border-radius: 999px;
+  padding: 6px 12px;
+  min-height: var(--tap-min);
+  display: flex;
+  align-items: center;
 }
 
 .brand {

@@ -36,11 +36,17 @@
       backdrop-filter: blur(10px);
       border-bottom: 1px solid var(--gray-200);
       z-index: 20;
-      display: flex; align-items: center; justify-content: space-between;
-      gap: 12px;
     }
-    .header h1 { font-size: 15px; font-weight: 600; color: var(--teal-700); letter-spacing: 0.01em; white-space: nowrap; }
-    .header .disclaimer { font-size: 10px; color: var(--gray-500); line-height: 1.35; max-width: 55%; }
+    .header h1 { font-size: 15px; font-weight: 600; color: var(--teal-700); letter-spacing: 0.01em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; flex: 1 1 auto; min-width: 0; }
+    .header .disclaimer { font-size: 10px; color: var(--gray-500); line-height: 1.35; margin-top: 6px; }
+    .header-row { display: flex; align-items: center; gap: 10px; }
+    .view-toggle {
+      flex-shrink: 0;
+      font-size: 11px; font-weight: 600; color: var(--teal-600);
+      text-decoration: none;
+      border: 1px solid var(--teal-600); border-radius: 999px;
+      padding: 5px 10px; white-space: nowrap;
+    }
 
     /* Loading */
     #loading {
@@ -62,7 +68,7 @@
     }
     .attribution a { color: var(--teal-600); text-decoration: none; }
 
-    /* Step 1: minimal console hint */
+    /* Tap hint */
     .hint {
       position: fixed; bottom: 28px; left: 50%; transform: translateX(-50%);
       background: rgba(13,148,136,0.9); color: #fff;
@@ -71,18 +77,76 @@
       z-index: 20; white-space: nowrap;
     }
     .hint.visible { opacity: 1; }
+
+    /* Skeleton toggle */
+    .skeleton-toggle {
+      flex-shrink: 0; margin-left: auto;
+      font-size: 11px; font-weight: 600; color: var(--gray-500);
+      background: #fff;
+      border: 1px solid var(--gray-200); border-radius: 999px;
+      padding: 5px 10px; cursor: pointer; white-space: nowrap;
+    }
+    .skeleton-toggle.active {
+      color: #fff; background: var(--teal-600); border-color: var(--teal-600);
+    }
+
+    /* Detail panel: bottom sheet */
+    .detail-panel {
+      position: fixed; left: 0; right: 0; bottom: 0;
+      max-height: 62vh;
+      background: #ffffff;
+      border-top: 1px solid var(--gray-200);
+      border-radius: 16px 16px 0 0;
+      box-shadow: 0 -8px 24px rgba(17,24,39,0.12);
+      z-index: 25;
+      transform: translateY(100%);
+      transition: transform 0.25s ease;
+      touch-action: pan-y;
+    }
+    .detail-panel.open { transform: translateY(0); }
+    .panel-close {
+      position: absolute; top: 10px; right: 10px;
+      width: 32px; height: 32px; border-radius: 50%;
+      border: 1px solid var(--gray-200); background: var(--gray-50);
+      color: var(--gray-500); font-size: 18px; line-height: 1;
+      cursor: pointer;
+    }
+    .panel-content { padding: 18px 20px 24px; overflow-y: auto; max-height: 62vh; }
+    .panel-muscle { font-size: 17px; font-weight: 600; color: var(--teal-700); padding-right: 36px; }
+    .panel-trp-block { margin-top: 16px; padding-top: 14px; border-top: 1px solid var(--gray-100); }
+    .panel-trp-block:first-of-type { border-top: none; }
+    .panel-trp-label { font-size: 12px; font-weight: 600; color: var(--teal-600); text-transform: uppercase; letter-spacing: 0.04em; }
+    .panel-caution {
+      display: flex; gap: 8px; align-items: flex-start;
+      margin-top: 10px; padding: 10px 12px;
+      background: #fef2f2; border: 1px solid #fecaca; border-radius: 8px;
+      font-size: 12.5px; color: var(--red-600); line-height: 1.4;
+    }
+    .panel-field { margin-top: 10px; }
+    .panel-empty { margin-top: 12px; font-size: 13px; color: var(--gray-500); font-style: italic; }
+    .panel-field-label { font-size: 11px; color: var(--gray-500); text-transform: uppercase; letter-spacing: 0.03em; }
+    .panel-field-value { font-size: 13.5px; color: var(--gray-900); line-height: 1.45; margin-top: 2px; }
   </style>
 </head>
 <body>
   <header class="header">
-    <h1>Vital Essence — Trigger Point Map</h1>
+    <div class="header-row">
+      <a class="view-toggle" href="/">&larr; List view</a>
+      <h1>Vital Essence — Trigger Point Map</h1>
+      <button id="skeleton-toggle" class="skeleton-toggle" type="button">Skeleton</button>
+    </div>
     <div class="disclaimer">Educational only. Not medical advice. Use under supervision. Stop if sharp, electrical, or nerve-like sensations occur.</div>
   </header>
 
   <div id="loading">Loading anatomy model…</div>
-  <div id="hint" class="hint">Tap any muscle to log its name (check console)</div>
+  <div id="hint" class="hint">Tap any muscle to see its trigger points</div>
 
   <canvas id="canvas"></canvas>
+
+  <div id="detail-panel" class="detail-panel" aria-hidden="true">
+    <button id="panel-close" class="panel-close" aria-label="Close">&times;</button>
+    <div id="panel-content" class="panel-content"></div>
+  </div>
 
   <footer class="attribution">
     3D anatomical meshes derived from <strong>Z-Anatomy</strong>, 
