@@ -274,6 +274,7 @@ window.__anatomyDebug = {
   isMuscleRegionsFullyLoaded: () => newMuscleLoader.isFullyLoaded(),
   isSkeletonRegionsFullyLoaded: () => newSkeletonLoader.isFullyLoaded(),
   clickableCount: () => newClickable.length,
+  clickableNames: () => newClickable.map((o) => o.userData.appMuscle?.muscle),
 };
 
 function loadGlbCached(loader, path) {
