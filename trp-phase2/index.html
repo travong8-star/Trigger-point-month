@@ -78,6 +78,19 @@
     }
     .hint.visible { opacity: 1; }
 
+    /* Background progress: non-blocking, shown while additional anatomy
+       regions load after the viewer is already interactive. Sits above
+       the tap hint so the two never overlap when both are briefly
+       visible right after the initial region finishes. */
+    #bg-progress {
+      position: fixed; bottom: 62px; left: 50%; transform: translateX(-50%);
+      background: rgba(17,24,39,0.82); color: #fff;
+      font-size: 10.5px; padding: 5px 12px; border-radius: 20px;
+      pointer-events: none; opacity: 0; transition: opacity 0.25s;
+      z-index: 20; white-space: nowrap; letter-spacing: 0.01em;
+    }
+    #bg-progress.visible { opacity: 1; }
+
     /* Skeleton toggle */
     .skeleton-toggle {
       flex-shrink: 0; margin-left: auto;
@@ -89,6 +102,17 @@
     .skeleton-toggle.active {
       color: #fff; background: var(--teal-600); border-color: var(--teal-600);
     }
+
+    /* Anatomy dev switch (OLD vs NEW) — development-only, not a
+       production-facing feature; kept visually distinct (dashed, amber) */
+    .anatomy-toggle {
+      display: block; margin-top: 8px;
+      font-size: 10px; font-weight: 600; color: #92400e;
+      background: #fffbeb; border: 1px dashed #d97706; border-radius: 999px;
+      padding: 4px 10px; cursor: pointer; white-space: nowrap;
+    }
+    .anatomy-toggle.old-mode { color: var(--gray-500); background: var(--gray-50); border-color: var(--gray-200); }
+    .anatomy-toggle:disabled { opacity: 0.6; cursor: wait; }
 
     /* Detail panel: bottom sheet */
     .detail-panel {
@@ -136,10 +160,12 @@
       <button id="skeleton-toggle" class="skeleton-toggle" type="button">Skeleton</button>
     </div>
     <div class="disclaimer">Educational only. Not medical advice. Use under supervision. Stop if sharp, electrical, or nerve-like sensations occur.</div>
+    <button id="anatomy-toggle" class="anatomy-toggle" type="button">Anatomy: NEW (BodyParts3D)</button>
   </header>
 
   <div id="loading">Loading anatomy model…</div>
   <div id="hint" class="hint">Tap any muscle to see its trigger points</div>
+  <div id="bg-progress"></div>
 
   <canvas id="canvas"></canvas>
 
@@ -148,10 +174,10 @@
     <div id="panel-content" class="panel-content"></div>
   </div>
 
-  <footer class="attribution">
-    3D anatomical meshes derived from <strong>Z-Anatomy</strong>, 
-    <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a>.
-    Modified: muscle subset extracted, converted to glTF, decimated for web delivery.
+  <footer class="attribution" id="attribution">
+    3D anatomical meshes derived from <strong>BodyParts3D</strong>, © The Database Center for Life Science,
+    <a href="http://dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html" target="_blank" rel="noopener">CC BY-SA 2.1 Japan</a>.
+    Converted to glTF for web delivery.
   </footer>
 
   <script type="module" src="/src/main.js"></script>

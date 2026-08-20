@@ -1,0 +1,9 @@
+{
+  "name": "bodyparts3d-conversion-tools",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Build-time OBJ->GLB conversion tooling for the BodyParts3D anatomy pipeline. Not part of the deployed app.",
+  "dependencies": {
+    "obj2gltf": "^3.2.0"
+  }
+}
